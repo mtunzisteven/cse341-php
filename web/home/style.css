@@ -8,10 +8,10 @@ body{
   color:#ffffff;
 }
 
-.nav-link{
+.nav-item{
   display:inline;
-  list-style-type: none;
-  margin-left: 0;
+  list-style-type: none !important;
+  margin: 0;
 }
 
 .container {
