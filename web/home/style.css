@@ -3,6 +3,10 @@ body{
   padding:0 5%;
 }
 
+h1{
+  font:900 40px #ffffff;
+}
+
 .nav-link, .homelink{
   text-decoration: none;
   color:#ffffff;
@@ -14,7 +18,7 @@ body{
   padding:0;
 }
 
-.nav-item{
+.nav-item a{
   list-style-type: none !important;
 }
 
