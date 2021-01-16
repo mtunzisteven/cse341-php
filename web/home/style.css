@@ -4,7 +4,7 @@ body{
 }
 
 h1{
-  font:900 40px #ffffff;
+  font-size:40px;
 }
 
 .nav-link, .homelink{
@@ -12,9 +12,9 @@ h1{
   color:#ffffff;
 }
 
-.nav-item a{
+.nav-item{
   list-style-type: none;
-  display:inline;
+  display:inline-block;
   margin: 0;
   padding:0;
 }
