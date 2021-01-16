@@ -10,9 +10,12 @@ body{
 
 .navbar-nav{
   display:inline;
-  list-style-type: none !important;
   margin: 0;
   padding:0;
+}
+
+.nav-item{
+  list-style-type: none !important;
 }
 
 .container {
