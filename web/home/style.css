@@ -7,6 +7,7 @@ body{
   color:#ffffff;
 }
 
-nav {
-
+.container {
+  border:springgreen solid 3px;
+  border-radius:10px;
 }
