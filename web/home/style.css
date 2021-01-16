@@ -8,13 +8,15 @@ h1{
 }
 
 .nav-link, .homelink{
+  display:block;
   text-decoration: none;
   color:#ffffff;
+  text-align: center;
 }
 
 .nav-item{
   list-style-type: none;
-  display:inline-block;
+  float:right;
   margin: 0;
   padding:0;
 }
