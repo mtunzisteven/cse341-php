@@ -15,7 +15,7 @@ h1{
 
 .nav-link{
   text-align:center;  
-  
+  display:block;
 }
 
 .nav-item{
@@ -31,9 +31,7 @@ h1{
 }
 
 .navbar-nav{
-  max-width: 100%;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:50%;
   text-align:center;
 }
 
