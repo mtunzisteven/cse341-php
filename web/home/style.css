@@ -14,17 +14,18 @@ h1{
 }
 
 .nav-link{
-  display:block;
-  float:right;
-  background-color:springgreen;
+  
 }
 
 .nav-item{
   list-style-type: none;
+  display:block;
+  float:right;
   margin: 0 5px;
   padding:5px;
   border-radius: 20px;
   color:midnightblue;
+  background-color:springgreen;
 }
 
 .navbar-nav{
