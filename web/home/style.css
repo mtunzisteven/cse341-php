@@ -30,7 +30,6 @@ li{
 }
 
 ul{
-  margin-left:50%;
   text-align:center;
   display:grid;
   grid-template-columns: 1fr 1fr;
