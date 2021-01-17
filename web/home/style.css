@@ -7,20 +7,19 @@ h1{
   font-size:40px;
 }
 
-.nav-link, .homelink{
+a{
   text-decoration: none;
   color:#ffffff;
   text-align: center;
 }
 
-.nav-link{
+li a{
   text-align:center;  
   display:block;
 }
 
-.nav-item{
+li{
   list-style-type: none;
-  float:right;
   width:80px;
   margin: 0 5px;
   padding:5px;
@@ -30,9 +29,11 @@ h1{
   box-shadow:1px 1px 0 2px #ffffff;
 }
 
-.navbar-nav{
+ul{
   margin-left:50%;
   text-align:center;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 header {
