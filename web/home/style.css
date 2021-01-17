@@ -15,11 +15,11 @@ h1{
 
 .nav-link{
   text-align:center;  
+  
 }
 
 .nav-item{
   list-style-type: none;
-  display:block;
   float:right;
   width:80px;
   margin: 0 5px;
