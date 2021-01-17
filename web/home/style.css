@@ -33,8 +33,7 @@ ul{
   text-align:center;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  padding-left:30%;
-  padding-right:30%;
+  width: 200px;
 }
 
 header {
