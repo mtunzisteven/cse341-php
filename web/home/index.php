@@ -26,7 +26,7 @@
 
    ?>
 
-   <div>
+   <div class="container">
    </div>
 
    <?php
@@ -45,7 +45,7 @@
    echo $footer;
 
   ?>
-  
+
  <script src="functions.js"></script>
  </body>
 </html>

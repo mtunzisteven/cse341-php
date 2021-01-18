@@ -27,15 +27,12 @@ li a{
 
 li a:hover{
   color:#ffffff;
+  background-color: tomato;
 }
 
 li{
   list-style-type: none;
 
-}
-
-li:hover{
-  background-color: tomato;
 }
 
 ul{
@@ -47,9 +44,13 @@ ul{
   margin-right: auto;
 }
 
-header, footer {
+header,footer {
   border:springgreen solid 6px;
   border-radius:10px;
   box-shadow:0 0 0 2px #ffffff;
   padding: 0 5px;
+}
+
+.container{
+  margin:0 50px 0 50px;
 }
