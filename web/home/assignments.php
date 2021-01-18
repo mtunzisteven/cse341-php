@@ -28,6 +28,24 @@
 
    <div>
    </div>
+
+   <?php
+   
+    $footer_template = "footer.html";
+
+    #check whether template exists, if not, cancel program.
+    if(file_exists($footer_template)){
+	    $footer = file_get_contents($footer_template);
+    }
+    else{
+	    die("File not found!");
+    }
+
+    #Print/Display the navigation template
+    echo $footer;
+
+   ?>
+
  <script src="functions.js"></script>
  </body>
 </html>
