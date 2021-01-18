@@ -29,23 +29,11 @@
    <div class="container">
      <h2>Coming soon...</h2>
    </div>
-
-   <?php
-   
-    $footer_template = "footer.html";
-
-    #check whether template exists, if not, cancel program.
-    if(file_exists($footer_template)){
-	    $footer = file_get_contents($footer_template);
-    }
-    else{
-	    die("File not found!");
-    }
-
-    #Print/Display the navigation template
-    echo $footer;
-
-   ?>
+   <footer>
+        <div class="footer-div">
+            <a href="https://byui.edu">&copy; 2021 BYU-Idaho | CSE341</a>
+        </div>
+   </footer>
 
  <script src="functions.js"></script>
  </body>
