@@ -44,9 +44,8 @@ ul{
   text-align:center;
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
   width: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 header{
@@ -60,7 +59,7 @@ footer{
   border:springgreen solid 6px;
   border-radius:10px;
   box-shadow:0 0 0 2px #ffffff;
-  padding: 0 15px;
+  padding: 15px 0;
 }
 
 .footer-div{
@@ -68,5 +67,5 @@ footer{
 }
 
 .container{
-  margin:200px 0;
+  margin:100px 0;
 }
