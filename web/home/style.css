@@ -29,8 +29,8 @@ p{
 
 .page-name{
   display:block;
-  max-width:100;
-  margin: auto;
+  padding-top: 100px;
+  margin-left: 49%;
 }
 
 a{
