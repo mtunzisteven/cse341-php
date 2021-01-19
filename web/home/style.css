@@ -7,9 +7,10 @@ h1{
   font-size:40px;
 }
 
-.container h2, h3, .page_name.h2{
+.container h2, h3, .page-name.h2{
   color:#ffffff;
   text-align: center;
+  vertical-align: middle;
 }
 
 p{
