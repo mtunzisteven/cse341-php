@@ -15,6 +15,7 @@
     #Replace page title
     $page_name = "Home";
 
+    #Specify the place where the changes will occure: $nav
     $nav = str_replace ( "{PAGE}" , $page_name , $nav );
 
     #Print/Display the navigation template

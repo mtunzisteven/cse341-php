@@ -26,6 +26,8 @@
             </li>
         </ul>
     </nav>
-    <div class="hero-div"></div>
-    <h2 class="page-name">{PAGE}</h2>
+    <div class="hero-div">
+        <h2 class="page-name">{PAGE}</h2>
+    </div>
+    
 </header>
