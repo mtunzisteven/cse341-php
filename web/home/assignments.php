@@ -1,41 +1,45 @@
-<!DOCTYPE html>
-<html lang="en-us">
- <head>
-  <title>Assignments</title>
-  <meta charset="utf-8">
-  <meta content="author" name="Mtunzi Mavuma" >
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- </head>
- <body>
-   <?php
+<?php
    
-    $nav_template = "nav.html";
+    $nav_template = "nav.php";
+    $footer_template = "footer.php";
 
     #check whether template exists, if not, cancel program.
-    if(file_exists($nav_template)){
-	    $nav = file_get_contents($nav_template);
+    if(file_exists($nav_template) and file_exists($footer_template)){
+      $nav = file_get_contents($nav_template);
+      $footer = file_get_contents($footer_template);
     }
     else{
 	    die("File not found!");
     }
 
+    #Set page title
+    $short_code = array(
+      "{PAGE}" => "Assignments"
+    );
+
+    $title = $short_code['{PAGE}'];
+
+    #Replace short codes on teplate with actual desired data
+    foreach(array_keys($short_code) as $k){
+      if(strlen($k)>2 && trim($k)!=""){
+          $content = str_replace($k,$short_code[$k],$content);
+      }
+      else{
+          echo "short codes error!";
+      }
+    }
+
     #Print/Display the navigation template
     echo $nav;
+?>
 
-   ?>
-
-   <div class="container">
+<div class="container">
      <h2>Coming soon...</h2>
-   </div>
-   <footer>
-        <div class="footer-div">
-            <a href="https://byui.edu">&copy; 2021 BYU-Idaho | CSE341</a>
-        </div>
-   </footer>
+</div>
 
- <script src="functions.js"></script>
- </body>
-</html>
+<?php
+
+    echo $footer;
+
+?>
