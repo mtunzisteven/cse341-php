@@ -40,12 +40,11 @@ li{
 
 }
 
-ul{
+ul.navbar-nav{
   text-align:center;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:20px;
-  max-width: 200px;
   margin-left:auto;
   margin-right:auto;
 }
