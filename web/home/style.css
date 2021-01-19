@@ -25,7 +25,12 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding:auto;
+}
+
+.page-name{
+  display:block;
+  max-width:100;
+  margin: auto;
 }
 
 a{
