@@ -7,6 +7,10 @@ h1{
   font-size:40px;
 }
 
+h1:hover{
+  color:tomato;
+}
+
 .container h2, h3{
   color:#ffffff;
   text-align: center;
@@ -85,6 +89,10 @@ footer{
 
 .footer-div{
   text-align: center;
+}
+
+.footer-div a:hover{
+  color:tomato;
 }
 
 div.container{
