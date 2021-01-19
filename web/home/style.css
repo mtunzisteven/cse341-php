@@ -18,7 +18,7 @@ p{
 }
 
 .hero-div{
-  color:#ffffff;
+  color:tomato;
   background-image: url("hero.jpg");
   height: 250px;
   background-attachment: fixed;
@@ -28,7 +28,6 @@ p{
 }
 
 .page-name{
-  display:block;
   padding-top: 100px;
   margin-left: 49%;
 }
