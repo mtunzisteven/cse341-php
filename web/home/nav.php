@@ -26,6 +26,6 @@
             </li>
         </ul>
     </nav>
-    <img class="hero" src="hero.jpg" alt="Hero Image"/>
+    <div class="hero-div"></div>
     <h2 class="page-name">{PAGE}</h2>
 </header>
