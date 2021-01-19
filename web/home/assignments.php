@@ -12,6 +12,11 @@
 	    die("File not found!");
     }
 
+    #Replace page title
+    $page_name = "Home";
+
+    $nav = str_replace ( "{PAGE}" , $page_name , $nav );
+
     #Print/Display the navigation template
     echo $nav;
 
