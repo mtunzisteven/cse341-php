@@ -13,7 +13,7 @@
     }
 
     #Replace page title
-    $page_name = "Home";
+    $page_name = "Assignments";
 
     #Specify the place where the changes will occure: $nav
     $nav = str_replace ( "{PAGE}" , $page_name , $nav );
