@@ -1,1 +1,1 @@
-$(document).ready(function(){$("body").on("load",function(){$(".hero-div").slideIn(3500);});});
+$(document).ready(function(){$("body").on("load",function(){$(".hero-div").slideIn(slow);});});
