@@ -16,7 +16,7 @@
     $page_name = "Assignments";
 
     #Specify the place where the changes will occure: $nav
-    $nav = str_replace ( "{PAGE}" , $page_name , $nav );
+    $nav = str_replace( "{PAGE}" , $page_name , $nav );
 
     #Print/Display the navigation template
     echo $nav;
@@ -24,7 +24,7 @@
    ?>
 
   <div class="container">
-      <h2>Coming soon...</h2>
+      <h2 class="soon">Coming soon...</h2>
   </div>
 
   <?php
