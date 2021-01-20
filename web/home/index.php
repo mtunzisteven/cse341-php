@@ -24,6 +24,12 @@
    ?>
 
    <div class="container">
+     <p>
+       My name is Mtunzi Steven Mavuma. I live in Durban, South Africa. I love to dance and swim. 
+       Programming is one of my favorite things to do because I get to create new things and solve problems.
+       I want to master PHP because I want to be able to create web applications that solve problems in my 
+       community.
+     </p>
    </div>
 
   <?php
