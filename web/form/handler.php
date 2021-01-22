@@ -6,7 +6,7 @@
   <style>
       body{
           background-color: tomato;
-          padding: 15% 30%;
+          padding: 15% 40%;
           text-align: justify;
           color:blanchedalmond;
       }
@@ -20,6 +20,8 @@
           echo '<h4>User Email Adress: <a href="mailto:"'.$_POST["email"].'>'.$_POST['email'].'</a></h4>'; 
           echo '<h4>Major: '.$_POST["major"].'</h4>';
           echo '<h4>Comments: '.$_POST["comments"].'</h4>';
+
+          echo '<h4>Continents Visited: '.implode(",",$_POST["continent"]).'</h4>';
     ?>
 
  </body>
