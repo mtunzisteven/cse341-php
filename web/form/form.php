@@ -86,7 +86,7 @@
 
       <label class="long">
         <div>Comments</div>
-        <textarea class="long" id="major" rows="5" name="comments" value="Computer Science"></Textarea>
+        <textarea class="long" id="comments" rows="5" name="comments" ></Textarea>
       </label>
       <input class="button" type="submit" value="sumbmit">
 

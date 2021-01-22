@@ -20,7 +20,8 @@
  <body>
 
     <?php 
-          $continents = "";
+
+          echo $_POST["major"];
    
           echo '<h4>User Name: </h4><span>'.$_POST["name"].'</span><br/>'; 
           echo '<h4>User Email Address: <a href="mailto:"'.$_POST["email"].'>'.$_POST['email'].'</a></h4><br/>'; 
