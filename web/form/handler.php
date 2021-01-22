@@ -33,9 +33,11 @@
             
             echo  '<h4>Continents Visited: </h4>';
 
+            $_count = 0;
+
             foreach($_POST["continents"] as $continent){
 
-                $_count = 0;
+                
 
                 switch($continent){
                     case "na":
