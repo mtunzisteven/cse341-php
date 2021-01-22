@@ -40,7 +40,7 @@
       </label><br/><hr/>
         <?php
 
-            $major = ["Computer Science", 
+            $majors = ["Computer Science", 
                       "Web Design and Development", 
                       "Computer information Technology", 
                       "Computer Engineering"
