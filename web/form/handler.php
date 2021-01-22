@@ -6,7 +6,7 @@
   <style>
       body{
           background-color: tomato;
-          padding: 15% 40%;
+          padding: 15% 30%;
           text-align: left;
           color:blanchedalmond;
       }
@@ -29,7 +29,7 @@
                 #echo '<h5>'.$visited.'</h5>';
             #}
 
-            echo '<4>Continents Visited: '.implode(",",$_POST["continents"]).'</h4>';
+            echo '<h4>Continents Visited: '.implode(", ",$_POST["continents"]).'</h4>';
           }
               
     ?>
