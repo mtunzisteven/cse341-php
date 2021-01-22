@@ -20,11 +20,13 @@
           echo '<h4>User Email Address: <a href="mailto:"'.$_POST["email"].'>'.$_POST['email'].'</a></h4>'; 
           echo '<h4>Major: '.$_POST["major"].'</h4>';
           echo '<h4>Comments: '.$_POST["comments"].'</h4>';
+        
+          if(!empty($_POST["continents"])){
+            echo '<h4>Continents Visited: ';
 
-          echo '<h4>Continents Visited: ';
-          
-          foreach($_POST["continents"] as $visited){
-            echo $visited.'</h4><br/>';
+            foreach($_POST["continents"] as $visited){
+                echo $visited.'</h4><br/>';
+            }
           }
               
     ?>
