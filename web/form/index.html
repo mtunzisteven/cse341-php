@@ -16,7 +16,7 @@
 
       }
 
-      input,label,textarea{
+      .long{
           width:100%;
       }
 
@@ -26,13 +26,13 @@
  <body>
 
   <form method="POST" action="handler.php">
-      <label>
+      <label class="long">
         <div>Name</div>
-        <input type="text" name="name" />
+        <input class="long" type="text" name="name" />
       </label><br/>
-      <label>
+      <label class="long">
         <div>Email</div>
-        <input type="text" name="email" />
+        <input class="long" type="text" name="email" />
       </label><br/><hr/>
 
         <div>Majors</div>
@@ -54,9 +54,9 @@
         </label><br/><hr/>
         
 
-      <label>
+      <label class="long">
         <div>Comments</div>
-        <textarea id="major" rows="5" name="comments" value="Computer Science"></Textarea>
+        <textarea class="long" id="major" rows="5" name="comments" value="Computer Science"></Textarea>
       </label>
 
   </form>
