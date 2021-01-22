@@ -7,7 +7,7 @@
       body{
           background-color: tomato;
           padding: 15% 40%;
-          text-align: justify;
+          text-align: left;
           color:blanchedalmond;
       }
 
@@ -22,10 +22,11 @@
           echo '<h4>Comments: '.$_POST["comments"].'</h4>';
         
           if(!empty($_POST["continents"])){
-            echo '<h4>Continents Visited: ';
+
+            echo '<h4>Continents Visited: </h4>';
 
             foreach($_POST["continents"] as $visited){
-                echo $visited.'</h4><br/>';
+                echo '<h4>'.$visited.'</h4><br/>';
             }
           }
               
