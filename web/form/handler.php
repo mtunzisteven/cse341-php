@@ -16,10 +16,10 @@
  </head>
  <body>
 
-    <?php echo '<h4>User Name: <p>'.$_POST["name"].'</p></h4>'; 
+    <?php echo '<h4>User Name: </h4><span>'.$_POST["name"].'</span>'; 
           echo '<h4>User Email Address: <a href="mailto:"'.$_POST["email"].'>'.$_POST['email'].'</a></h4>'; 
-          echo '<h4>Major: <p>'.$_POST["major"].'</p></h4>';
-          echo '<h4>Comments: <p>'.$_POST["comments"].'</p></h4>';
+          echo '<h4>Major: </h4><span>'.$_POST["major"].'</span>';
+          echo '<h4>Comments: </h4><span>'.$_POST["comments"].'</span>';
         
           if(!empty($_POST["continents"])){
 
@@ -29,7 +29,7 @@
                 #echo '<h5>'.$visited.'</h5>';
             #}
 
-            echo '<h4>Continents Visited: <p>'.implode(", ",$_POST["continents"]).'</p></h4>';
+            echo '<h4>Continents Visited: </h4><span>'.implode(", ",$_POST["continents"]).'</span>';
           }
               
     ?>
