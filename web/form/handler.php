@@ -24,7 +24,7 @@
    
           echo '<h4>User Name: </h4><span>'.$_POST["name"].'</span><br/>'; 
           echo '<h4>User Email Address: <a href="mailto:"'.$_POST["email"].'>'.$_POST["email"].'</a></h4><br/>'; 
-          echo '<h4>Major: </h4><span>'.$_POST['major'].'</span><br/>';
+          echo '<h4>Major: </h4><span>'.$_POST["major"].'</span><br/>';
           echo '<h4>Comments: </h4><span>'.$_POST["comments"].'</span><br/>';
 
           
