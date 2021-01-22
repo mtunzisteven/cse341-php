@@ -48,9 +48,10 @@
       
             echo '<div>Majors</div>';
             foreach($majors as $major){
-            echo '<label><input id="major" type="radio" name="major" value='.$major.'/>'.$major.'</label><br/>';
+            echo '<label><input id="major" type="radio" name="major" value='.$major.'/>'.$major.'</label><hr/>';
             }
         ?>
+
 
         <div>Continents Visited</div>
         <label>
