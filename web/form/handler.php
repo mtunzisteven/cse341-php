@@ -61,7 +61,7 @@
                       break;
                 }
 
-                if($_count!=count($count)){
+                if($_count!=count($_POST["continents"])){
                     echo '<span>'.$continent.'</span>, ';
                 }
 
@@ -69,7 +69,7 @@
                     echo '<span>'.$continent.'</span>';
                 }
 
-                $_count +1;
+                $_count +=1;
                     
             }
             
