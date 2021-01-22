@@ -70,11 +70,8 @@
                 else{
                     echo '<span>'.$continent.'</span>';
                 }
-
-                echo " my count: ".$_count." | Array count: ".count($_POST["continents"])." ";
                     
             }
-            
 
           }
               
