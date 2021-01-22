@@ -69,7 +69,7 @@
                     echo '<span>'.$continent.'</span>';
                 }
 
-                $_count +=1;
+                $_count =$_count +1;
                     
             }
             
