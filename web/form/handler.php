@@ -11,6 +11,10 @@
           color:blanchedalmond;
       }
 
+      h4{
+          display: inline;
+      }
+
       
   </style>
  </head>
