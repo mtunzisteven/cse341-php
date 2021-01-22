@@ -23,11 +23,13 @@
         
           if(!empty($_POST["continents"])){
 
-            echo '<h4>Continents Visited: </h4>';
+            #echo '<h4>Continents Visited: </h4>';
 
-            foreach($_POST["continents"] as $visited){
-                echo '<h4>'.$visited.'</h4><br/>';
-            }
+            #foreach($_POST["continents"] as $visited){
+                #echo '<h5>'.$visited.'</h5>';
+            #}
+
+            echo '<4>Continents Visited: '.implode(",",$_POST["continents"]).'</h4>';
           }
               
     ?>
