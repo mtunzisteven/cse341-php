@@ -7,27 +7,31 @@
  <body>
 
   <form method="POST" action="handler.php">
-      <label>Name
+      <label>
+        <div>Name</div>
         <input type="text" name="name" />
-      </label>
-      <label>Email
+      </label><br/>
+      <label>
+        <div>Email</div>
         <input type="text" name="email" />
       </label><br/>
-      <caption>Majors
+      <fieldset>
+        <div>Majors</div>
         <label>Computer Science
             <input id="major" type="radio" name="major" value="Computer Science" />
-        </label>
+        </label><br/>
         <label>Web Design and Development
             <input id="major" type="radio" name="major" value="Web Design and Development" />
-        </label>
+        </label><br/>
         <label>Computer information Technology
             <input id="major" type="radio" name="major" value="Computer information Technology" />
-        </label>
+        </label><br/>
         <label>Computer Engineering
             <input id="major" type="radio" name="major" value="Computer Engineering" />
         </label>
-      </caption>
-      <label>Comments
+      </fieldset><br/>
+      <label>
+        <div>Comments</div>
         <textarea id="major" name="comments" value="Computer Science"></Textarea>
       </label>
 
