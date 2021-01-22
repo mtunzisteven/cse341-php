@@ -6,7 +6,7 @@
   <style>
       body{
           background-color: tomato;
-          padding: 45% 30%;
+          padding: 15% 30%;
           text-align: justify;
           color:blanchedalmond;
       }
