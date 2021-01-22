@@ -37,7 +37,7 @@
 
             foreach($_POST["continents"] as $continent){
 
-                
+                $_count =$_count +1;
 
                 switch($continent){
                     case "na":
@@ -70,8 +70,6 @@
                 else{
                     echo '<span>'.$continent.'</span>';
                 }
-
-                $_count =$_count +1;
 
                 echo " my count: ".$_count." | Array count: ".count($_POST["continents"])." ";
                     
