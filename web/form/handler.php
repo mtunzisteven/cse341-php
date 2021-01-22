@@ -70,6 +70,8 @@
                 }
 
                 $_count =$_count +1;
+
+                echo "my count: ".$_count."Array count: ".$_POST["continents"];
                     
             }
             
