@@ -26,33 +26,36 @@
           echo '<h4>User Email Address: <a href="mailto:"'.$_POST["email"].'>'.$_POST['email'].'</a></h4><br/>'; 
           echo '<h4>Major: </h4><span>'.$_POST["major"].'</span><br/>';
           echo '<h4>Comments: </h4><span>'.$_POST["comments"].'</span><br/>';
-        
-          if(!empty($_POST["continents"])){
 
-            switch($_POST["continents"]){
-                case "na":
-                  $continents = "North America";
-                  break;
-              case "sa":
-                  $continents = "South America";
-                  break;
-              case "a1":
-                  $continents = "Asia";
-                  break;
-              case "a2":
-                  $continents = "Australia";
-                  break;
-              case "e":
-                  $continents = "Europe";
-                  break;
-              case "a3":
-                  $continents = "Africa";
-                  break;
-              case "a4":
-                  $continents = "Antarctica";
-                  break;
-              default: 
-                  $continents = $_POST["continents"];
+          $continents = $_POST["continents"]; 
+        
+          if(!empty($continents)){
+
+            foreach($continents as $continent){
+
+                switch($continent){
+                    case "na":
+                      $continent = "North America";
+                      break;
+                  case "sa":
+                      $continent = "South America";
+                      break;
+                  case "a1":
+                      $continent = "Asia";
+                      break;
+                  case "a2":
+                      $continent = "Australia";
+                      break;
+                  case "e":
+                      $continent = "Europe";
+                      break;
+                  case "a3":
+                      $continent = "Africa";
+                      break;
+                  case "a4":
+                      $continent = "Antarctica";
+                      break;
+                }
             }
 
             echo '<h4>Continents Visited: </h4><span>'.implode(", ",$continents).'</span>';
