@@ -27,11 +27,15 @@
           echo '<h4>Major: </h4><span>'.$_POST["major"].'</span><br/>';
           echo '<h4>Comments: </h4><span>'.$_POST["comments"].'</span><br/>';
 
-          $continents = $_POST["continents"]; 
+          
         
-          if(!empty($continents)){
+          if(!empty($_POST["continents"])){
+            
+            echo  '<h4>Continents Visited: </h4>';
 
-            foreach($continents as $continent){
+            foreach($_POST["continents"] as $continent){
+
+                $_count = 0;
 
                 switch($continent){
                     case "na":
@@ -56,9 +60,20 @@
                       $continent = "Antarctica";
                       break;
                 }
-            }
 
-            echo '<h4>Continents Visited: </h4><span>'.implode(", ",$continents).'</span>';
+                if($_count!=count($count)){
+                    echo '<span>'.$continent.'</span>, ';
+                }
+
+                else{
+                    echo '<span>'.$continent.'</span>';
+                }
+
+                $_count +1;
+                    
+            }
+            
+
           }
               
     ?>
