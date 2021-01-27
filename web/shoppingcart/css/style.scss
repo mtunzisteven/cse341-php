@@ -81,6 +81,11 @@ img.products{
     @include pad-all-sides(20%, 5px);
 }
 
+.cart-container{
+    @include flex(row, space-between, nowrap);
+    border-radius:30px; 
+}
+
 .nav li{
     @include clean-li();
 }
@@ -92,7 +97,7 @@ a{
 .cart-value{
     background-color:$secondary-color;
     @include equal(30px);
-    @include pad-all-sides(20%, 20%);
+    @include pad-all-sides(2px, 2px);
     font-size: 6px;
     color:$light-color;
 }
