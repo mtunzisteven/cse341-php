@@ -52,6 +52,7 @@ $small-font: 14px;
 body{
     background-color:$light-color;
     font-family: $font-family;
+    max-width:100%;
 }
 
 h1{
@@ -78,12 +79,11 @@ img.products{
     background-color: $main-color;
     @include unequal(100%, 40px);
     @include flex(row, space-between, nowrap);
-    @include pad-all-sides(20%, 5px);
+    @include pad-all-sides(2px, 5px);
 }
 
 .cart-container{
     @include flex(row, space-between, nowrap);
-    border-radius:30px; 
 }
 
 .nav li{
