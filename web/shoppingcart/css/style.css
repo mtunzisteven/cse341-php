@@ -1,41 +1,55 @@
-body{
-    background-color:#ffffff;
+body {
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-    color:#ffffff;
+h1 {
+  color: #ffffff;
 }
 
-h2{
-    color:#009687;
+h2 {
+  color: #009687;
 }
 
-img.products{
-    border:solid 1px #96000F;
+img.products {
+  border: solid 1px #96000F;
 }
 
-.header-top{
-    height:150px;
+.header-top {
+  height: 150px;
 }
 
-.logo{
-    size: 125px 125px;
+.logo {
+  size: 125px 125px;
 }
 
-.nav{
-    background-color: #009687;
-    height:70px;
+.nav {
+  background-color: #009687;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.cart-value{
-    background-color:#96000F;
-    size: 30px 30px;
-    font-size: 6px;
-    color:#ffffff;
+.cart-value {
+  background-color: #96000F;
+  size: 30px 30px;
+  font-size: 6px;
+  color: #ffffff;
 }
 
-.hero{
-    background-image: url("../shoppingcart/images/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+.hero {
+  background-image: url("../shoppingcart/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+/*# sourceMappingURL=style.css.map */

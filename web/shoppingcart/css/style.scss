@@ -1,0 +1,65 @@
+
+//Colors
+$main-color:#009687;
+$secondary-color:#96000F;
+$light-color:#ffffff;
+
+//Font
+$font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$large-font: 35px;
+$medium-font: 18px;
+$small-font: 14px;
+
+//flex 
+@mixin flex($dir, $justify, $wrap:wrap){
+    display:flex;
+    flex-direction:$dir;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+
+body{
+    background-color:$light-color;
+    font-family: $font-family;
+}
+
+h1{
+    color:$light-color;
+}
+
+h2{
+    color:$main-color;
+}
+
+img.products{
+    border:solid 1px $secondary-color;
+}
+
+.header-top{
+    height:150px;
+}
+
+.logo{
+    size: 125px 125px;
+}
+
+.nav{
+    background-color: $main-color;
+    height:70px;
+    @include flex(row, space-between);
+}
+
+.cart-value{
+    background-color:$secondary-color;
+    size: 30px 30px;
+    font-size: 6px;
+    color:$light-color;
+}
+
+.hero{
+    background-image: url("../shoppingcart/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
