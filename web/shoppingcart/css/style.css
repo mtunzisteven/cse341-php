@@ -1,0 +1,37 @@
+body{
+    background-color:#ffffff;
+}
+
+h1{
+    color:#ffffff;
+}
+
+h2{
+    color:#009687;
+}
+
+img{
+    border:solid 1px #96000F;
+}
+
+.header-top{
+    height:150px;
+}
+
+.nav{
+    background-color: #009687;
+    height:70px;
+}
+
+.cart-value{
+    background-color:#96000F;
+    size: 30px 30px;
+    font-size: 6px;
+    color:#ffffff;
+}
+
+.hero{
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
