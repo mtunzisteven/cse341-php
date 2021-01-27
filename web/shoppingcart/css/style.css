@@ -2,6 +2,7 @@ body {
   background-color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -16,6 +17,7 @@ h2 {
   width: 15px;
   height: 15px;
   background-color: #96000F;
+  padding: 2px 2px;
 }
 
 img.products {
@@ -48,6 +50,12 @@ img.products {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 2px 5px;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 2px 5px;
 }
 
 .cart-container {
@@ -63,12 +71,14 @@ img.products {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
 }
 
 .nav li {
   list-style-type: none;
-  -webkit-text-decoration: left;
-          text-decoration: left;
+  text-align: left;
+  padding-bottom: 40%;
+  margin-left: 0;
 }
 
 a {
