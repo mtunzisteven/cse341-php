@@ -27,6 +27,8 @@ h2 {
 
 .cart-link {
   background-image: url("../images/cart.png");
+  background-repeat: no-repeat;
+  background-size: 22px auto;
   height: 22px;
   margin: 0 15px 0 5px;
 }
@@ -90,6 +92,6 @@ a {
 .hero {
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
 }
 /*# sourceMappingURL=style.css.map */
