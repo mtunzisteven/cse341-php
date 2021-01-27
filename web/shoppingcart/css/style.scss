@@ -73,6 +73,10 @@ h2{
     margin-top: 5px;
 }
 
+.cart-span{
+    margin-bottom: 5px;
+}
+
 .cart-link{
     display:block;
     @include marg-all-sides(auto,auto)
