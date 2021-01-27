@@ -80,7 +80,8 @@ img.products{
 }
 
 .logo{
-    @include unequal(95px, auto);
+    @include equal(85px);
+    @include pad-all-sides(10px,5px)
 }
 
 .nav{
@@ -98,7 +99,7 @@ ul{
 
 .cart-container{
     @include flex(row, space-between, nowrap);
-    padding:0;
+    @include pad-all-sides(2px,5px)
 }
 
 .nav li{

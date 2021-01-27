@@ -29,8 +29,9 @@ img.products {
 }
 
 .logo {
-  width: 95px;
-  height: auto;
+  width: 85px;
+  height: 85px;
+  padding: 10px 5px;
 }
 
 .nav {
@@ -71,7 +72,7 @@ ul {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0;
+  padding: 2px 5px;
 }
 
 .nav li {
