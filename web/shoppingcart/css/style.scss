@@ -63,6 +63,10 @@ h2{
     color:$main-color;
 }
 
+img.shopping-cart{
+    @include equal(15px);
+}
+
 img.products{
     border:solid 1px $secondary-color;
 }
@@ -88,6 +92,7 @@ img.products{
 
 .nav li{
     @include clean-li();
+    text-decoration: left;
 }
 
 a{
@@ -96,10 +101,11 @@ a{
 
 .cart-value{
     background-color:$secondary-color;
-    @include equal(30px);
-    @include pad-all-sides(2px, 2px);
+    @include equal(15px);
+    @include pad-all-sides(5px, 5px);
     font-size: 6px;
     color:$light-color;
+    border-radius:20px;
 }
 
 .hero{

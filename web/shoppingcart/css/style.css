@@ -12,6 +12,11 @@ h2 {
   color: #009687;
 }
 
+img.shopping-cart {
+  width: 15px;
+  height: 15px;
+}
+
 img.products {
   border: solid 1px #96000F;
 }
@@ -61,6 +66,8 @@ img.products {
 
 .nav li {
   list-style-type: none;
+  -webkit-text-decoration: left;
+          text-decoration: left;
 }
 
 a {
@@ -69,11 +76,12 @@ a {
 
 .cart-value {
   background-color: #96000F;
-  width: 30px;
-  height: 30px;
-  padding: 2px 2px;
+  width: 15px;
+  height: 15px;
+  padding: 5px 5px;
   font-size: 6px;
   color: #ffffff;
+  border-radius: 20px;
 }
 
 .hero {
