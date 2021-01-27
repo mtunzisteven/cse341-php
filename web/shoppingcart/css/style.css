@@ -52,7 +52,7 @@ img.products {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 2px, 30px 2px 15px;
-  border: 1 solid red;
+  border: 1px solid red;
 }
 
 ul {
