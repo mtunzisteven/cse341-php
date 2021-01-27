@@ -4,6 +4,25 @@ $main-color:#009687;
 $secondary-color:#96000F;
 $light-color:#ffffff;
 
+//Dimentions
+@mixin equal($measure:100%){
+    width:$measure;
+    height:$measure;
+}
+
+@mixin unequal($width, $height){
+    width:$width;
+    height:$height;
+}
+
+@mixin pad-all-sides($updown, $leftright){
+    padding:$updown $leftright;
+}
+
+@mixin marg-all-sides($updown, $leftright){
+    padding:$updown $leftright;
+}
+
 //Font
 $font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $large-font: 35px;
@@ -52,14 +71,14 @@ img.products{
 }
 
 .logo{
-    width:95px;
-    height:auto;
+    @include unequal(95px, auto);
 }
 
 .nav{
     background-color: $main-color;
-    height:40px;
+    @include unequal(100%, 40px);
     @include flex(row, space-between, nowrap);
+    @include pad-all-sides(20%, 5px);
 }
 
 .nav li{
@@ -72,7 +91,8 @@ a{
 
 .cart-value{
     background-color:$secondary-color;
-    size: 30px 30px;
+    @include equal(30px);
+    @include pad-all-sides(20%, 20%);
     font-size: 6px;
     color:$light-color;
 }
