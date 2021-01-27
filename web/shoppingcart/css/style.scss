@@ -68,6 +68,7 @@ h2{
 .nav-div{
     @include flex(row, space-between, nowrap);
     align-items: center;
+    align-content: center;
     height:100%;
 }
 
