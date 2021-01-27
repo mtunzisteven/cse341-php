@@ -99,9 +99,9 @@ ul{
 }
 
 .cart-container{
-    @include flex(row, space-between, nowrap);
+    @include flex(row, space-around, nowrap);
     @include pad-all-sides(2px,5px);
-    @include unequal(150px,25px);
+    @include unequal(80px,25px);
 }
 
 .nav li{
