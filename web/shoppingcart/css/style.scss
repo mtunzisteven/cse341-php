@@ -53,9 +53,10 @@ $small-font: 14px;
 body{
     background-color:$light-color;
     font-family: $font-family;
-    width:95%;
+    width:99%;
     max-width:100%;
     margin: 0;
+    padding-right: 5px;
 }
 
 h1{
