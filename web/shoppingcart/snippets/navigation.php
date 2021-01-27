@@ -5,7 +5,6 @@
         </ul>
         <a class="cart-link" href="../shoppingcart/cart.php" title="Shopping Cart">
             <span class="cart-span">cart</span>
-            <img src="../shoppingcart/images/cart.png" alt="cart" />
         </a>
     </div>
 </nav>

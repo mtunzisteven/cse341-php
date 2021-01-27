@@ -26,8 +26,9 @@ h2 {
 }
 
 .cart-link {
-  display: block;
+  background-image: url("../shoppingcart/images/cart.png");
   height: 22px;
+  margin: 0 15px 0 5px;
 }
 
 img.products {
