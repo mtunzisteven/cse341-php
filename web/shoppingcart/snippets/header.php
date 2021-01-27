@@ -6,6 +6,6 @@
         <?php require "navigation.php"; ?>
     </nav>
 
-    <div class="hero"></div>
+    <div class="hero"><p><br></p></div>
 
 </header>
