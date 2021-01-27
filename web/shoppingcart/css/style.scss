@@ -90,6 +90,7 @@ img.products{
     @include unequal(95%, 28px);
     @include flex(row, space-between, nowrap);
     padding: 2px, 30px 2px 15px;
+    border:1 solid red;
 }
 
 ul{
