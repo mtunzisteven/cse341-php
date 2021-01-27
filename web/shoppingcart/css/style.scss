@@ -54,7 +54,6 @@ body{
     background-color:$light-color;
     font-family: $font-family;
     max-width:100%;
-    
     margin: 0;
 }
 
@@ -91,7 +90,6 @@ img.products{
     @include unequal(98%, 28px);
     @include flex(row, space-between, nowrap);
     padding-right: 15px;
-    border:1px solid red;
     display: block;
     margin: auto;
 }
