@@ -89,7 +89,7 @@ img.products{
     background-color: $main-color;
     @include unequal(100%, 28px);
     @include flex(row, space-between, nowrap);
-    @include pad-all-sides(2px, 15px);
+    margin: 2px, 30px 2px 15px;
     margin:0;
 }
 

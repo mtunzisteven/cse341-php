@@ -51,7 +51,7 @@ img.products {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 2px 15px;
+  margin: 2px, 30px 2px 15px;
   margin: 0;
 }
 
