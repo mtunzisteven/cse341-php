@@ -93,5 +93,7 @@ a {
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: 98% 400px;
+  max-width: 98%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
