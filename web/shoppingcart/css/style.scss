@@ -68,9 +68,13 @@ h2{
 .cart-link img{
     @include equal(12px);
     background-color: $secondary-color;
-    margin-top:7px;
     border-radius:15px;
     padding:3px;
+}
+
+.cart-link{
+    display:block;
+    @include marg-all-sides(auto,auto)
 }
 
 img.products{

@@ -17,9 +17,13 @@ h2 {
   width: 12px;
   height: 12px;
   background-color: #96000F;
-  margin-top: 7px;
   border-radius: 15px;
   padding: 3px;
+}
+
+.cart-link {
+  display: block;
+  padding: auto auto;
 }
 
 img.products {
