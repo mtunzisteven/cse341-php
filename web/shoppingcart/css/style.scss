@@ -10,6 +10,16 @@ $large-font: 35px;
 $medium-font: 18px;
 $small-font: 14px;
 
+//List items and links
+@mixin clean-li(){
+    list-style-type: none;
+}
+
+@mixin clean-a(){
+    text-decoration: none;
+}
+
+
 //flex 
 @mixin flex($dir, $justify, $wrap:wrap){
     display:flex;
@@ -48,7 +58,15 @@ img.products{
 .nav{
     background-color: $main-color;
     height:70px;
-    @include flex(row, space-between);
+    @include flex(row, space-between, nowrap);
+}
+
+.nav li{
+    @include clean-li();
+}
+
+a{
+    @include clean-a();
 }
 
 .cart-value{
