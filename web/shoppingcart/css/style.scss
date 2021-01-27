@@ -65,17 +65,19 @@ h2{
     color:$main-color;
 }
 
+.nav-div{
+    @include flex(row, space-between, nowrap);
+    align-items: center;
+    height:100%;
+}
+
 .cart-link img{
     @include equal(12px);
     background-color: $secondary-color;
     border-radius:15px;
     padding:3px;
-    margin-top: 5px;
 }
 
-.cart-span{
-    margin-top: -5px;
-}
 
 .cart-link{
     display:block;
@@ -102,11 +104,6 @@ img.products{
     padding-right: 15px;
     display: block;
     margin: auto;
-}
-
-.nav-div{
-    @include flex(row, space-between, nowrap);
-    height:100%;
 }
 
 ul{
