@@ -86,7 +86,7 @@ img.products{
 
 .nav{
     background-color: $main-color;
-    @include unequal(100%, 22px);
+    @include unequal(100%, 28px);
     @include flex(row, space-between, nowrap);
     @include pad-all-sides(2px, 5px);
     margin:0;
