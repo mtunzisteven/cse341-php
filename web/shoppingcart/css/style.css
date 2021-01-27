@@ -74,8 +74,8 @@ ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 2px 5px;
-  width: 50px;
-  height: 15px;
+  width: 150px;
+  height: 25px;
 }
 
 .nav li {

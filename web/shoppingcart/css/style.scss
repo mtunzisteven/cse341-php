@@ -101,7 +101,7 @@ ul{
 .cart-container{
     @include flex(row, space-between, nowrap);
     @include pad-all-sides(2px,5px);
-    @include unequal(50px,15px);
+    @include unequal(150px,25px);
 }
 
 .nav li{
