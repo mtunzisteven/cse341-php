@@ -17,7 +17,8 @@ h2 {
   width: 15px;
   height: 15px;
   background-color: #96000F;
-  padding: 2px 2px;
+  padding: 5px 5px;
+  border-radius: 10px;
 }
 
 img.products {
