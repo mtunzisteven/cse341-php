@@ -19,7 +19,7 @@ h2 {
   background-color: #96000F;
   margin-top: 7px;
   border-radius: 15px;
-  display: block;
+  z-index: 100;
 }
 
 img.products {
@@ -40,6 +40,12 @@ img.products {
   background-color: #009687;
   width: 98%;
   height: 28px;
+  padding-right: 15px;
+  display: block;
+  margin: auto;
+}
+
+.nav-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,9 +58,6 @@ img.products {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding-right: 15px;
-  display: block;
-  margin: auto;
 }
 
 ul {
