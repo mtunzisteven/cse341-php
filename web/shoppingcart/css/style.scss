@@ -91,6 +91,11 @@ img.products{
     margin:0;
 }
 
+ul{
+    margin: 0;
+    @include pad-all-sides(2px,5px)
+}
+
 .cart-container{
     @include flex(row, space-between, nowrap);
     padding:0;
@@ -99,6 +104,7 @@ img.products{
 .nav li{
     @include clean-li();
     text-align: left;
+    padding-bottom: 40%;
 }
 
 a{
