@@ -74,7 +74,7 @@ h2{
 }
 
 .cart-span{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .cart-link{
@@ -106,7 +106,7 @@ img.products{
 
 .nav-div{
     @include flex(row, space-between, nowrap);
-
+    height:100%;
 }
 
 ul{

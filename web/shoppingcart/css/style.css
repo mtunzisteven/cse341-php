@@ -23,7 +23,7 @@ h2 {
 }
 
 .cart-span {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .cart-link {
@@ -68,6 +68,7 @@ img.products {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  height: 100%;
 }
 
 ul {
