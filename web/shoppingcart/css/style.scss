@@ -79,7 +79,8 @@ h2{
 
 .cart-link{
     display:block;
-    @include marg-all-sides(auto,auto)
+    @include marg-all-sides(auto,auto);
+    height:22px;
 }
 
 img.products{
