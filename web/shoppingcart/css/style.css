@@ -37,7 +37,7 @@ img.products {
 
 .nav {
   background-color: #009687;
-  width: 100%;
+  width: 98%;
   height: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +53,8 @@ img.products {
       flex-wrap: nowrap;
   padding-right: 15px;
   border: 1px solid red;
+  display: block;
+  margin: auto;
 }
 
 ul {

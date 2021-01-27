@@ -88,10 +88,12 @@ img.products{
 
 .nav{
     background-color: $main-color;
-    @include unequal(100%, 28px);
+    @include unequal(98%, 28px);
     @include flex(row, space-between, nowrap);
     padding-right: 15px;
     border:1px solid red;
+    display: block;
+    margin: auto;
 }
 
 ul{
