@@ -19,6 +19,7 @@ h2 {
   background-color: #96000F;
   margin-top: 7px;
   border-radius: 15px;
+  display: block;
 }
 
 img.products {
