@@ -10,12 +10,16 @@ h2{
     color:#009687;
 }
 
-img{
+img.products{
     border:solid 1px #96000F;
 }
 
 .header-top{
     height:150px;
+}
+
+.logo{
+    size: 250px 250px;
 }
 
 .nav{
