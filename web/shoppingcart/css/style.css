@@ -19,8 +19,9 @@ img.products {
   height: 150px;
 }
 
-.logo-link {
-  size: 125px 125px;
+img.logo {
+  width: 250;
+  height: auto;
 }
 
 .nav {
