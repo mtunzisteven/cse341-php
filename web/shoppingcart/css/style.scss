@@ -3,8 +3,9 @@
 $main-color:#009687;
 $secondary-color:#96000F;
 $light-color:#ffffff;
+$dark-color:rgb(53, 51, 51);
 
-//Dimentions
+//Dimensions
 @mixin equal($measure:100%){
     width:$measure;
     height:$measure;
@@ -65,6 +66,8 @@ h2{
 
 .cart-link img{
     @include equal(15px);
+    background-color: $secondary-color;
+    margin:$marg-all(2px);
 }
 
 img.products{
@@ -92,7 +95,7 @@ img.products{
 
 .nav li{
     @include clean-li();
-    text-decoration: left;
+    text-align: left;
 }
 
 a{
@@ -100,7 +103,7 @@ a{
 }
 
 .cart-value{
-    background-color:$secondary-color;
+    background-color:$dark-color;
     @include equal(15px);
     @include pad-all-sides(5px, 5px);
     font-size: 6px;

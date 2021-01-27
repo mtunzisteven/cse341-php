@@ -15,6 +15,7 @@ h2 {
 .cart-link img {
   width: 15px;
   height: 15px;
+  background-color: #96000F;
 }
 
 img.products {
@@ -75,7 +76,7 @@ a {
 }
 
 .cart-value {
-  background-color: #96000F;
+  background-color: #353333;
   width: 15px;
   height: 15px;
   padding: 5px 5px;
