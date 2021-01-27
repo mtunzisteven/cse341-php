@@ -54,6 +54,7 @@ body{
     background-color:$light-color;
     font-family: $font-family;
     max-width:100%;
+    
     margin: 0;
 }
 
@@ -68,7 +69,7 @@ h2{
 .cart-link img{
     @include equal(12px);
     background-color: $secondary-color;
-    @include pad-all-sides(3px, 3px);
+    margin-top:7px;
     border-radius:15px;
 }
 
@@ -89,7 +90,6 @@ img.products{
     background-color: $main-color;
     @include unequal(100%, 28px);
     @include flex(row, space-between, nowrap);
-    max-width: 100%;
     padding-right: 15px;
     border:1px solid red;
 }

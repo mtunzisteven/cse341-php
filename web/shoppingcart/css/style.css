@@ -17,7 +17,7 @@ h2 {
   width: 12px;
   height: 12px;
   background-color: #96000F;
-  padding: 3px 3px;
+  margin-top: 7px;
   border-radius: 15px;
 }
 
@@ -51,7 +51,6 @@ img.products {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  max-width: 100%;
   padding-right: 15px;
   border: 1px solid red;
 }
