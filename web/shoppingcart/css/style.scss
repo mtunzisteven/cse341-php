@@ -81,12 +81,12 @@ img.products{
 
 .logo{
     @include equal(85px);
-    @include pad-all-sides(10px,5px)
+    @include pad-all-sides(10px,10px);
 }
 
 .nav{
     background-color: $main-color;
-    @include unequal(100%, 40px);
+    @include unequal(100%, 22px);
     @include flex(row, space-between, nowrap);
     @include pad-all-sides(2px, 5px);
     margin:0;
@@ -99,7 +99,8 @@ ul{
 
 .cart-container{
     @include flex(row, space-between, nowrap);
-    @include pad-all-sides(2px,5px)
+    @include pad-all-sides(2px,5px);
+    @include unequal(50px,15px);
 }
 
 .nav li{
@@ -111,6 +112,7 @@ ul{
 
 a{
     @include clean-a();
+    color:$light-color;
 }
 
 .cart-value{
