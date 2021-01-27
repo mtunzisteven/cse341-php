@@ -54,6 +54,7 @@ body{
     background-color:$light-color;
     font-family: $font-family;
     max-width:100%;
+    margin: 0;
 }
 
 h1{
@@ -67,7 +68,7 @@ h2{
 .cart-link img{
     @include equal(15px);
     background-color: $secondary-color;
-    margin:$marg-all(2px);
+    margin:$marg-all-sides(2px), 2px;
 }
 
 img.products{
@@ -87,10 +88,12 @@ img.products{
     @include unequal(100%, 40px);
     @include flex(row, space-between, nowrap);
     @include pad-all-sides(2px, 5px);
+    margin:0;
 }
 
 .cart-container{
     @include flex(row, space-between, nowrap);
+    padding:0;
 }
 
 .nav li{
