@@ -14,11 +14,11 @@ h2 {
 }
 
 .cart-link img {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background-color: #96000F;
-  padding: 5px 5px;
-  border-radius: 10px;
+  padding: 3px 3px;
+  border-radius: 15px;
 }
 
 img.products {
