@@ -53,10 +53,8 @@ $small-font: 14px;
 body{
     background-color:$light-color;
     font-family: $font-family;
-    width:99%;
     max-width:100%;
     margin: 0;
-    padding-right: 5px;
 }
 
 h1{
@@ -91,7 +89,7 @@ img.products{
     background-color: $main-color;
     @include unequal(95%, 28px);
     @include flex(row, space-between, nowrap);
-    margin: 2px, 30px 2px 15px;
+    padding: 2px, 30px 2px 15px;
 }
 
 ul{
