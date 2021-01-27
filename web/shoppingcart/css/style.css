@@ -19,13 +19,13 @@ img.products {
   height: 150px;
 }
 
-.logo {
+.logo-link {
   size: 125px 125px;
 }
 
 .nav {
   background-color: #009687;
-  height: 70px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

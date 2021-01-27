@@ -51,13 +51,13 @@ img.products{
     height:150px;
 }
 
-.logo{
+.logo-link{
     size: 125px 125px;
 }
 
 .nav{
     background-color: $main-color;
-    height:70px;
+    height:40px;
     @include flex(row, space-between, nowrap);
 }
 
