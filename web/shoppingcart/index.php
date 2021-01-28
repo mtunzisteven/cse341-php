@@ -18,7 +18,8 @@
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" id="watch" type="button" name="watch" value="Add to Cart" />
+                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -26,7 +27,7 @@
                     <img class="products" alt="watch" src="images/bath salts.jpg" />
                     Bath Salts
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="salts" value="Add to Cart" />
             </div>
 
             <div class="product-container">
@@ -42,7 +43,7 @@
                     <img class="products" alt="watch" src="images/coco oil.jpg" />
                     Coconut Oil
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="oil" value="Add to Cart" />
             </div>
 
             <div class="product-container">
@@ -50,7 +51,7 @@
                     <img class="products" alt="watch" src="images/face mask.jpg" />
                     Face Mask
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="mask" value="Add to Cart" />
             </div>
 
             <div class="product-container">
@@ -58,7 +59,7 @@
                     <img class="products" alt="watch" src="images/gabriel chanel.jpg" />
                     Gabriel Chanel
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="gabriel" value="Add to Cart" />
             </div>
 
             <div class="product-container">
@@ -66,7 +67,7 @@
                     <img class="products" alt="watch" src="images/green loafer.jpg" />
                     Green Loafer
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="loafer" value="Add to Cart" />
             </div>
 
             <div class="product-container">
@@ -74,7 +75,7 @@
                     <img class="products" alt="watch" src="images/nike trainer.jpg" />
                     Nike Trainer
                 </label>
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="button" name="trainer" value="Add to Cart" />
             </div>
         </form>
     
