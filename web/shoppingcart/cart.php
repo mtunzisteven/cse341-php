@@ -22,7 +22,7 @@ if(isset($_POST["watchdata"])){    //Since form is submitted to this page, we ca
         
         <?php require "snippets/header.php"; 
         
-        echo $_session["watchdata"];
+        echo '<h1>'.$_SESSION["watchdata"].'</h1>';
         ?>
         
         <?php require "snippets/footer.php"; ?>
