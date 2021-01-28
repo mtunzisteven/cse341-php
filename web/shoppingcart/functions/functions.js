@@ -12,7 +12,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'post',
-            url: '../shoppingcart/index.php',
+            url: '../index.php',
             data: {'watchdata': $(".products-label").text()},
             cache:false,
             success: function(data)
