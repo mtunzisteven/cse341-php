@@ -24,7 +24,7 @@
                 <input class="buttons" id="watch" type="button" name="watch" value="Add to Cart" />
             </form>
 
-            <?php $_session["watch"]=$_POST["watchvalue"];
+            <?php
             
                     echo $_session["watch"];
 
@@ -61,7 +61,7 @@
             ?>
 
             <form method="post" action="" class="product-container">
-                <label>
+                <label class="products-label">
                     <img class="products" alt="watch" src="images/coco oil.jpg" />
                     Coconut Oil
                 </label>

@@ -10,8 +10,15 @@ $(document).ready(function () {
         $("#watchvalue").val(newV);
         $(".cart-span").text(total);
 
-        $post("../shoppingcart/index.php",function(data,status){
-            alert("Data: "+data);
+        $.ajax({
+            type: 'post',
+            url: '../shoppingcart/index.php',
+            data: {'$_SESSION["watch"]': $(".products-label").text()},
+            cache:false,
+            success: function(data)
+            {
+                alert(data);
+            }
         });
     });
 
