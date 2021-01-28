@@ -12,7 +12,7 @@ $(document).ready(function () {
         $("input.values").val(newV);
         $(".cart-span").text(total);
         
-        var input_value = $("proname").text();
+        var input_value = $("proname").val();
 
         var holder = $(this),
             url = holder.attr("action"),
