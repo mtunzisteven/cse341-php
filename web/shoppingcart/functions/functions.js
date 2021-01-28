@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         $("#saltsvalue").val(newV);
         alert("Value is :"+$("#saltsvalue").val());
-        total+=val();
+        total+=$("#saltsvalue").val();
         $(".cart-span").val(total);
     });
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         $("#watchvalue").val(newV);
         alert("Value is :"+$("#watchvalue").val());
-        total+=val();
+        total+=$("#watchvalue").val();
         $(".cart-span").text(total);
     });
 
