@@ -149,11 +149,11 @@
 
 function clicks(){
 
-    var invisiblevalue = document.getElementById("#saltsvalue");
-    var newV = parseInt(invisiblevalue.value)+1;
+    var invisiblevalue = document.getElementById("#saltsvalue").value;
+    var newV = parseInt(invisiblevalue)+1;
     var cart = document.getElementById("cart-span").value;
     var total = newV+cart;
 
     invisiblevalue.value = newV;
-    cart.value = total;
+    cart = total;
 }
