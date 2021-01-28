@@ -4,6 +4,6 @@
     </div>
         <?php require "navigation.php"; ?>
 
-    <div class="hero"><h1  class="hero-h"></h1></div>
+    <div class="hero"><p  class="hero-h"><br></p></div>
 
 </header>
