@@ -10,11 +10,59 @@
     </head>
     <body>
         
-            <?php require "snippets/header.php"; ?>
-        
+        <?php require "snippets/header.php"; ?>
+    
+        <form method="post" action="">
+            <label>
+                <img class="products" alt="watch" src="images/fossil watch.jpg" />
+                Fossil Watch
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
 
-        
-            <?php require "snippets/footer.php"; ?>
+            <label>
+                <img class="products" alt="watch" src="images/bath salts.jpg" />
+                Bath Salts
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/brikestock sandals.jpg" />
+                brikestock sandals
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/coco oil.jpg" />
+                Coconut Oil
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/face mask.jpg" />
+                Face Mask
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/gabriel chanel.jpg" />
+                Gabriel Chanel
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/green loafer.jpg" />
+                Green Loafer
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+
+            <label>
+                <img class="products" alt="watch" src="images/nike trainer.jpg" />
+                Nike Trainer
+                <input class="buttons" type="button" name="watch" value="0" />     
+            </label>
+        </form>
+    
+        <?php require "snippets/footer.php"; ?>
         
     </body>
 </html>
