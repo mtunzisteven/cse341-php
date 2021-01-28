@@ -10,7 +10,7 @@ $(document).ready(function () {
         alert("Value is :"+$("#saltsvalue").val());
 
         total+=$("#saltsvalue").val();
-        $(".cart-span").val(total);
+        $(".cart-span").html(total);
     });
 
     $("#watch").click( function(){
