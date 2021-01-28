@@ -1,31 +1,39 @@
 
 $(document).ready(function () {
 
-    var input_value;
 
-    $("#watch").click( function(){
+    $("form.product-container").on("submit" ,function(){
 
-        var invisiblevalue = $("#watchvalue").val();
+        var invisiblevalue = $("input.values").val();
         var newV = parseInt(invisiblevalue)+1;
         var cart = parseInt($(".cart-span").text());
         var total = newV+cart;
 
-        $("#watchvalue").val(newV);
+        $("input.values").val(newV);
         $(".cart-span").text(total);
         
-        input_value = $("#watch-label").text();
+        var input_value = $("proname").text();
 
-        $post("../index.php",
-        {
-            'watchdata':input_value
-        },
-        function(data,status){
-            alert(data);
-        });
+        var holder = $(this),
+            url = holder.attr("action"),
+            method =holder.attr("method"),
+            data = {};
+
+            data[$("proname").attr('name')] = input_value;
         
+        $.ajax({
+            type: method,
+            url: url,
+            data: data,
+            success: function (response) {
+                console.log(response);
+            }
+        });
+
+        return false;
     });
 
-
+/*
     $("#salts").click( function(){
 
         var invisiblevalue = $("#saltsvalue").val();
@@ -139,6 +147,6 @@ $(document).ready(function () {
 
         $("#trainervalue").val(newV);
         $(".cart-span").text(total);
-    }); 
+    }); */
 
 });

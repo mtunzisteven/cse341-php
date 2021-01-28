@@ -15,20 +15,24 @@
         <?php require "snippets/header.php"; ?>
     
         <div class="form">
-            <form id="form1" method="post" action="" class="product-container">
+            <form id="form1" method="post" action="#" class="product-container">
                 <label id="watch-label">
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch
                 </label>
-                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
-                <input class="invisibles" type="text" id="watchdata" name="watchdata" value="" /> 
-                <input class="buttons" id="watch" type="button" name="watch" value="Add to Cart" />
+                <input class="invisibles values" type="number" id="watchvalue" name="watchvalue" value="0" />
+                <input class="invisibles proname" type="text" id="watchdata" name="watchdata" value="Fossil Watch" /> 
+                <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
             </form>
 
             <?php
             
-            $_SESSION["watchdata"] = $_POST["watchdata"];
-            echo $_session["watchdata"];
+                if(isset($_POST["watchdata"])){
+
+                    $_SESSION["watchdata"] = $_POST["watchdata"];
+                
+                    echo $_session["watchdata"];
+                }
 
             ?>
 
