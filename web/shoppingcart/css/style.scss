@@ -77,11 +77,12 @@ h2{
 }
 
 .cart-span{
-    @include equal(10px);
+    @include equal(15px);
     background-color: $secondary-color;
-    border-radius:15px;
+    border-radius:20px;
     padding:3px;
     font-size:10px;
+    text-align:center;
 }
 
 img.products{
