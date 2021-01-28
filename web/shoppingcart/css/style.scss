@@ -67,22 +67,13 @@ h2{
 
 .cart-link{
     height:22px;
-    margin: 0 15px -5px 5px;
+    margin: 15px 15px -5px 5px;
 }
 
 .cart-link img{
     height: 20px;
     padding: 5px 0 0 3px;
     margin-bottom: -2px;
-}
-
-.cart-span{
-    @include equal(15px);
-    background-color: $secondary-color;
-    border-radius:20px;
-    padding:3px;
-    font-size:10px;
-    text-align:center; 
 }
 
 .header-top{
