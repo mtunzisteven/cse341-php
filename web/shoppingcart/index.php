@@ -18,7 +18,7 @@
 
                 $_SESSION["watchdata"] = $_POST["watchdata"];
             
-                echo $_session["watchdata"];
+                print $_session["watchdata"];
             }
 
         ?>
