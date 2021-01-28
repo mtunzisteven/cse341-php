@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -19,8 +21,14 @@
                     Fossil Watch
                 </label>
                 <input class="buttons" id="watch" type="button" name="watch" value="Add to Cart" />
-                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
+                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0"/>
             </div>
+
+            <?php $_session["watch"]=$_POST["watch"];
+            
+                    echo $_session["watch"];
+
+            ?>
 
             <div class="product-container">
                 <label>
