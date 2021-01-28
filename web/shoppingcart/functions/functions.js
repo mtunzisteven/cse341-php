@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         alert("Value is :"+$("#saltsvalue").val());
 
-        $(".cart-span").replaceWith("<div class='cart-span' >"+$("#saltsvalue").val()+"</div>");
+        $(".cart-span").replaceWith("<div class='cart-span' >"+newV+"</div>");
     });
 
     $("#watch").click( function(){
