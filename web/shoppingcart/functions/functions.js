@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#saltsvalue").val(newV);
         alert("Value is :"+$("#saltsvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     });
 
     $("#watch").click( function(){
@@ -19,7 +19,7 @@ $(document).ready(function () {
         $("#watchvalue").val(newV);
         alert("Value is :"+$("#watchvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     });
 
 
@@ -31,7 +31,7 @@ $(document).ready(function () {
         $("#sandalsvalue").val(newV);
         alert("Value is :"+$("#sandalsvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     });  
 
     $("#oil").click( function(){
@@ -42,7 +42,7 @@ $(document).ready(function () {
         $("#oilvalue").val(newV);
         alert("Value is :"+$("#oilvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     }); 
 
     $("#mask").click( function(){
@@ -53,7 +53,7 @@ $(document).ready(function () {
         $("#maskvalue").val(newV);
         alert("Value is :"+$("#maskvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     }); 
 
     $("#gabriel").click( function(){
@@ -64,7 +64,7 @@ $(document).ready(function () {
         $("#gabrielvalue").val(newV);
         alert("Value is :"+$("#gabrielvalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     }); 
 
     $("#loafer").click( function(){
@@ -75,7 +75,7 @@ $(document).ready(function () {
         $("#loafervalue").val(newV);
         alert("Value is :"+$("#loafervalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     }); 
 
     $("#trainer").click( function(){
@@ -86,7 +86,7 @@ $(document).ready(function () {
         $("#trainervalue").val(newV);
         alert("Value is :"+$("#trainervalue").val());
         total+=val(newV);
-        $("cart-span").text(total);
+        $(".cart-span").text(total);
     }); 
 
 });
