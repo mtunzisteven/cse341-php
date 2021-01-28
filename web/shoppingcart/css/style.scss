@@ -73,16 +73,15 @@ h2{
 
 .cart-link img{
     padding:0 10px 20px 0; 
-    font-size: 16px;
+    height: 10px;
 }
 
 .cart-span{
-    @include equal(12px);
+    @include equal(10px);
     background-color: $secondary-color;
-    border-radius:20px;
+    border-radius:15px;
     padding:3px;
-    height: 15px;
-    width:15px;
+    font-size:10px;
 }
 
 img.products{

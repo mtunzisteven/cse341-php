@@ -32,17 +32,16 @@ h2 {
 
 .cart-link img {
   padding: 0 10px 20px 0;
-  font-size: 16px;
+  height: 10px;
 }
 
 .cart-span {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #96000F;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 3px;
-  height: 15px;
-  width: 15px;
+  font-size: 10px;
 }
 
 img.products {
