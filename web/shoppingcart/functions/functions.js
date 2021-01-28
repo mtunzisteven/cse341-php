@@ -12,14 +12,14 @@ $(document).ready(function () {
         $("input.values").val(newV);
         $(".cart-span").text(total);
         
-        var input_value = $("proname").val();
+        var input_value = $(".proname").val();
 
         var holder = $(this),
             url = holder.attr("action"),
             method =holder.attr("method"),
             data = {};
 
-            data[$("proname").attr('name')] = input_value;
+            data[$(".proname").attr('name')] = input_value;
         
         $.ajax({
             type: method,
