@@ -73,7 +73,7 @@ h2{
 }
 
 .cart-span{
-    margin:0 10px 5px 0;
+    padding:0 10px 5px 0;
 }
 
 
@@ -131,8 +131,9 @@ a{
 .hero{
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
-    width:100%;
-    margin:0 2%;
+    min-width: 100%;
+    max-width:100%;
+    margin:0 auto;
 }
 
 .hero-h{
