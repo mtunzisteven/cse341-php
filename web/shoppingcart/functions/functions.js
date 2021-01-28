@@ -6,6 +6,5 @@ $(document).ready(function () {
 
         $("#watchvalue").val(newV);
         alert("Value of invisible changed to: "+$("#watchvalue").val());
-        $.post("../index.php", {"watch": newV});
     });
 });
