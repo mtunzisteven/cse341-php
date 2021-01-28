@@ -65,22 +65,23 @@ h2{
     color:$main-color;
 }
 
+.cart-link{
+    height:22px;
+    margin: 0 15px 0 5px;
+    @include flex(column,center,nowrap);
+}
+
 .cart-link img{
     @include equal(12px);
     background-color: $secondary-color;
-    border-radius:15px;
+    border-radius:20px;
     padding:3px;
     height: 15px;
+    width:15px;
 }
 
 .cart-span{
     padding:0 10px 5px 0;
-}
-
-
-.cart-link{
-    height:22px;
-    margin: 0 15px 0 5px;
 }
 
 img.products{
@@ -131,7 +132,7 @@ a{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    width:99.5%;
+    width:99.2%;
     margin:0 auto;
 }
 
