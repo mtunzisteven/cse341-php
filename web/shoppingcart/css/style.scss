@@ -129,11 +129,12 @@ a{
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: contain;
+    background-size: cover;
     width:100%;
     margin:0 auto;
 }
 
 .hero-h{
     padding:200px 0;
+
 }
