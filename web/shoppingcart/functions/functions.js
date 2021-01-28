@@ -5,6 +5,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#watchvalue").val(newV);
+        alert("Value is :"+$("#watchvalue").val());
     });
 
     $("#salts").click( function(){
@@ -12,7 +13,8 @@ $(document).ready(function () {
         var invisiblevalue = $("#saltsvalue").val();
         var newV = parseInt(invisiblevalue)+1;
 
-        $("#salts").val(newV);
+        $("#saltsvalue").val(newV);
+        alert("Value is :"+$("#saltsvalue").val());
     });
 
     $("#sandals").click( function(){
@@ -21,6 +23,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#sandalsvalue").val(newV);
+        alert("Value is :"+$("#sandalsvalue").val());
     });
 
     $("#oil").click( function(){
@@ -29,6 +32,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#oilvalue").val(newV);
+        alert("Value is :"+$("#oilvalue").val());
     });
 
     $("#mask").click( function(){
@@ -37,6 +41,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#maskvalue").val(newV);
+        alert("Value is :"+$("#maskvalue").val());
     });
 
     $("#gabriel").click( function(){
@@ -45,6 +50,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#gabrielvalue").val(newV);
+        alert("Value is :"+$("#gabrielvalue").val());
     });
 
     $("#loafer").click( function(){
@@ -53,6 +59,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#loafervalue").val(newV);
+        alert("Value is :"+$("#loafervalue").val());
     });
 
     $("#trainer").click( function(){
@@ -61,6 +68,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#trainervalue").val(newV);
+        alert("Value is :"+$("#trainervalue").val());
     });
 
 });
