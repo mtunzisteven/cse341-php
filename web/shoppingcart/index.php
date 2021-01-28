@@ -37,7 +37,7 @@
                     <img class="products" alt="salts" src="images/bath salts.jpg" />
                     Bath Salts
                 </label>
-                <input class="invisibles" type="number" id="saltsvalue" name="saltsvalue" value="0" />
+                <input class="invisibles" type="number" id="saltsvalue" onclick="clicks()" name="saltsvalue" value="0" />
                 <input class="invisibles" type="text" id="saltsdata" name="saltsdata" value="" /> 
                 <input class="buttons" id="salts" type="button" name="salts" value="Add to Cart" />
             </form>
