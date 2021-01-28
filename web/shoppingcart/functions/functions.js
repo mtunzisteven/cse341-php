@@ -6,11 +6,11 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#saltsvalue").val(newV);
-        
+
         alert("Value is :"+$("#saltsvalue").val());
 
         total+=parseInt($("#saltsvalue").val());
-        $(".cart-span").text(total);
+        $(".cart-span").val(total);
     });
 
     $("#watch").click( function(){
