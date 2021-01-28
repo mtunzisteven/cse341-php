@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#watch").click( fucntion(){
+    $("#watch").click( function(){
 
         var invisiblevalue = $("#watchvalue").val();
         var newV = invisiblevalue+1;
