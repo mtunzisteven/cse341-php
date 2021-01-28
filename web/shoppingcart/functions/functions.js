@@ -27,54 +27,66 @@ $(document).ready(function () {
 
         var invisiblevalue = $("#sandalsvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#sandalsvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     });  
 
     $("#oil").click( function(){
 
         var invisiblevalue = $("#oilvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#oilvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     }); 
 
     $("#mask").click( function(){
 
         var invisiblevalue = $("#maskvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#maskvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     }); 
 
     $("#gabriel").click( function(){
 
         var invisiblevalue = $("#gabrielvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#gabrielvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     }); 
 
     $("#loafer").click( function(){
 
         var invisiblevalue = $("#loafervalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#loafervalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     }); 
 
     $("#trainer").click( function(){
 
         var invisiblevalue = $("#trainervalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#trainervalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     }); 
 
 });
