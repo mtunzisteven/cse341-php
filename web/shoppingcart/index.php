@@ -73,6 +73,8 @@
             
             echo $_session["oil"];
 
+            echo $_POST["oilvalue"];
+
             ?>
 
             <form method="post" action="" class="product-container">
