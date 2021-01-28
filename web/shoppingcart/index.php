@@ -24,7 +24,7 @@
                 <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
             </form>
 
-            <?php $_session["watch"]=$_POST["watch"];
+            <?php $_session["watch"]=$_POST["watchvalue"];
             
                     echo $_session["watch"];
 
