@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    var input_value;
+
     $("#watch").click( function(){
 
         var invisiblevalue = $("#watchvalue").val();
@@ -10,18 +12,18 @@ $(document).ready(function () {
         $("#watchvalue").val(newV);
         $(".cart-span").text(total);
         
-        var input_value = $("#watch-label").text();
+        input_value = $("#watch-label").text();
+    });
 
-        $("#watchdata").change(function () { 
-            $post("../index.php",
-            {
-                value:input_value
-            },
-            function(data,status){
-                alert(data);
-            });
-            
+    $("#watchdata").change(function () { 
+        $post("../index.php",
+        {
+            value:input_value
+        },
+        function(data,status){
+            alert(data);
         });
+        
     });
 
 
