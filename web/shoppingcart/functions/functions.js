@@ -9,17 +9,14 @@ $(document).ready(function () {
 
         $("#watchvalue").val(newV);
         $(".cart-span").text(total);
+        
+        var input_value = $("#watch-label").text();
+        $("#watchdata").attr("value", input_value);
 
-        $.ajax({
-            type: 'post',
-            url: '../index.php',
-            data: {'watchdata': $(".products-label").text()},
-            cache:false,
-            success: function(data)
-            {
-                alert(data);
-            }
-        });
+    
+        // submit the form, to retrieve the del_id value from $_POST
+        $("#form1").submit();
+        return false;
     });
 
 

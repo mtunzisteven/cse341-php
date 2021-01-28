@@ -15,8 +15,8 @@
         <?php require "snippets/header.php"; ?>
     
         <div class="form">
-            <form method="post" action="" class="product-container">
-                <label>
+            <form id="form1" method="post" action="" class="product-container">
+                <label id="watch-label">
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch
                 </label>
@@ -27,9 +27,9 @@
 
             <?php
             
-                    echo $_POST["watchvalue"];
+            $_SESSION = $_POST["watchdata"];
+
                     echo $_POST["watchdata"];
-                    echo $_POST["watch"];
 
             ?>
 
