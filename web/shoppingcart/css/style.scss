@@ -80,9 +80,8 @@ h2{
 .cart-span{
     @include equal(15px);
     background-color: $secondary-color;
-    color:$light-color;
     border-radius:20px;
-    padding:5px;
+    padding:3px;
     font-size:10px;
     text-align:center; 
 }
