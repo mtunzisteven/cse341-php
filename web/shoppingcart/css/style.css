@@ -117,7 +117,9 @@ a {
 }
 
 .footer-div {
-  max-width: 50px;
+  max-width: 100px;
   margin: auto;
+  color: #ffffff;
+  background-color: #009687;
 }
 /*# sourceMappingURL=style.css.map */
