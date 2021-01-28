@@ -80,6 +80,7 @@ h2{
 .cart-span{
     @include equal(15px);
     background-color: $secondary-color;
+    width:50px;
     color:$light-color;
     border-radius:20px;
     padding:5px;
