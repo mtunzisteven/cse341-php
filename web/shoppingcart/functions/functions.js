@@ -1,4 +1,5 @@
-$(document).ready(function () {
+
+/*$(document).ready(function () {
 
     var input_value;
 
@@ -143,3 +144,16 @@ $(document).ready(function () {
     }); 
 
 });
+*/
+
+
+function clicks(){
+
+    var invisiblevalue = document.getElementById("#saltsvalue");
+    var newV = parseInt(invisiblevalue.value)+1;
+    var cart = document.getElementById("cart-span").value;
+    var total = newV+cart;
+
+    invisiblevalue.value = newV;
+    cart.value = total;
+}
