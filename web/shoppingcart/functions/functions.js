@@ -11,12 +11,18 @@ $(document).ready(function () {
         $(".cart-span").text(total);
         
         var input_value = $("#watch-label").text();
-        $("#watchdata").attr("value", input_value);
+        var productname = $("#watchdata").attr("value", input_value);
 
-    
-        // submit the form, to retrieve the del_id value from $_POST
-        $("#form1").submit();
-        return false;
+        $("#watchdata").change(function () { 
+            $post("../index.php",
+            {
+                value:productname
+            },
+            function(data,status){
+                alert(data);
+            });
+            
+        });
     });
 
 
@@ -27,8 +33,22 @@ $(document).ready(function () {
         var cart = parseInt($(".cart-span").text());
         var total = newV+cart;
 
+        //Add the total quantity
         $("#saltsvalue").val(newV);
+
+        //Add the total number of items in cart
         $(".cart-span").text(total);
+
+        //Get the name of the item
+        var input_value = $("#salts-label").text();
+
+        //add it to the value input element using AJAX
+        $post("#saltsvalue").attr("value", input_value);
+
+    
+        // submit the form, to retrieve the del_id value from $_POST
+        $("#form2").submit();
+        return false;
     });
 
     $("#sandals").click( function(){
@@ -40,6 +60,14 @@ $(document).ready(function () {
 
         $("#sandalsvalue").val(newV);
         $(".cart-span").text(total);
+
+        var input_value = $("#sandals-label").text();
+        $("#sandalsvalue").attr("value", input_value);
+
+    
+        // submit the form, to retrieve the del_id value from $_POST
+        $("#form3").submit();
+        return false;
     });  
 
     $("#oil").click( function(){
@@ -51,6 +79,14 @@ $(document).ready(function () {
 
         $("#oilvalue").val(newV);
         $(".cart-span").text(total);
+
+        var input_value = $("#oil-label").text();
+        $("#oilvalue").attr("value", input_value);
+
+    
+        // submit the form, to retrieve the del_id value from $_POST
+        $("#form4").submit();
+        return false;
     }); 
 
     $("#mask").click( function(){
@@ -62,6 +98,14 @@ $(document).ready(function () {
 
         $("#maskvalue").val(newV);
         $(".cart-span").text(total);
+
+        var input_value = $("#oil-label").text();
+        $("#oilvalue").attr("value", input_value);
+
+    
+        // submit the form, to retrieve the del_id value from $_POST
+        $("#form4").submit();
+        return false;
     }); 
 
     $("#gabriel").click( function(){

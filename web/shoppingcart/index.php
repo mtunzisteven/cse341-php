@@ -27,23 +27,22 @@
 
             <?php
             
-            $_SESSION = $_POST["watchdata"];
-
-                    echo $_POST["watchdata"];
+            $_SESSION["watchdata"] = $_POST["watchdata"];
+            echo $_session["watchdata"];
 
             ?>
 
-            <form method="post" action="" class="product-container">
-                <label>
+            <form id="form2" method="post" action="" class="product-container">
+                <label  id="salts-label">
                     <img class="products" alt="salts" src="images/bath salts.jpg" />
                     Bath Salts
                 </label>
                 <input class="invisibles" type="number" id="saltsvalue" name="saltsvalue" value="0" />
+                <input class="invisibles" type="text" id="saltsdata" name="saltsdata" value="" /> 
                 <input class="buttons" id="salts" type="button" name="salts" value="Add to Cart" />
             </form>
 
             <?php $_session["salts"]=$_POST["saltsvalue"];
-            
             echo $_session["salts"];
 
             ?>
