@@ -140,16 +140,18 @@ label {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 20%;
+  padding: 5px 50px;
   text-align: center;
 }
 
 img.products {
   border: solid 1px #96000F;
+  max-width: 100px;
 }
 
 .buttons {
   padding: 3px;
+  max-width: 40px;
   border-radius: 2px;
   color: #ffffff;
   background-color: #96000F;

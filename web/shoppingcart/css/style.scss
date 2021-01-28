@@ -146,16 +146,19 @@ form{
 
 label{
     @include flex(column, center, nowrap);
-    padding:20%;
+    padding:5px 50px;
     text-align:center;
 }
 
 img.products{
     border:solid 1px $secondary-color;
+    max-width: 100px;
+
 }
 
 .buttons{
     padding:3px;
+    max-width: 40px;
     border-radius: 2px;
     color: $light-color;
     background-color: $secondary-color;
