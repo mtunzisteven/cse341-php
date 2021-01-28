@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $("#salts").click( function(){
+
+        var invisiblevalue = $("#saltsvalue").val();
+        var newV = parseInt(invisiblevalue)+1;
+
+        $("#saltsvalue").val(newV);
+        alert("Value is :"+$("#saltsvalue").val());
+    });
+
+
     $("#watch").click( function(){
 
         var invisiblevalue = $("#watchvalue").val();
@@ -8,14 +18,6 @@ $(document).ready(function () {
         alert("Value is :"+$("#watchvalue").val());
     });
 
-    $("#salts").click( function(){
-
-        var invisiblevalue = $("#saltsvalue").val();
-        var newV = parseInt(invisiblevalue)+1;
-
-        $("#saltsvalue").val(newV);
-        alert("Value is :"+$("#saltsvalue").val());
-    });
 
     $("#sandals").click( function(){
 
