@@ -16,49 +16,49 @@
             <label>
                 <img class="products" alt="watch" src="images/fossil watch.jpg" />
                 Fossil Watch
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="watch" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/bath salts.jpg" />
                 Bath Salts
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="salts" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/brikestock sandals.jpg" />
-                brikestock sandals
-                <input class="buttons" type="button" name="watch" value="0" />     
+                Brikestock Sandals
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/coco oil.jpg" />
                 Coconut Oil
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="oil" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/face mask.jpg" />
                 Face Mask
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="mask" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/gabriel chanel.jpg" />
                 Gabriel Chanel
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="chanel" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/green loafer.jpg" />
                 Green Loafer
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="loafer" value="Add to Cart" />     
             </label>
 
             <label>
                 <img class="products" alt="watch" src="images/nike trainer.jpg" />
                 Nike Trainer
-                <input class="buttons" type="button" name="watch" value="0" />     
+                <input class="buttons" type="button" name="trainer" value="Add to Cart" />     
             </label>
         </form>
     

@@ -144,6 +144,14 @@ a{
 
 }
 
+form{
+    @include flex(row, center, wrap);
+}
+
+label{
+    @include flex(column, center, nowrap);
+}
+
 .footer-div{
     width:99.2%;
     max-width:100%;
