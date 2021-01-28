@@ -21,12 +21,13 @@
                     Fossil Watch
                 </label>
                 <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
+                <input class="invisibles" type="text" id="watchdata" name="watchdata" value="" /> 
                 <input class="buttons" id="watch" type="button" name="watch" value="Add to Cart" />
             </form>
 
             <?php
             
-                    echo $_session["watch"];
+                    echo $_POST["watchdata"];
 
             ?>
 

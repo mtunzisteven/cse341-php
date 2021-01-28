@@ -13,7 +13,7 @@ $(document).ready(function () {
         $.ajax({
             type: 'post',
             url: '../shoppingcart/index.php',
-            data: {'$_SESSION["watch"]': $(".products-label").text()},
+            data: {'watchdata': $(".products-label").text()},
             cache:false,
             success: function(data)
             {
