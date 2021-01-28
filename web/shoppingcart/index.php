@@ -27,7 +27,9 @@
 
             <?php
             
+                    echo $_POST["watchvalue"];
                     echo $_POST["watchdata"];
+                    echo $_POST["watch"];
 
             ?>
 
