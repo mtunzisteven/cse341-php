@@ -6,10 +6,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#saltsvalue").val(newV);
-
-        alert("Value is :"+$("#saltsvalue").val());
-
-        $(".cart-span").replaceWith("<div class='cart-span' >"+newV+"</div>");
+        $(".cart-span").text(newV);
     });
 
     $("#watch").click( function(){
@@ -18,9 +15,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#watchvalue").val(newV);
-        alert("Value is :"+$("#watchvalue").val());
-        total+=$("#watchvalue").val();
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     });
 
 
@@ -30,9 +25,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#sandalsvalue").val(newV);
-        alert("Value is :"+$("#sandalsvalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     });  
 
     $("#oil").click( function(){
@@ -41,9 +34,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#oilvalue").val(newV);
-        alert("Value is :"+$("#oilvalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     }); 
 
     $("#mask").click( function(){
@@ -52,9 +43,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#maskvalue").val(newV);
-        alert("Value is :"+$("#maskvalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     }); 
 
     $("#gabriel").click( function(){
@@ -63,9 +52,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#gabrielvalue").val(newV);
-        alert("Value is :"+$("#gabrielvalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     }); 
 
     $("#loafer").click( function(){
@@ -74,9 +61,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#loafervalue").val(newV);
-        alert("Value is :"+$("#loafervalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     }); 
 
     $("#trainer").click( function(){
@@ -85,9 +70,7 @@ $(document).ready(function () {
         var newV = parseInt(invisiblevalue)+1;
 
         $("#trainervalue").val(newV);
-        alert("Value is :"+$("#trainervalue").val());
-        total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").text(newV);
     }); 
 
 });
