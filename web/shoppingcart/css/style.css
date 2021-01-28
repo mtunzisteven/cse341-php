@@ -40,8 +40,9 @@ h2 {
   width: 15px;
   height: 15px;
   background-color: #96000F;
+  color: #ffffff;
   border-radius: 20px;
-  padding: 3px;
+  padding: 5px;
   font-size: 10px;
   text-align: center;
 }
