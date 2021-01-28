@@ -20,8 +20,8 @@
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch
                 </label>
-                <input class="submit" id="watch" type="button" name="watch" value="Add to Cart" />
-                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0"/>
+                <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
+                <input class="invisibles" type="number" id="watchvalue" name="watchvalue" value="0" />
             </form>
 
             <?php $_session["watch"]=$_POST["watch"];
