@@ -1,3 +1,13 @@
+<?php session_start(); 
+
+            
+if(isset($_POST["watchdata"])){    //Since form is submitted to this page, we capture the information here
+
+    $_SESSION["watchdata"] = $_POST["watchdata"];
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -10,7 +20,10 @@
     </head>
     <body>
         
-        <?php require "snippets/header.php"; ?>
+        <?php require "snippets/header.php"; 
+        
+        echo $_session["watchdata"];
+        ?>
         
         <?php require "snippets/footer.php"; ?>
         

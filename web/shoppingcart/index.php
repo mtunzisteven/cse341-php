@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -12,19 +10,10 @@
     </head>
     <body>
         
-        <?php require "snippets/header.php"; 
-            
-            if(isset($_POST["watchdata"])){    //Since form is submitted to this page, we capture the information here
-
-                $_SESSION["watchdata"] = $_POST["watchdata"];
-            
-                print $_session["watchdata"];
-            }
-
-        ?>
+        <?php require "snippets/header.php";   ?>
     
         <div class="form">
-            <form id="form1" method="post" action="index.php" class="product-container">
+            <form id="form1" method="post" action="cart.php" class="product-container">
                 <label id="watch-label">
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch

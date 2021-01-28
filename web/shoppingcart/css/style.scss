@@ -68,7 +68,6 @@ h2{
 .cart-link{
     height:22px;
     margin: -8px 15px 5px 5px;
-    @include flex(column,center,nowrap);
 }
 
 .cart-link img{
