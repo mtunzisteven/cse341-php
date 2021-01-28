@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#saltsvalue").val(newV);
         alert("Value is :"+$("#saltsvalue").val());
         total+=val(newV);
-        $(".cart-span").text(total);
+        $(".cart-span").val(total);
     });
 
     $("#watch").click( function(){
