@@ -151,7 +151,9 @@ form{
 label{
     padding:5px 50px;
     text-align:center;
+    @include flex(column, center, nowrap);
 }
+
 
 img.products{
     border:solid 1px $secondary-color;
