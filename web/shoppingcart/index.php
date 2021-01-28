@@ -28,6 +28,7 @@
                     Bath Salts
                 </label>
                 <input class="buttons" type="button" name="salts" value="Add to Cart" />
+                <input class="invisibles" type="number" id="saltsvalue" name="saltsvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -36,6 +37,7 @@
                     Brikestock Sandals    
                 </label>
                 <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+                <input class="invisibles" type="number" id="sandalsvalue" name="sandalsvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -44,6 +46,7 @@
                     Coconut Oil
                 </label>
                 <input class="buttons" type="button" name="oil" value="Add to Cart" />
+                <input class="invisibles" type="number" id="oilvalue" name="oilvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -52,6 +55,7 @@
                     Face Mask
                 </label>
                 <input class="buttons" type="button" name="mask" value="Add to Cart" />
+                <input class="invisibles" type="number" id="maskvalue" name="maskvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -60,6 +64,7 @@
                     Gabriel Chanel
                 </label>
                 <input class="buttons" type="button" name="gabriel" value="Add to Cart" />
+                <input class="invisibles" type="number" id="gabrielvalue" name="gabrielvalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -68,6 +73,7 @@
                     Green Loafer
                 </label>
                 <input class="buttons" type="button" name="loafer" value="Add to Cart" />
+                <input class="invisibles" type="number" id="loafervalue" name="loafervalue" value="0" />
             </div>
 
             <div class="product-container">
@@ -76,6 +82,7 @@
                     Nike Trainer
                 </label>
                 <input class="buttons" type="button" name="trainer" value="Add to Cart" />
+                <input class="invisibles" type="number" id="trainervalue" name="trainervalue" value="0" />
             </div>
         </form>
     
