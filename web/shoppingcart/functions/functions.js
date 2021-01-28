@@ -1,5 +1,5 @@
 
-/*$(document).ready(function () {
+$(document).ready(function () {
 
     var input_value;
 
@@ -14,12 +14,10 @@
         $(".cart-span").text(total);
         
         input_value = $("#watch-label").text();
-    });
 
-    $("#watchdata").change(function () { 
         $post("../index.php",
         {
-            value:input_value
+            'watchdata':input_value
         },
         function(data,status){
             alert(data);
@@ -144,16 +142,3 @@
     }); 
 
 });
-*/
-
-
-function clicks(){
-
-    var invisiblevalue = document.getElementById("#saltsvalue").value;
-    var newV = parseInt(invisiblevalue)+1;
-    var cart = document.getElementById("cart-span").value;
-    var total = newV+cart;
-
-    invisiblevalue.value = newV;
-    cart = total;
-}
