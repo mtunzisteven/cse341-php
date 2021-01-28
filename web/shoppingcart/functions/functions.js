@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         alert("Value is :"+$("#saltsvalue").val());
 
-        total+=parseInt($("#saltsvalue").val());
+        total+=$("#saltsvalue").val();
         $(".cart-span").val(total);
     });
 
