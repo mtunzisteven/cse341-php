@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         $("#saltsvalue").val(newV);
         alert("Value is :"+$("#saltsvalue").val());
-        total+=val(newV);
+        total=total + val(newV);
         $(".cart-span").val(total);
     });
 
