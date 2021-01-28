@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    $("#watch").click( function(){
+
+        var invisiblevalue = $("#watchvalue").val();
+        var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
+
+        $("#watchvalue").val(newV);
+        $(".cart-span").text(total);
+
+        $post("../shoppingcart/index.php",function(data,status){
+            alert("Data: "+data);
+        });
+    });
+
+
     $("#salts").click( function(){
 
         var invisiblevalue = $("#saltsvalue").val();
@@ -10,18 +26,6 @@ $(document).ready(function () {
         $("#saltsvalue").val(newV);
         $(".cart-span").text(total);
     });
-
-    $("#watch").click( function(){
-
-        var invisiblevalue = $("#watchvalue").val();
-        var newV = parseInt(invisiblevalue)+1;
-        var cart = parseInt($(".cart-span").text());
-        var total = newV+cart;
-
-        $("#watchvalue").val(newV);
-        $(".cart-span").text(total);
-    });
-
 
     $("#sandals").click( function(){
 
