@@ -35,8 +35,8 @@
                     <img class="products" alt="salts" src="images/bath salts.jpg" />
                     Bath Salts
                 </label>
-                <input class="buttons" type="button" name="salts" value="Add to Cart" />
                 <input class="invisibles" type="number" id="saltsvalue" name="saltsvalue" value="0" />
+                <input class="buttons" type="button" name="salts" value="Add to Cart" />
             </form>
 
             <?php $_session["salts"]=$_POST["saltsvalue"];
