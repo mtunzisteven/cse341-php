@@ -12,10 +12,19 @@
     </head>
     <body>
         
-        <?php require "snippets/header.php"; ?>
+        <?php require "snippets/header.php"; 
+            
+            if(isset($_POST["watchdata"])){    //Since form is submitted to this page, we capture the information here
+
+                $_SESSION["watchdata"] = $_POST["watchdata"];
+            
+                echo $_session["watchdata"];
+            }
+
+        ?>
     
         <div class="form">
-            <form id="form1" method="post" action="#" class="product-container">
+            <form id="form1" method="post" action="index.php" class="product-container">
                 <label id="watch-label">
                     <img class="products" alt="watch" src="images/fossil watch.jpg" />
                     Fossil Watch
@@ -24,17 +33,6 @@
                 <input class="invisibles proname" type="text" id="watchdata" name="watchdata" value="Fossil Watch" /> 
                 <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
             </form>
-
-            <?php
-            
-                if(isset($_POST["watchdata"])){
-
-                    $_SESSION["watchdata"] = $_POST["watchdata"];
-                
-                    echo $_session["watchdata"];
-                }
-
-            ?>
 
             <form id="form2" method="post" action="" class="product-container">
                 <label  id="salts-label">

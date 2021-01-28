@@ -4,25 +4,31 @@ $(document).ready(function () {
 
     $("form.product-container").on("submit" ,function(){
 
-        var invisiblevalue = $("input.values").val();
-        var newV = parseInt(invisiblevalue)+1;
-        var cart = parseInt($(".cart-span").text());
-        var total = newV+cart;
-
+        var invisiblevalue = $("input.values").val(); //Initial qty of product selected
+        var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
+        var cart = parseInt($(".cart-span").text());  //total qty of items in cart
+        var total = 1+cart;                           //Adding selection to tota qty
+ 
+        //Setting the new qty to specific items in cart
         $("input.values").val(newV);
+
+        //Setting the new total qty of items in cart
         $(".cart-span").text(total);
         
+        //Getting the name of the proxduct from input value
         var input_value = $(".proname").val();
 
-        var holder = $(this),
+        //Gather form submission data
+        var holder = $(this), //"holder" is just so we don't keep typing "this"
             url = holder.attr("action"),
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = input_value;
+            data[$(".proname").attr('name')] = input_value; //Adding POST data to be sent
         
+        //The actual ajax data transfer method. Data gathered above will now be used.
         $.ajax({
-            type: method,
+            type: method, 
             url: url,
             data: data,
             success: function (response) {
@@ -30,7 +36,7 @@ $(document).ready(function () {
             }
         });
 
-        return false;
+        return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
 /*
