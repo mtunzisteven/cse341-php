@@ -159,6 +159,10 @@ label {
       flex-wrap: nowrap;
 }
 
+.invisibles {
+  display: none;
+}
+
 img.products {
   border: solid 1px #96000F;
   max-width: 200px;
