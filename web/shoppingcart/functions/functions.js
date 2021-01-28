@@ -4,18 +4,22 @@ $(document).ready(function () {
 
         var invisiblevalue = $("#saltsvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#saltsvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     });
 
     $("#watch").click( function(){
 
         var invisiblevalue = $("#watchvalue").val();
         var newV = parseInt(invisiblevalue)+1;
+        var cart = parseInt($(".cart-span").text());
+        var total = newV+cart;
 
         $("#watchvalue").val(newV);
-        $(".cart-span").text(newV);
+        $(".cart-span").text(total);
     });
 
 
