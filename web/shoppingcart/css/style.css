@@ -22,7 +22,7 @@ h2 {
 }
 
 .cart-span {
-  margin-bottom: 5px;
+  margin: 0 10px 5px 0;
 }
 
 .cart-link {
@@ -94,5 +94,9 @@ a {
   background-repeat: no-repeat;
   max-width: 98%;
   margin: auto;
+}
+
+.hero-h {
+  margin: 200px 0;
 }
 /*# sourceMappingURL=style.css.map */
