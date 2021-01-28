@@ -127,7 +127,7 @@ form {
       flex-wrap: wrap;
 }
 
-label {
+.product-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,6 +140,9 @@ label {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+label {
   padding: 5px 50px;
   text-align: center;
 }

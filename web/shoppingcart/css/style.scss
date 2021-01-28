@@ -144,8 +144,11 @@ form{
     @include flex(row, center, wrap);
 }
 
-label{
+.product-container{
     @include flex(column, center, nowrap);
+}
+
+label{
     padding:5px 50px;
     text-align:center;
 }

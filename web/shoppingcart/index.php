@@ -13,53 +13,69 @@
         <?php require "snippets/header.php"; ?>
     
         <form method="post" action="">
-            <label>
-                <img class="products" alt="watch" src="images/fossil watch.jpg" />
-                Fossil Watch
-                <input class="buttons" type="button" name="watch" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/fossil watch.jpg" />
+                    Fossil Watch
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/bath salts.jpg" />
-                Bath Salts
-                <input class="buttons" type="button" name="salts" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/bath salts.jpg" />
+                    Bath Salts
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/brikestock sandals.jpg" />
-                Brikestock Sandals
-                <input class="buttons" type="button" name="sandals" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/brikestock sandals.jpg" />
+                    Brikestock Sandals    
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/coco oil.jpg" />
-                Coconut Oil
-                <input class="buttons" type="button" name="oil" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/coco oil.jpg" />
+                    Coconut Oil
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/face mask.jpg" />
-                Face Mask
-                <input class="buttons" type="button" name="mask" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/face mask.jpg" />
+                    Face Mask
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/gabriel chanel.jpg" />
-                Gabriel Chanel
-                <input class="buttons" type="button" name="chanel" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/gabriel chanel.jpg" />
+                    Gabriel Chanel
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/green loafer.jpg" />
-                Green Loafer
-                <input class="buttons" type="button" name="loafer" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/green loafer.jpg" />
+                    Green Loafer
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
 
-            <label>
-                <img class="products" alt="watch" src="images/nike trainer.jpg" />
-                Nike Trainer
-                <input class="buttons" type="button" name="trainer" value="Add to Cart" />     
-            </label>
+            <div class="product-container">
+                <label>
+                    <img class="products" alt="watch" src="images/nike trainer.jpg" />
+                    Nike Trainer
+                </label>
+                <input class="buttons" type="button" name="sandals" value="Add to Cart" />
+            </div>
         </form>
     
         <?php require "snippets/footer.php"; ?>
