@@ -146,13 +146,14 @@ label {
 
 img.products {
   border: solid 1px #96000F;
-  max-width: 100px;
+  max-width: 200px;
 }
 
 .buttons {
   padding: 3px;
-  max-width: 40px;
-  border-radius: 2px;
+  max-width: 80px;
+  margin: 0 auto;
+  border-radius: 30px;
   color: #ffffff;
   background-color: #96000F;
 }
