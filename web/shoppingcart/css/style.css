@@ -46,10 +46,6 @@ h2 {
   text-align: center;
 }
 
-img.products {
-  border: solid 1px #96000F;
-}
-
 .header-top {
   height: 150px;
 }
@@ -144,6 +140,23 @@ label {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 20%;
+  text-align: center;
+}
+
+img.products {
+  border: solid 1px #96000F;
+}
+
+.buttons {
+  padding: 3px;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #96000F;
+}
+
+.buttons:hover {
+  background-color: #009687;
 }
 
 .footer-div {

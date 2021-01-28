@@ -86,10 +86,6 @@ h2{
     text-align:center; 
 }
 
-img.products{
-    border:solid 1px $secondary-color;
-}
-
 .header-top{
     height:150px;
 }
@@ -150,6 +146,23 @@ form{
 
 label{
     @include flex(column, center, nowrap);
+    padding:20%;
+    text-align:center;
+}
+
+img.products{
+    border:solid 1px $secondary-color;
+}
+
+.buttons{
+    padding:3px;
+    border-radius: 2px;
+    color: $light-color;
+    background-color: $secondary-color;
+}
+
+.buttons:hover{
+    background-color: $main-color;
 }
 
 .footer-div{
