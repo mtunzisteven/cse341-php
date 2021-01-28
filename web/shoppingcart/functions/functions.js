@@ -11,12 +11,11 @@ $(document).ready(function () {
         $(".cart-span").text(total);
         
         var input_value = $("#watch-label").text();
-        var productname = $("#watchdata").attr("value", input_value);
 
         $("#watchdata").change(function () { 
             $post("../index.php",
             {
-                value:productname
+                value:input_value
             },
             function(data,status){
                 alert(data);
@@ -43,7 +42,7 @@ $(document).ready(function () {
         var input_value = $("#salts-label").text();
 
         //add it to the value input element using AJAX
-        $post("#saltsvalue").attr("value", input_value);
+        $("#saltsvalue").attr("value", input_value);
 
     
         // submit the form, to retrieve the del_id value from $_POST
