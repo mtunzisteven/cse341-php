@@ -67,7 +67,7 @@ h2{
 
 .cart-link{
     height:22px;
-    margin: 0 15px 0 5px;
+    margin: 0 15px 5px 5px;
     @include flex(column,center,nowrap);
 }
 
@@ -132,8 +132,9 @@ a{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    width:99.2%;
+    width:99.15%;
     margin:0 auto;
+    margin-top: -10px;
 }
 
 .hero-h{
