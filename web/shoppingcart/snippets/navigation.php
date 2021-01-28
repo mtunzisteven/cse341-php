@@ -4,7 +4,7 @@
             <li><a href="../shoppingcart/" title="Brose Products" >Browse</a></li>
         </ul>
         <a class="cart-link" href="../shoppingcart/cart.php" title="Shopping Cart">
-        <img alt="cart" src="../shoppingcart/images/cart.png" /><div class="cart-span">cart</div>
+        <div class="cart-span">0</div><img alt="cart" src="../shoppingcart/images/cart.png" />
         </a>
     </div>
 </nav>
