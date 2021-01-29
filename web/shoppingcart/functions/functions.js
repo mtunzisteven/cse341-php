@@ -1,15 +1,10 @@
 
 $(document).ready(function () {
 
-    $('form').each(function(){
-        $(this).submit(function(e){
-            e.preventDefault();
-            return  false;
-        })
-    }) 
-
-    $("#form1").on("submit" ,function(){
+    $("#form1").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
+        return  false;
     });
 
     $("#form2").on("submit" ,function(){
@@ -32,9 +27,10 @@ $(document).ready(function () {
         action(this);
     });
 
-    $("#form7").on("submit" ,function(){
+    $("#form7").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
-
+        return  false;
     });
 
     $("#form8").on("submit" ,function(){
