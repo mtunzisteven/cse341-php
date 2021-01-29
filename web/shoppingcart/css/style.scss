@@ -66,8 +66,13 @@ h2{
 }
 
 .cart-link{
+    @include flex(row, end, nowrap);
     height:22px;
     margin: 15px 15px -5px 5px;
+}
+
+.cart-title{
+    color:$light-color;
 }
 
 .cart-link img{
