@@ -294,7 +294,7 @@ function action(form){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
             break;
-        case "form7":
+        case "form#form7.product-container":
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
             break;
