@@ -26,9 +26,10 @@ $(document).ready(function () {
         action(this);
     });
 
-    $("#form7").on("submit" ,function(){
-        //e.preventDefault();
+    $("#form7").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
+        return false;
     });
 
     $("#form8").on("submit" ,function(){
