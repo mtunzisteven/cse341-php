@@ -316,15 +316,12 @@ function action(form){
     else if(formid=="form7"){
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
-            name = "loaferdata";
             src_id = "#loafersrc";
-            src_name ="loafersrc";
 
     }
     else if(formid=="form8"){
             itemQty = "#trainerqty";
             item_name = "#trainerdata";
-            name = "trainerdata";
 
 
     }
@@ -343,9 +340,9 @@ function action(form){
         method =holder.attr("method"),
         data = {};
 
-        data[$(itemQty).attr('name')] = name; //Adding item name to POST data to be sent
-        data[$(src_id).attr('name')] = src_name; //Adding item name to POST data to be sent
-        data[$(item_name).attr('name')] = name; //Adding item name to POST data to be sent
+        data[$(itemQty).attr('name')] = $(itemQty).val(); //Adding item name to POST data to be sent
+        data[$(src_id).attr('name')] = $(src_id).val(); //Adding item name to POST data to be sent
+        data[$(item_name).attr('name')] = $(item_name).val(); //Adding item name to POST data to be sent
     
     //The actual ajax data transfer method. Data gathered above will now be used.
     $.ajax({
