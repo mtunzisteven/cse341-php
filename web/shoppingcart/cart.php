@@ -83,7 +83,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
             <?php
 
             if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"])){
-                echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons" type="button" id="oil" name="removewatch" value="Delete item" /></div>';
+                echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src=\"'.$_SESSION["watchsrc"].'\" /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons" type="button" id="oil" name="removewatch" value="Delete item" /></div>';
             }
 
             if(isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"])){
