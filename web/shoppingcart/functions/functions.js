@@ -270,7 +270,8 @@ $(document).ready(function () {
 
 function action(form){
     var itemQty, item_name;
-    form = form.outerHTML;
+    form = form.outerHTML; //convert from html object to html
+    form = form.attr("id"); //get id
 
     alert(form);
 
