@@ -281,21 +281,27 @@ function action(form){
         case "form3":
             itemQty = "#sandalsqty";
             item_name = "#sandalsdata";
+            break;
         case "form4":
             itemQty = "#soillsqty";
             item_name = "#oilsdata";
+            break;
         case "form5":
             itemQty = "#maskqty";
             item_name = "#maskdata";
+            break;
         case "form6":
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
+            break;
         case "form7":
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
+            break;
         case "form8":
             itemQty = "#trainerqty";
             item_name = "#trainerdata";
+            break;
         default:
             return;
     }
