@@ -13,7 +13,7 @@ $(document).ready(function () {
         //Getting the name of the proxduct from input value
         var item_name = $("#watchdata").val();
 
-        var item_src = $("#watchqtysrc").val();
+        var item_src = $("#watchsrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -21,7 +21,7 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#watchdata").attr('name')] = item_name; //Adding item name to POST data to be sent
             data[$("#watchqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
             data[$("#watchqtysrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 

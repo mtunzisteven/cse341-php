@@ -21,8 +21,8 @@
                     
                 </label>
                 <input class="invisibles " type="text" id="watchdata" name="watchdata" value="Fossil Watch" /> 
-                <input class="invisibles qty" type="text" id="atchqty" name="watchqty" value="<?php if($_SESSION["watchqty"]<1){echo 0 ;} else{echo $_SESSION["watchqty"];} ?>" />
-                <input class="invisibles src" type="text" id="atchsrc" name="watchsrc" value="images/watch.jpg" />
+                <input class="invisibles qty" type="text" id="watchqty" name="watchqty" value="<?php if($_SESSION["watchqty"]<1){echo 0 ;} else{echo $_SESSION["watchqty"];} ?>" />
+                <input class="invisibles src" type="text" id="watchsrc" name="watchsrc" value="images/watch.jpg" />
                 <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
             </form>
 
@@ -31,7 +31,7 @@
                     <img class="products" alt="salts" src="images/salts.jpg" />
                     Bath Salts<br/>$15
                 </label>
-                <input class="invisibles proname" type="text" id="saltsdata" name="saltsdata" value="Bath Salts" />
+                <input class="invisibles " type="text" id="saltsdata" name="saltsdata" value="Bath Salts" />
                 <input class="invisibles qty" type="text" id="saltsqty" name="saltsqty" value="<?php if($_SESSION["saltsqty"]<1){echo 0 ;} else{echo $_SESSION["saltsqty"];} ?>" />
                 <input class="invisibles src" type="text" id="saltssrc" name="saltssrc" value="images/salts.jpg" /> 
                 <input class="buttons" id="salts" type="submit" name="salts" value="Add to Cart" />
