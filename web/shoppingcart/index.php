@@ -14,7 +14,7 @@
         <?php require "snippets/header.php";   ?>
     
         <div class="form">
-            <form id="form" method="post" action="cart.php" class="product-container">
+            <form id="form" method="post" action="cart.php" class="product-container form1">
                 <label id="watch-label">
                     <img class="products" alt="watch" src="images/watch.jpg" />
                     Fossil Watch<br/>$150
@@ -26,7 +26,7 @@
                 <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
             </form>
 
-            <form id="form" method="post" action="cart.php" class="product-container">
+            <form id="form" method="post" action="cart.php" class="product-container form2">
                 <label  id="salts-label">
                     <img class="products" alt="salts" src="images/salts.jpg" />
                     Bath Salts<br/>$15
@@ -37,7 +37,7 @@
                 <input class="buttons" id="salts" type="submit" name="salts" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form3">
                 <label>
                     <img class="products" alt="watch" src="images/sandals.jpg" />
                     Brikestock Sandals<br/>$50    
@@ -48,7 +48,7 @@
                 <input class="buttons" type="button" id="submit" name="sandals" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form4">
                 <label class="products-label">
                     <img class="products" alt="watch" src="images/oil.jpg" />
                     Coconut Oil<br/>$10
@@ -59,7 +59,7 @@
                 <input class="buttons" type="submit" id="oil" name="oil" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form5">
                 <label>
                     <img class="products" alt="watch" src="images/mask.jpg" />
                     Face Mask<br/>$50
@@ -70,7 +70,7 @@
                 <input class="buttons" type="submit" id="mask" name="mask" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form6">
                 <label>
                     <img class="products" alt="watch" src="images/chanel.jpg" />
                     Gabriel Chanel<br/>$150
@@ -81,7 +81,7 @@
                 <input class="buttons" type="submit" id="gabriel" name="gabriel" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form7">
                 <label>
                     <img class="products" alt="watch" src="images/loafer.jpg" />
                     Green Loafer<br/>$100
@@ -92,7 +92,7 @@
                 <input class="buttons" type="submit" id="loafer" name="loafer" value="Add to Cart" />
             </form>
 
-            <form method="post" action="cart.php" class="product-container">
+            <form method="post" action="cart.php" class="product-container form8">
                 <label>
                     <img class="products" alt="watch" src="images/trainer.jpg" />
                     Nike Trainer<br/>$190
