@@ -152,16 +152,16 @@ $(document).ready(function () {
 
     $("#form5").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#maskqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#maskqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#maskdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#masksrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -169,9 +169,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#maskdata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#maskqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#masksrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.

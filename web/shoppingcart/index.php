@@ -65,8 +65,8 @@
                     Face Mask<br/>$50
                 </label>
                 <input class="invisibles proname" type="text" id="maskdata" name="maskdata" value="Face Mask" /> 
-                <input class="invisibles qty" type="text" id="qty" name="maskqty" value="<?php if($_SESSION["maskqty"]<1){echo 0 ;} else{echo $_SESSION["maskqty"];} ?>" />
-                <input class="invisibles src" type="text" id="src" name="masksrc" value="images/mask.jpg" /> 
+                <input class="invisibles qty" type="text" id="maskqty" name="maskqty" value="<?php if($_SESSION["maskqty"]<1){echo 0 ;} else{echo $_SESSION["maskqty"];} ?>" />
+                <input class="invisibles src" type="text" id="masksrc" name="masksrc" value="images/mask.jpg" /> 
                 <input class="buttons" type="submit" id="mask" name="mask" value="Add to Cart" />
             </form>
 
@@ -76,8 +76,8 @@
                     Gabriel Chanel<br/>$150
                 </label>
                 <input class="invisibles proname" type="text" id="chaneldata" name="chaneldata" value="Gabriel Chanel" />
-                <input class="invisibles qty" type="text" id="qty" name="chanelqty" value="<?php if($_SESSION["chanelqty"]<1){echo 0 ;} else{echo $_SESSION["chanelqty"];} ?>" />
-                <input class="invisibles src" type="text" id="src" name="chanelsrc" value="images/chanel.jpg" />
+                <input class="invisibles qty" type="text" id="chanelqty" name="chanelqty" value="<?php if($_SESSION["chanelqty"]<1){echo 0 ;} else{echo $_SESSION["chanelqty"];} ?>" />
+                <input class="invisibles src" type="text" id="chanelsrc" name="chanelsrc" value="images/chanel.jpg" />
                 <input class="buttons" type="submit" id="gabriel" name="gabriel" value="Add to Cart" />
             </form>
 
