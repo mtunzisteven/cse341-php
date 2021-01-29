@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
 
-    $(".form1").on("submit" ,function(){
+    $("#form1").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -39,7 +39,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form2").on("submit" ,function(){
+    $("#form2").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -76,7 +76,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form3").on("submit" ,function(){
+    $("#form3").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -113,7 +113,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form4").on("submit" ,function(){
+    $("#form4").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -150,7 +150,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form5").on("submit" ,function(){
+    $("#form5").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -187,7 +187,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form6").on("submit" ,function(){
+    $("#form6").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -224,7 +224,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form7").on("submit" ,function(){
+    $("#form7").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
@@ -261,7 +261,7 @@ $(document).ready(function () {
         return false; //With this return value, we ensure the form doesn't get submitted and reload the page
     });
 
-    $(".form8").on("submit" ,function(){
+    $("#form8").on("submit" ,function(){
 
         var invisiblevalue = $(".qty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
