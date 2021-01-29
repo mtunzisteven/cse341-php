@@ -272,42 +272,40 @@ function action(form){
     var itemQty, item_name;
     var formAtt = form.attr("id");
 
-    switch(formAtt) {
-        case "form1":
+    if(form=="form1") {
+        
             itemQty = "#watchqty";
             item_name = "#watchdata";
-            break;
-        case "form2":
+    }
+    else if(form=="form2"){
             itemQty = "#saltsqty";
             item_name = "#saltsdata";
-            break;
-        case "form3":
+    }
+    else if(form=="form3"){
             itemQty = "#sandalsqty";
             item_name = "#sandalsdata";
-            break;
-        case "form4":
+     }
+    else if(form=="form4"){
             itemQty = "#soillsqty";
             item_name = "#oilsdata";
-            break;
-        case "form5":
+     }
+    else if(form=="form5"){
             itemQty = "#maskqty";
             item_name = "#maskdata";
-            break;
-        case "form6":
+    }
+    else if(form=="form6"){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
-            break;
-        case "form7":
+    }
+    else if(form=="form7"){
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
-            break;
-        case "form8":
+    }
+    else if(form=="form8"){
             itemQty = "#trainerqty";
             item_name = "#trainerdata";
-            break;
-        default:
-            alert("No match on the cases!");
     }
+    else{alert("Not working accordingly!")}
 
 
     var invisiblevalue = $(ItemQty).val(); //Initial qty of product selected
