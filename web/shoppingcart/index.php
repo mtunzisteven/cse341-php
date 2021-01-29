@@ -87,7 +87,7 @@
                     Green Loafer<br/>$100
                 </label>
                 <input class="invisibles proname" type="text" id="loaferdata" name="loaferdata" value="Green Loafer" />
-                <input class="invisibles qty" type="text" id="qty" name="loaferqty" value="<?php if($_SESSION["loaferqty"]<1){echo 0 ;} else{echo $_SESSION["loaferqty"];} ?>" />
+                <input class="invisibles qty" type="text" id="qty" name="loaferqty" value=<?php if($_SESSION["loaferqty"]<1){0 ;} else{ $_SESSION["loaferqty"];} ?> />
                 <input class="invisibles src" type="text" id="src" name="loafersrc" value="images/loafer.jpg" />
                 <input class="buttons" type="submit" id="loafer" name="loafer" value="Add to Cart" />
             </form>
