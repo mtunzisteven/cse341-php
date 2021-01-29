@@ -74,8 +74,8 @@ ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 22px;
-  margin: 15px 15px -5px 5px;
-  color: #353333;
+  margin: 0 15px -5px 10px;
+  color: #ffffff;
 }
 
 .cart-link img {

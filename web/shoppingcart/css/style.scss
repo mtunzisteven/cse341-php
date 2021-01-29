@@ -102,8 +102,8 @@ ul{
 .cart-link{
     @include flex(row, space-between, nowrap);
     height:22px;
-    margin: 15px 15px -5px 5px;
-    color:$dark-color;
+    margin: 0 15px -5px 10px;
+    color:$light-color;
 }
 
 .cart-link img{
