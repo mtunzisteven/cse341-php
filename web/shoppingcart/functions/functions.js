@@ -271,8 +271,10 @@ $(document).ready(function () {
 function action(form){
     var itemQty, item_name;
     formid = $(form).attr("id"); //get id
+    var properId = "#"+formid;
 
     alert(formid);
+    alert(properId);
 
     if(formid=="form1") {
         
@@ -317,7 +319,7 @@ function action(form){
     $(itemQty).val(newV);
 
     //Gather form submission data
-    var holder = $(formid), //"holder" is just so we don't keep typing "this"
+    var holder = $(properId), //"holder" is just so we don't keep typing "this"
         url = holder.attr("action"),
         method =holder.attr("method"),
         data = {};

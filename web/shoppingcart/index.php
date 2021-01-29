@@ -87,8 +87,8 @@
                     Green Loafer<br/>$100
                 </label>
                 <input class="invisibles proname" type="text" id="loaferdata" name="loaferdata" value="Green Loafer" />
-                <input class="invisibles qty" type="text" id="qty" name="loaferqty" value="0" />
-                <input class="invisibles src" type="text" id="src" name="loafersrc" value="images/loafer.jpg" />
+                <input class="invisibles qty" type="text" id="loaferqty" name="loaferqty" value=<?php if($_SESSION["loaferqty"]<1){echo "0" ;} else{echo $_SESSION["loaferqty"];} ?> />
+                <input class="invisibles src" type="text" id="loafersrc" name="loafersrc" value="images/loafer.jpg" />
                 <input class="buttons" type="submit" id="loafer" name="loafer" value="Add to Cart" />
             </form>
 
@@ -98,8 +98,8 @@
                     Nike Trainer<br/>$190
                 </label>
                 <input class="invisibles proname" type="text" id="trainerdata" name="trainerdata" value="Nike Trainer" />
-                <input class="invisibles qty" type="text" id="qty" name="trainerqty" value="<?php if($_SESSION["trainerqty"]<1){echo 0 ;} else{echo $_SESSION["trainerqty"];} ?>" />
-                <input class="invisibles src" type="text" id="src" name="trainersrc" value="images/trainer.jpg" />
+                <input class="invisibles qty" type="text" id="trainerqty" name="trainerqty" value="<?php if($_SESSION["trainerqty"]<1){echo 0 ;} else{echo $_SESSION["trainerqty"];} ?>" />
+                <input class="invisibles src" type="text" id="trainersrc" name="trainersrc" value="images/trainer.jpg" />
                 <input class="buttons" type="submit" id="trainer" name="trainer" value="Add to Cart" />
             </form>
         </div>    
