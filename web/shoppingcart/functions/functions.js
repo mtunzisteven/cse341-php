@@ -317,7 +317,7 @@ function action(form){
     $(itemQty).val(newV);
 
     //Gather form submission data
-    var holder = $(this), //"holder" is just so we don't keep typing "this"
+    var holder = $(formid), //"holder" is just so we don't keep typing "this"
         url = holder.attr("action"),
         method =holder.attr("method"),
         data = {};
