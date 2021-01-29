@@ -4,7 +4,6 @@ $(document).ready(function () {
     $("#form1").on("submit" ,function(e){
         e.preventDefault();
         action(this);
-        return  false;
     });
 
     $("#form2").on("submit" ,function(){
@@ -30,7 +29,6 @@ $(document).ready(function () {
     $("#form7").on("submit" ,function(e){
         e.preventDefault();
         action(this);
-        return  false;
     });
 
     $("#form8").on("submit" ,function(){
