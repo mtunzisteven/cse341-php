@@ -270,7 +270,6 @@ $(document).ready(function () {
 
 function action(form){
     var itemQty, item_name;
-    var formAtt = form.attr("id");
 
     if(form=="form1") {
         
