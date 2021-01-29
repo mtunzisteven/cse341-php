@@ -2,36 +2,36 @@
 $(document).ready(function () {
 
  
-    $("#form1").on("submit" ,function(){
+    $("#form1").on("click" ,function(){
         action(this);
     });
 
-    $("#form2").on("submit" ,function(){
+    $("#form2").on("click" ,function(){
         action(this);
     });
     
-    $("#form3").on("submit" ,function(){
+    $("#form3").on("click" ,function(){
         action(this);
     });
 
-    $("#form4").on("submit" ,function(){
+    $("#form4").on("click" ,function(){
         action(this);
     });
     
-    $("#form5").on("submit" ,function(){
+    $("#form5").on("click" ,function(){
         action(this);
     });
 
-    $("#form6").on("submit" ,function(){
+    $("#form6").on("click" ,function(){
         action(this);
     });
 
-    $("#form7").on("submit" ,function(){
+    $("#submit7").on("click" ,function(){
         action(this);
 
     });
 
-    $("#form8").on("submit" ,function(){
+    $("#form8").on("click" ,function(){
         action(this);
     });
 
@@ -334,6 +334,5 @@ function action(form){
             console.log(response);
         }
         
-    });return false; //With this return value, we ensure the form doesn't get submitted and reload the page
-
+    });
 }

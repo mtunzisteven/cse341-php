@@ -89,7 +89,7 @@
                 <input class="invisibles proname" type="text" id="loaferdata" name="loaferdata" value="Green Loafer" />
                 <input class="invisibles qty" type="text" id="qty" name="loaferqty" value="<?php if($_SESSION["loaferqty"]<1){echo 0 ;} else{echo $_SESSION["loaferqty"];} ?>" />
                 <input class="invisibles src" type="text" id="src" name="loafersrc" value="images/loafer.jpg" />
-                <input class="buttons" type="submit" id="loafer" name="loafer" value="Add to Cart" />
+                <input class="buttons" type="button" id="submit7" name="loafer" value="Add to Cart" />
             </form>
 
             <form id="form8" method="post" action="cart.php" class="product-container">
