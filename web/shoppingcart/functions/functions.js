@@ -1,7 +1,13 @@
 
 $(document).ready(function () {
 
- 
+    $('form').each(function(){
+        $(this).submit(function(e){
+            e.preventDefault();
+            return  false;
+        })
+    }) 
+
     $("#form1").on("submit" ,function(){
         action(this);
     });
