@@ -319,7 +319,7 @@ function action(form){
 
     //Gather form submission data
     var holder = $(this), //"holder" is just so we don't keep typing "this"
-        url = "cart.php",
+        url = holder.attr("action"),
         method =holder.attr("method"),
         data = {};
 
