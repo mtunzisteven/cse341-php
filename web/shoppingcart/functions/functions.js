@@ -306,7 +306,7 @@ function action(form){
             item_name = "#trainerdata";
             break;
         default:
-            return;
+            alert("No match on the cases!");
     }
 
 
