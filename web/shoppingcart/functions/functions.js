@@ -2,36 +2,36 @@
 $(document).ready(function () {
 
  
-    $("#form1").on("click" ,function(){
+    $("#form1").on("submit" ,function(){
         action(this);
     });
 
-    $("#form2").on("click" ,function(){
+    $("#form2").on("submit" ,function(){
         action(this);
     });
     
-    $("#form3").on("click" ,function(){
+    $("#form3").on("submit" ,function(){
         action(this);
     });
 
-    $("#form4").on("click" ,function(){
+    $("#form4").on("submit" ,function(){
         action(this);
     });
     
-    $("#form5").on("click" ,function(){
+    $("#form5").on("submit" ,function(){
         action(this);
     });
 
-    $("#form6").on("click" ,function(){
+    $("#form6").on("submit" ,function(){
         action(this);
     });
 
-    $("#submit7").on("click" ,function(){
+    $("#form7").on("submit" ,function(){
         action(this);
 
     });
 
-    $("#form8").on("click" ,function(){
+    $("#form8").on("submit" ,function(){
         action(this);
     });
 
@@ -319,7 +319,7 @@ function action(form){
 
     //Gather form submission data
     var holder = $(this), //"holder" is just so we don't keep typing "this"
-        url = holder.attr("action"),
+        url = "cart.php",
         method =holder.attr("method"),
         data = {};
 
