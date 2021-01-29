@@ -315,9 +315,6 @@ function action(form){
 
     //Setting the new qty to specific items in cart
     $(itemQty).val(newV);
-    
-    //Getting the name of the proxduct from input value
-    var item_name = $(inputName).val();
 
     //Gather form submission data
     var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -325,7 +322,7 @@ function action(form){
         method =holder.attr("method"),
         data = {};
 
-        data[$(inputName).attr('name')] = item_name; //Adding item name to POST data to be sent
+        data[$(item_name).attr('name')] = item_name; //Adding item name to POST data to be sent
     
     //The actual ajax data transfer method. Data gathered above will now be used.
     $.ajax({
