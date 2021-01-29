@@ -186,6 +186,12 @@ img.products {
   background-color: #009687;
 }
 
+.cart-form {
+  background-color: #009687;
+  padding: 50px 50px;
+  margin: auto;
+}
+
 .footer-div {
   width: 99.2%;
   max-width: 100%;

@@ -183,6 +183,13 @@ img.products{
     background-color: $main-color;
 }
 
+.cart-form{
+    background-color: $main-color;
+    @include pad-all-sides(50px, 50px);
+    margin: auto;
+    
+}
+
 .footer-div{
     width:99.2%;
     max-width:100%;

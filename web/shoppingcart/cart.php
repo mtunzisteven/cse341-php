@@ -58,7 +58,11 @@ if(isset($_POST["trainerdata"])){    //Since form is submitted to this page, we 
         
         <?php require "snippets/header.php"; ?>
         
-        <form method="post" action="checkout.php" >
+        <form class="cart-form" method="post" action="checkout.php" >
+            <div>
+                <img class="cart-thumnails" alt="salts" src="" />
+                <p></p>
+            </div>
         </form>
         
         <?php require "snippets/footer.php"; ?>
