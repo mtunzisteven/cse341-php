@@ -270,33 +270,32 @@ $(document).ready(function () {
 
 function action(form){
     var itemQty, item_name;
-    formhtml = form.outerHTML; //convert from html object to html
-    formid = $(formhtml).attr("id"); //get id
+    formid = $(form).attr("id"); //get id
 
     alert(formid);
 
-    if(form=="form1") {
+    if(formid=="form1") {
         
             itemQty = "#watchqty";
             item_name = "#watchdata";
     }
-    else if(form=="form2"){
+    else if(formid=="form2"){
             itemQty = "#saltsqty";
             item_name = "#saltsdata";
     }
-    else if(form=="form3"){
+    else if(formid=="form3"){
             itemQty = "#sandalsqty";
             item_name = "#sandalsdata";
      }
-    else if(form=="form4"){
+    else if(formid=="form4"){
             itemQty = "#soillsqty";
             item_name = "#oilsdata";
      }
-    else if(form=="form5"){
+    else if(formid=="form5"){
             itemQty = "#maskqty";
             item_name = "#maskdata";
     }
-    else if(form=="form6"){
+    else if(formid=="form6"){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
     }
@@ -304,18 +303,18 @@ function action(form){
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
     }
-    else if(form=="form8"){
+    else if(formid=="form8"){
             itemQty = "#trainerqty";
             item_name = "#trainerdata";
     }
     else{alert("Not working accordingly!")}
 
 
-    var invisiblevalue = $(ItemQty).val(); //Initial qty of product selected
+    var invisiblevalue = $(itemQty).val(); //Initial qty of product selected
     var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
 
     //Setting the new qty to specific items in cart
-    $(ItemQty).val(newV);
+    $(itemQty).val(newV);
     
     //Getting the name of the proxduct from input value
     var item_name = $(inputName).val();
