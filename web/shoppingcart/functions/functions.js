@@ -26,8 +26,8 @@ $(document).ready(function () {
         action(this);
     });
 
-    $("#form7").on("submit" ,function(e){
-        e.preventDefault();
+    $("#form7").on("submit" ,function(){
+        //e.preventDefault();
         action(this);
     });
 
