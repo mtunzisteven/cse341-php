@@ -268,9 +268,10 @@ $(document).ready(function () {
 });
 
 function action(form){
-    var itemQty, item_name;/*
+    var itemQty, item_name;
+    var formAtt = form.attr("id");
 
-    switch(form) {
+    switch(formAtt) {
         case "form1":
             itemQty = "#watchqty";
             item_name = "#watchdata";
@@ -295,7 +296,7 @@ function action(form){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
             break;
-        case "form#form7.product-container":
+        case "form7":
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
             break;
@@ -334,5 +335,5 @@ function action(form){
             console.log(response);
         }
         
-    });*/
+    });
 }
