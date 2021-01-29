@@ -110,10 +110,6 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["loafersrc"].' /><p class="cart-item-title">'.$_SESSION["loaferdata"].'</p><input class="buttons" type="button" id="oil" name="removewatch" value="Delete item" /></div>';
             }
 
-            if(!isset($_SESSION["loaferdata"]) && !isset($_SESSION["loafersrc"])){
-                echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["loafersrc"].' /><p class="cart-item-title">'.$_SESSION["loaferdata"].'</p><input class="buttons" type="button" id="oil" name="removewatch" value="Delete item" /></div>';
-            }
-
             if(isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"])){
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["saltssrc"].' /><p class="cart-item-title">'.$_SESSION["saltsdata"].'</p><input class="buttons" type="button" id="oil" name="removewatch" value="Delete item" /></div>';
             }
