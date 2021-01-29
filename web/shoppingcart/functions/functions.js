@@ -296,7 +296,7 @@ function action(form){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
     }
-    else if(form=="form7"){
+    else if(form=="form#form7.product-container"){
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
     }
