@@ -271,6 +271,8 @@ $(document).ready(function () {
 function action(form){
     var itemQty, item_name;
 
+    alert(form);
+
     if(form=="form1") {
         
             itemQty = "#watchqty";
