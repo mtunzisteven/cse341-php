@@ -81,7 +81,7 @@
                 <input class="buttons" type="submit" id="gabriel" name="gabriel" value="Add to Cart" />
             </form>
 
-            <form id="form7" method="post" action="" class="product-container">
+            <form id="form7" method="post" action="cart.php" class="product-container">
                 <label>
                     <img class="products" alt="watch" src="images/loafer.jpg" />
                     Green Loafer<br/>$100
