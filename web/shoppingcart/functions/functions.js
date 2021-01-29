@@ -268,7 +268,7 @@ $(document).ready(function () {
 });
 
 function action(form){
-    var itemQty, item_name;
+    var itemQty, item_name;/*
 
     switch(form) {
         case "form1":
@@ -334,5 +334,5 @@ function action(form){
             console.log(response);
         }
         
-    });
+    });*/
 }
