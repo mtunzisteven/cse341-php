@@ -4,16 +4,16 @@ $(document).ready(function () {
 
     $("#form1").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#watchqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#watchqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#watchdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#watchqtysrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -22,8 +22,8 @@ $(document).ready(function () {
             data = {};
 
             data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#watchqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#watchqtysrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
@@ -41,16 +41,16 @@ $(document).ready(function () {
 
     $("#form2").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#saltsqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#saltsqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#saltsdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#saltsqty").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -58,9 +58,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#saltsdata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#saltsqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#saltssrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
@@ -78,16 +78,16 @@ $(document).ready(function () {
 
     $("#form3").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#maskqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#maskqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#maskdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#maskqty").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -95,9 +95,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#maskdata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#maskqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#masksrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
@@ -189,16 +189,16 @@ $(document).ready(function () {
 
     $("#form6").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#oilsqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#oilsqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#oilsdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#oilssrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -206,9 +206,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#oilsdata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#oilsqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#oilssrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
@@ -226,16 +226,16 @@ $(document).ready(function () {
 
     $("#form7").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#chanelqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#chanelqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#chaneldata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#chanelsrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -243,9 +243,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#chaneldata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#chanelqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#chanelsrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
@@ -263,16 +263,16 @@ $(document).ready(function () {
 
     $("#form8").on("submit" ,function(){
 
-        var invisiblevalue = $(".qty").val(); //Initial qty of product selected
+        var invisiblevalue = $("#loaferqty").val(); //Initial qty of product selected
         var newV = parseInt(invisiblevalue)+1;        //1 added per selection to qty
  
         //Setting the new qty to specific items in cart
-        $(".qty").val(newV);
+        $("#loaferqty").val(newV);
         
         //Getting the name of the proxduct from input value
-        var item_name = $(".proname").val();
+        var item_name = $("#loaferdata").val();
 
-        var item_src = $(".src").val();
+        var item_src = $("#loafersrc").val();
 
         //Gather form submission data
         var holder = $(this), //"holder" is just so we don't keep typing "this"
@@ -280,9 +280,9 @@ $(document).ready(function () {
             method =holder.attr("method"),
             data = {};
 
-            data[$(".proname").attr('name')] = item_name; //Adding item name to POST data to be sent
-            data[$(".qty").attr('name')] = newV; //Adding item quantity to POST data to be sent
-            data[$(".src").attr('name')] = item_src; //Adding item image source to POST data to be sent
+            data[$("#loaferdata").attr('name')] = item_name; //Adding item name to POST data to be sent
+            data[$("#loaferqty").attr('name')] = newV; //Adding item quantity to POST data to be sent
+            data[$("#loafersrc").attr('name')] = item_src; //Adding item image source to POST data to be sent
 
         
         //The actual ajax data transfer method. Data gathered above will now be used.
