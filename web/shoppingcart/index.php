@@ -54,8 +54,8 @@
                     Coconut Oil<br/>$10
                 </label>
                 <input class="invisibles proname" type="text" id="oilsdata" name="oilsdata" value="Coconut Oil" /> 
-                <input class="invisibles qty" type="text" id="qty" name="oilsqty" value="<?php if($_SESSION["oilsqty"]<1){echo 0 ;} else{echo $_SESSION["oilsqty"];} ?>" />
-                <input class="invisibles src" type="text" id="src" name="oilssrc" value="images/oil.jpg" /> 
+                <input class="invisibles qty" type="text" id="oilsqty" name="oilsqty" value="<?php if($_SESSION["oilsqty"]<1){echo 0 ;} else{echo $_SESSION["oilsqty"];} ?>" />
+                <input class="invisibles src" type="text" id="oilssrc" name="oilssrc" value="images/oil.jpg" /> 
                 <input class="buttons" type="submit" id="oil" name="oil" value="Add to Cart" />
             </form>
 
