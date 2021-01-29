@@ -270,10 +270,10 @@ $(document).ready(function () {
 
 function action(form){
     var itemQty, item_name;
-    form = form.outerHTML; //convert from html object to html
-    form = form.attr("id"); //get id
+    formhtml = form.outerHTML; //convert from html object to html
+    formid = $(formhtml).attr("id"); //get id
 
-    alert(form);
+    alert(formid);
 
     if(form=="form1") {
         
@@ -300,7 +300,7 @@ function action(form){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
     }
-    else if(form=="form#form7.product-container"){
+    else if(formid=="form7"){
             itemQty = "#loaferqty";
             item_name = "#loaferdata";
     }
