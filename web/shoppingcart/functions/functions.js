@@ -28,7 +28,6 @@ $(document).ready(function () {
 
     $("#form7").on("submit" ,function(){
         action(this);
-        return false; //With this return value, we ensure the form doesn't get submitted and reload the page
 
     });
 
@@ -335,6 +334,6 @@ function action(form){
             console.log(response);
         }
         
-    });
+    });return false; //With this return value, we ensure the form doesn't get submitted and reload the page
 
 }
