@@ -270,6 +270,7 @@ $(document).ready(function () {
 
 function action(form){
     var itemQty, item_name;
+    form = form.outerHTML;
 
     alert(form);
 
