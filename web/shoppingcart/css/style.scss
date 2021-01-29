@@ -41,7 +41,7 @@ $small-font: 14px;
 
 
 //flex 
-@mixin flex($dir, $justify, $wrap:wrap){
+@mixin flex($dir, $justify, $wrap:nowrap){
     display:flex;
     flex-direction:$dir;
     justify-content: $justify;
@@ -66,7 +66,7 @@ h2{
 }
 
 .cart-link{
-    @include flex(row, end, nowrap);
+    @include flex(row, end);
     height:22px;
     margin: 15px 15px -5px 5px;
 }
@@ -99,7 +99,7 @@ h2{
 }
 
 .nav-div{
-    @include flex(row, space-between, nowrap);
+    @include flex(row, space-between);
     height:100%;
 }
 
@@ -140,13 +140,13 @@ a{
 }
 
 .product-container{
-    @include flex(column, center, nowrap);
+    @include flex(column, center);
 }
 
 label{
     padding:5px 50px;
     text-align:center;
-    @include flex(column, center, nowrap);
+    @include flex(column, center);
 }
 
 .invisibles{
