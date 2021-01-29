@@ -83,13 +83,6 @@ h2{
     margin: auto;
 }
 
-.nav li{
-    @include clean-li();
-    text-align: left;
-    padding-bottom: 40%;
-    margin-left: 5px;
-}
-
 .nav-div{
     @include flex(row, space-between);
     height:100%;
@@ -100,14 +93,28 @@ ul{
     @include pad-all-sides(2px,5px);
 }
 
+.nav li{
+    @include clean-li();
+    text-align: left;
+    padding-bottom: 40%;
+    margin-left: 5px;
+}
+
+.nav li:hover{
+    color:$secondary-color;
+}
+
 .cart-link{
     @include flex(row, space-between, nowrap);
-    height:22px;
+    height:27px;
     margin: 0 15px -5px 10px;
 }
 
+.cart-link:hover{
+    background-color:$secondary-color;
+}
+
 .cart-title{
-    color:$light-color;
     padding: 5px 5px 0 3px;
     font-size: 14px;
 }

@@ -33,13 +33,6 @@ h2 {
   margin: auto;
 }
 
-.nav li {
-  list-style-type: none;
-  text-align: left;
-  padding-bottom: 40%;
-  margin-left: 5px;
-}
-
 .nav-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +54,17 @@ ul {
   padding: 2px 5px;
 }
 
+.nav li {
+  list-style-type: none;
+  text-align: left;
+  padding-bottom: 40%;
+  margin-left: 5px;
+}
+
+.nav li:hover {
+  color: #96000F;
+}
+
 .cart-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,12 +78,15 @@ ul {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 22px;
+  height: 27px;
   margin: 0 15px -5px 10px;
 }
 
+.cart-link:hover {
+  background-color: #96000F;
+}
+
 .cart-title {
-  color: #ffffff;
   padding: 5px 5px 0 3px;
   font-size: 14px;
 }
