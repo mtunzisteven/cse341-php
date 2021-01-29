@@ -22,7 +22,7 @@
                 </label>
                 <input class="invisibles proname" type="text" id="watchdata" name="watchdata" value="Fossil Watch" /> 
                 <input class="invisibles qty" type="text" id="qty" name="watchqty" value="<?php if($_SESSION["watchqty"]<1){echo 0 ;} else{echo $_SESSION["watchqty"];} ?>" />
-                <input class="invisibles src" type="text" id="src" name="watchsrc" value="images/fossil watch.jpg" />
+                <input class="invisibles src" type="text" id="src" name="watchsrc" value="images/logo.jpg" />
                 <input class="buttons" id="watch" type="submit" name="watch" value="Add to Cart" />
             </form>
 
