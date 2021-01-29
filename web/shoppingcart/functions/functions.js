@@ -28,6 +28,8 @@ $(document).ready(function () {
 
     $("#form7").on("submit" ,function(){
         action(this);
+        return false; //With this return value, we ensure the form doesn't get submitted and reload the page
+
     });
 
     $("#form8").on("submit" ,function(){
@@ -332,7 +334,7 @@ function action(form){
         success: function (response) {
             console.log(response);
         }
+        
     });
 
-    return false; //With this return value, we ensure the form doesn't get submitted and reload the page
 }
