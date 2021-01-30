@@ -238,7 +238,7 @@ img.products {
   color: #ffffff;
 }
 
-.checkout-button {
+.checkout-button, .checkout-button-link {
   width: 100%;
   height: 100%;
 }
@@ -256,6 +256,7 @@ img.products {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 40px 0;
 }
 
 .footer-div {

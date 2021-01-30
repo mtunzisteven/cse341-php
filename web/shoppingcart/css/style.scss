@@ -229,7 +229,8 @@ img.products{
 
 .checkout-buttons-container{
     @include flex(row, center, nowrap);
-    
+    @include pad-all-sides(40px, 0);
+
 }
 
 .footer-div{
