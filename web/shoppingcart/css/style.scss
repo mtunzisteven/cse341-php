@@ -256,6 +256,22 @@ img.products{
     text-align: left;
 }
 
+.confirmation-container{
+    @include marg-all-sides(20px, 30%);
+    @include flex(column, center, nowrap);
+    background-color:$main-color;
+    @include pad-all-sides(20px, 20px);
+}
+
+.order-summary{
+    @include flex(row, space-between, nowrap );
+    border: 1px solid $light-color;
+}
+
+.address{
+    border-right: 1px solid $light-color;
+}
+
 .footer-div{
     width:99.2%;
     max-width:100%;

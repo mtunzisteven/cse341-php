@@ -41,7 +41,7 @@ if(isset($_POST["code"])){
         
         <?php require "snippets/header.php"; ?>
         
-        <div class="form" >
+        <div class="confirmation-container" >
             <h3 class="checkout-form-title">Thank you for Placing Your Order</h3>
             <div class="order-summary">
 
