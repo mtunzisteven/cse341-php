@@ -223,9 +223,13 @@ img.products{
     color:$light-color;
 }
 
-.checkout-button, .checkout-link{
+.checkout-link{
     @include unequal(200px, 30px);
     @include pad-all-sides(2px, 5px);
+}
+
+.checkout-button{
+    @include equal(100%);
 }
 
 .checkout-buttons-container{
