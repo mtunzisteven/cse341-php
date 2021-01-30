@@ -238,7 +238,7 @@ img.products{
 .checkout-link{
     @include unequal(200px, 30px);
     @include pad-all-sides(2px, 5px);
-    margin-top: -60px;
+    margin-top: -50px;
 }
 
 .checkout-button{

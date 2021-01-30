@@ -30,12 +30,13 @@
             <label class="checkout-label">Zip Code
                 <input class="checkout-input" type="text" />
             </label>
+
+            <input type="submit" class="buttons checkout-button" value="Complete Purchase" />
             
         </form>
 
         <div class="checkout-buttons-container">
             <a class="checkout-link" href="cart.php" ><button class="buttons checkout-button"> Return to Cart</button></a>
-            <a class="checkout-link" href="confirmation.php" ><button class="buttons checkout-button"> Complete Purchase</button></a>
         </div>
         
         <?php require "snippets/footer.php"; ?>

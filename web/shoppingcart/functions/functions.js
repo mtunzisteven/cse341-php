@@ -50,6 +50,12 @@ $(document).ready(function () {
         send_to_cart(this);
         return false;
     });
+
+    $(".complete").on("click", function(){
+        $("checkout-form").
+            
+        });
+    });
 });
 
 function send_to_cart(form){
