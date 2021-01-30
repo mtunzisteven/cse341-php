@@ -240,7 +240,8 @@ img.products {
 
 .checkout-button, .checkout-button-link {
   width: 150px;
-  height: 150px;
+  height: 30px;
+  padding: 0 5px;
 }
 
 .checkout-buttons-container {

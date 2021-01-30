@@ -224,7 +224,8 @@ img.products{
 }
 
 .checkout-button, .checkout-button-link{
-    @include equal(150px);
+    @include unequal(150px, 30px);
+    @include pad-all-sides(0, 5px);
 }
 
 .checkout-buttons-container{
