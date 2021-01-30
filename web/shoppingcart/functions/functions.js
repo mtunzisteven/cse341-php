@@ -139,7 +139,6 @@ function remove(button){
     var buttonid = $(button).attr("id"); //get id
     var properId = "#"+buttonid;
 
-
     data = {};
 
     data[$(properId).attr("name")] = $(properId).val();
