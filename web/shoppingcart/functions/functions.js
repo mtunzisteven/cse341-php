@@ -118,7 +118,7 @@ function action(form){
         data[$(src_id).attr('name')] = $(src_id).val(); //Adding item name to POST data to be sent
         data[$(item_name).attr('name')] = $(item_name).val(); //Adding item name to POST data to be sent
 
-        alert($(itemQty).attr('name')+"\n"+$(src_id).attr('name')+"\n"+$(item_name).attr('name'));
+        alert($(itemQty).attr('name')+"= "+$(itemQty).val()+"\n"+$(src_id).attr('name')+"= "+$(src_id).val()+"\n"+$(item_name).attr('name')+"= "+$(item_name).val());
     
     //The actual ajax data transfer method. Data gathered above will now be used.
     $.ajax({
