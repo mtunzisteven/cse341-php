@@ -8,14 +8,6 @@ if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){    //Since form is 
 
 }
 
-if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){    //Since form is submitted to this page, we capture the information here
-
-    $_SESSION["saltsdata"] = $_POST["saltsdata"];
-    $_SESSION["saltsrc"] = $_POST["saltssrc"];
-
-
-}
-
 if(isset($_POST["oilsdata"]) && isset($_POST["oilssrc"])){    //Since form is submitted to this page, we capture the information here
 
     $_SESSION["oilsdata"] = $_POST["oilsdata"];
@@ -86,7 +78,11 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
             }
 
-            if(isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"])){
+            if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){
+
+                $_SESSION["saltsdata"] = $_POST["saltsdata"];
+                $_SESSION["saltssrc"] = $_POST["saltssrc"];
+
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["saltssrc"].' /><p class="cart-item-title">'.$_SESSION["saltsdata"].'</p><input class="buttons" type="button" id="removesalts" name="removesalts" value="Delete item" /></div>';
             }
 
