@@ -11,7 +11,7 @@ if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){    //Since form is 
 if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){    //Since form is submitted to this page, we capture the information here
 
     $_SESSION["saltsdata"] = $_POST["saltsdata"];
-    $_SESSION["saltsrc"] = $_POST["saltssrc"];
+    $_SESSION["saltssrc"] = $_POST["saltssrc"];
 
 
 }
