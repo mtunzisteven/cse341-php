@@ -24,7 +24,7 @@
    ?>
 
   <ul class="assignments-container container">
-      <li class="assignment-item"><a href="../shoppingcart/" >Shopping Cart</a></li>
+      <li class="assignment-item"><a href="../shoppingcart/" >Assignment: Shopping Cart</a></li>
   </ul>
 
   <?php

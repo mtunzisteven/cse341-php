@@ -60,7 +60,9 @@ li a{
   color:#ffffff;
   background-color:midnightblue;
   box-shadow: none;
-  
+  width:100%;
+  text-align: left;
+
 }
 
 li a:hover{
