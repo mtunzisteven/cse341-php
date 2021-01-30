@@ -143,9 +143,9 @@ function remove(button){
     data[$(button).attr("name")] = $(button).val();
 
     $.ajax({
-        type = "post",
-        url = "cart.php",
-        data = data,
+        type : "post",
+        url : "cart.php",
+        data : data,
         success: function (response){
             console.log(response);
         }
