@@ -191,7 +191,14 @@ img.products{
 }
 
 .cart-item{
-    @include flex(row, center, nowrap);
+    @include flex(row, space-between, nowrap);
+    align-items: center;
+    @include marg-all-sides(50px, 10px);
+    @include pad-all-sides(100px, 100px);
+}
+
+.cart-thumnails{
+    @include equal(50px);
 }
 
 .footer-div{
