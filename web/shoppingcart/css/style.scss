@@ -225,6 +225,8 @@ img.products{
 
 .checkout-form{
     @include flex(column, center, nowrap);
+    @include pad-all-sides(25%, 50px);
+
 }
 
 .checkout-buttons-container{
@@ -236,7 +238,7 @@ img.products{
 .checkout-link{
     @include unequal(200px, 30px);
     @include pad-all-sides(2px, 5px);
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .checkout-button{

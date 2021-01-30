@@ -18,10 +18,10 @@
         
         <form class="cart-form checkout-form" method="post" action="confirmation.php" >
             <h3 class="checkout-form-title">Please enter your addess</h3>
-            <label class="checkout-label">Street Address
+            <label class="checkout-label">Address Line 1
                 <input class="checkout-input" type="text" />
             </label>
-            <label class="checkout-label">Street Address
+            <label class="checkout-label">Street  Line 2
                 <input class="checkout-input" type="text" />
             </label>
             <label class="checkout-label">Town
