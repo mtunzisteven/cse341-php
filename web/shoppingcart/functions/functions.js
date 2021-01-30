@@ -160,9 +160,7 @@ function remove(button){
     if(inputs==1){
         $("input").remove(); //checkout button must go
 
-        if(inputs==0){ //If equal to 0, then the inputs have all been removed.
-            $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
-        }
+        $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
     }
         
   
