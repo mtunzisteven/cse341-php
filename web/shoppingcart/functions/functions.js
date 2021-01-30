@@ -1,10 +1,10 @@
 
 $(document).ready(function () {
 
-    /*$(".buttons").click(function (e) { 
+    $(".removers").click(function (e) { 
         e.preventDefault();       
         remove();
-    });*/
+    });
 
     $("#form1").on("submit" ,function(e){
         e.preventDefault();
