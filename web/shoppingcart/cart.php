@@ -68,7 +68,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Browse</title>
+        <title>Cart</title>
         <meta charset="utf-8">
         <meta content="author" name="Mtunzi Mavuma" >
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -84,7 +84,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
 
             if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"])){
                 if(!isset($_POST['removewatch'])){
-                    echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons removers" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
+                    echo '<div class="cart-item removewatch"><img class="cart-thumnails removewatch" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title removewatch">'.$_SESSION["watchdata"].'</p><input class="buttons removers removewatch" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
                 }
                 else{
                     unset($_POST["watchdata"]); unset($_POST["watchdsrc"]); unset($_POST["watchqty"]);

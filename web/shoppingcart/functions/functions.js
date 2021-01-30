@@ -138,6 +138,7 @@ function send_to_cart(form){
 function remove(button){
     var buttonid = $(button).attr("id"); //get id
     var properId = "#"+buttonid;
+    var containerclass = "."+buttonid;
 
     data = {};
 
@@ -153,7 +154,7 @@ function remove(button){
     })
 
     var removals = $("div").parentsUntil(properId);
-    $(properId).remove(removals);
+    $(containerclass).remove();
         
   
 
