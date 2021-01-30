@@ -225,7 +225,7 @@ img.products{
 
 .checkout-form{
     @include flex(column, center, nowrap);
-    @include pad-all-sides(25%, 50px);
+    @include pad-all-sides(50px, 25%);
 
 }
 

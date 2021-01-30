@@ -251,7 +251,7 @@ img.products {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 25% 50px;
+  padding: 50px 25%;
 }
 
 .checkout-buttons-container {
