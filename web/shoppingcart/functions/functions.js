@@ -1,53 +1,58 @@
 
 $(document).ready(function () {
 
+    $(".buttons").click(function (e) { 
+        e.preventDefault();       
+        remove();
+    });
+
     $("#form1").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;
     });
 
     $("#form2").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;    });
     
     $("#form3").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;    });
 
     $("#form4").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;    });
     
     $("#form5").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;    
     });
 
     $("#form6").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;    
     });
 
     $("#form7").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;
     });
 
     $("#form8").on("submit" ,function(e){
         e.preventDefault();
-        action(this);
+        send_to_cart(this);
         return false;
     });
 });
 
-function action(form){
+function send_to_cart(form){
     var itemQty, item_name, src_id;
     formid = $(form).attr("id"); //get id
     var properId = "#"+formid;
@@ -99,7 +104,7 @@ function action(form){
             src_id = "#trainersrc";
 
     }
-    else{alert("Not working accordingly!")}
+    else{alert("Product not added accordingly to cart!")}
 
 
     var invisiblevalue = $(itemQty).val(); //Initial qty of product selected
@@ -128,4 +133,24 @@ function action(form){
         }
         
     });
+}
+
+function remove(button){
+
+
+    data = {};
+
+    data[$(button).attr("name")] = $(button).val();
+
+    $.ajax({
+        type = "post",
+        url = "cart.php",
+        data = data,
+        success: function (response){
+            console.log(response);
+        }
+    })
+        
+  
+
 }
