@@ -56,6 +56,13 @@ li a{
   box-shadow:1px 1px 0 2px #ffffff;
 }
 
+.assignment-item a{
+  color:#ffffff;
+  background-color:midnightblue;
+  box-shadow: none;
+  
+}
+
 li a:hover{
   color:#ffffff;
   background-color: tomato;

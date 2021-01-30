@@ -23,8 +23,8 @@
 
    ?>
 
-  <ul class="container">
-      <li class="soon"><a href="../shoppingcart/" >Assignments</a></li>
+  <ul class="assignments-container container">
+      <li class="assignment-item"><a href="../shoppingcart/" >Shopping Cart</a></li>
   </ul>
 
   <?php
