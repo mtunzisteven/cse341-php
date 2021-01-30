@@ -98,8 +98,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"]) && isset($_POST["
             }
            
             if(!(isset($_POST["trainerdata"]) || isset($_POST["loaferdata"]) || isset($_POST["chaneldata"]) || isset($_POST["sandalsdata"]) || isset($_POST["maskdata"]) && isset($_POST["oilsdata"]) || isset($_POST["chansaltsdataeldata"]) || isset($_POST["watchdata"]))){
-                //echo '<p class="cart-item-title2">Your cart is empty.</p>';
-                echo $trainer;
+                echo '<p class="cart-item-title2">Your cart is empty.</p>';
             }
 
             ?>
