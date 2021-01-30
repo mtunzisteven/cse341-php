@@ -21,10 +21,13 @@
             
         </form>
 
-        <a href="cart.php" ><button class="buttons checkout-button"> Return to Cart</button></a>
-        <a href="confirmation.php" ><button class="buttons checkout-button"> Complete Purchase<<button></a>
+        <div class="checkout-buttons-container">
+            <a class="checkout-link" href="cart.php" ><button class="buttons checkout-button"> Return to Cart</button></a>
+            <a class="checkout-link" href="confirmation.php" ><button class="buttons checkout-button"> Complete Purchase<button></a>
+        </div>
         
         <?php require "snippets/footer.php"; ?>
         
     </body>
+
 </html>
