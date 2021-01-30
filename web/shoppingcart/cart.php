@@ -5,14 +5,14 @@ if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){    //Since form is 
 
     $_SESSION["watchdata"] = $_POST["watchdata"];
     $_SESSION["watchsrc"] = $_POST["watchsrc"];
-
+    $_SESSION["watchqty"] = $_POST["watchqty"];
 }
 
 if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){    //Since form is submitted to this page, we capture the information here
 
     $_SESSION["saltsdata"] = $_POST["saltsdata"];
     $_SESSION["saltssrc"] = $_POST["saltssrc"];
-
+    $_SESSION["saltsqty"] = $_POST["saltsqty"];
 
 }
 
@@ -20,7 +20,7 @@ if(isset($_POST["oilsdata"]) && isset($_POST["oilssrc"])){    //Since form is su
 
     $_SESSION["oilsdata"] = $_POST["oilsdata"];
     $_SESSION["oilssrc"] = $_POST["oilssrc"];
-
+    $_SESSION["oilsqty"] = $_POST["oilsqty"];
 
 }
 
