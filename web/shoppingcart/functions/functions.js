@@ -51,10 +51,20 @@ $(document).ready(function () {
         return false;
     });
 
-    $(".complete").on("click", function(){
-        $("checkout-form").
-            
+    $(".complete").on("submit", function(e){
+        e.preventDefault();
+        var form = $(".checkout-form").attr("class");
+        var formclass = "."+form;
+        inputs={};
+        inputs = $(formclass).children("checkout-input");
+        
+        $.each(inputs, function(index, value){
+            alert( index + ": " + value );
+            confirm(value);
         });
+
+        
+        return false;
     });
 });
 
@@ -171,4 +181,19 @@ function remove(button){
         
   
 
+}
+
+function confirm(input){
+    data = {};
+
+    data[$(input).attr("name")] = $(input).val();
+
+    $.ajax({
+        type : "post",
+        url : "confirmation.php",
+        data : data,
+        success: function (response){
+            console.log(response);
+        }
+    })
 }

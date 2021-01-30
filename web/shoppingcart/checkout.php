@@ -31,7 +31,7 @@
                 <input class="checkout-input" type="text" />
             </label>
 
-            <input type="submit" class="buttons checkout-button" value="Complete Purchase" />
+            <input type="submit" class="buttons checkout-button complete" value="Complete Purchase" />
             
         </form>
 
