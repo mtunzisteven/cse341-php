@@ -272,12 +272,23 @@ img.products {
   width: 200px;
   height: 30px;
   padding: 2px 5px;
+  margin-top: -40px;
 }
 
 .checkout-button {
   width: 200px;
   height: 30px;
   max-width: 200px;
+}
+
+.checkout-form-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+.checkout-label {
+  color: #ffffff;
+  text-align: left;
 }
 
 .footer-div {

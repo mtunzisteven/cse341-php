@@ -18,16 +18,16 @@
         
         <form class="cart-form checkout-form" method="post" action="confirmation.php" >
             <h3 class="checkout-form-title">Please enter your addess</h3>
-            <label>Street Address
+            <label class="checkout-label">Street Address
                 <input class="checkout-input" type="text" />
             </label>
-            <label>Street Address
+            <label class="checkout-label">Street Address
                 <input class="checkout-input" type="text" />
             </label>
-            <label>Town
+            <label class="checkout-label">Town
                 <input class="checkout-input" type="text" />
             </label>
-            <label>Zip Code
+            <label class="checkout-label">Zip Code
                 <input class="checkout-input" type="text" />
             </label>
             

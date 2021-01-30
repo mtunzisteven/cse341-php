@@ -236,11 +236,22 @@ img.products{
 .checkout-link{
     @include unequal(200px, 30px);
     @include pad-all-sides(2px, 5px);
+    margin-top: -40px;
 }
 
 .checkout-button{
     @include unequal(200px, 30px);
     max-width: 200px;
+    }
+
+.checkout-form-title{
+    color:$light-color;
+    text-align: center;
+}
+
+.checkout-label{
+    color:$light-color;
+    text-align: left;
 }
 
 .footer-div{
