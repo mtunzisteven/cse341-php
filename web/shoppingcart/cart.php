@@ -35,7 +35,7 @@ if(isset($_POST["maskdata"]) && isset($_POST["masksrc"])){    //Since form is su
 if(isset($_POST["sandalsdata"]) && isset($_POST["sandalssrc"])){    //Since form is submitted to this page, we capture the information here
 
     $_SESSION["sandalsdata"] = $_POST["sandalsdata"];
-    $_SESSION["oilssrc"] = $_POST["oilssrc"];
+    $_SESSION["sandalssrc"] = $_POST["sandalssrc"];
 
 
 }
