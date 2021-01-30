@@ -82,6 +82,9 @@
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["trainersrc"].' /><p class="cart-item-title">'.$_SESSION["trainerdata"].'</p><p class="cart-item-quantity">'.$_SESSION["trainerqty"].'</p><input class="buttons" type="button" id="removetrainer" name="removetrainer" value="Delete item" /></div>';
             }
             
+            if(!(isset($_POST["trainerdata"]) && isset($_POST["loaferdata"]) && isset($_POST["chaneldata"]) && isset($_POST["sandalsdata"]) && isset($_POST["maskdata"]) && isset($_POST["oilsdata"]) && isset($_POST["chansaltsdataeldata"]) && isset($_POST["watchdata"]))){
+                echo '<p class="cart-item-title">Your cart is empty.</p>';
+            }
 
             ?>
         </form>
