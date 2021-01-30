@@ -6,12 +6,12 @@ if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){    //Since form is 
     $_SESSION["watchdata"] = $_POST["watchdata"];
     $_SESSION["watchsrc"] = $_POST["watchsrc"];
 
-    if(isset($_POST["removewatch"])){
-        session_unset($_SESSION["watchdata"]);
-        session_unset($_SESSION["watchdsrc"]);
-        session_unset($_SESSION["watchqty"]);
-    }
+}
 
+if(isset($_POST["removewatch"])){
+    session_unset($_SESSION["watchdata"]);
+    session_unset($_SESSION["watchdsrc"]);
+    session_unset($_SESSION["watchqty"]);
 }
 
 if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){    //Since form is submitted to this page, we capture the information here

@@ -136,11 +136,12 @@ function send_to_cart(form){
 }
 
 function remove(button){
+    var buttonid = $(button).attr("id"); //get id
 
 
     data = {};
 
-    data[$(button).attr("name")] = $(button).val();
+    data[$(buttonid).attr("name")] = $(buttonid).val();
 
     $.ajax({
         type : "post",
