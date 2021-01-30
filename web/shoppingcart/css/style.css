@@ -189,6 +189,7 @@ img.products {
 .cart-checkout-button {
   margin-top: 20px;
   padding: 4px;
+  max-width: 100%;
 }
 
 .cart-form {
