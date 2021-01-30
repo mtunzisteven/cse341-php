@@ -40,7 +40,8 @@ $(document).ready(function () {
         return false;
     });
 
-    $("#form8").on("submit" ,function(){
+    $("#form8").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
         return false;
     });
