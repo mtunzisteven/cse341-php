@@ -21,8 +21,8 @@
             
         </form>
 
-        <a href="cart.php" lass="buttons cart-checkout-button"> Return to Cart</a>
-        <a href="cart.php" lass="buttons cart-checkout-button"> Complete Purchase</a>
+        <a href="cart.php" class="buttons checkout-button"> Return to Cart</a>
+        <a href="confirmation.php" class="buttons checkout-button"> Complete Purchase</a>
         
         <?php require "snippets/footer.php"; ?>
         
