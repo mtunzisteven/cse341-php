@@ -195,18 +195,18 @@ img.products{
     align-items: center;
     @include marg-all-sides(10px, 10px);
     @include pad-all-sides(10px, 100px);
-    width:90%;
+    max-width:90%;
     border:1px solid $light-color;
 
 }
 
 .cart-thumnails{
     @include equal(50px);
-    padding-right: 20px;
+    padding-right: 20%;
 }
 
 .cart-item-title{
-    width: 100px;
+    width: 100%;
     color:$light-color;
 }
 
