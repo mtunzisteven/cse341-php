@@ -223,6 +223,10 @@ img.products{
     color:$light-color;
 }
 
+.checkout-form{
+    @include flex(column, center, nowrap);
+}
+
 .checkout-buttons-container{
     @include flex(row, space-around, nowrap);
     @include pad-all-sides(40px, 0);

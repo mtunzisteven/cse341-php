@@ -16,8 +16,20 @@
         
         <?php require "snippets/header.php"; ?>
         
-        <form class="cart-form" method="post" action="checkout.php" >
-            
+        <form class="checkout-form" method="post" action="confirmation.php" >
+            <h3 class="checkout-form-title">Please enter your addess</h3>
+            <label>Street Address
+                <input class="checkout-input" type="text" />
+            </label>
+            <label>Street Address
+                <input class="checkout-input" type="text" />
+            </label>
+            <label>Town
+                <input class="checkout-input" type="text" />
+            </label>
+            <label>Zip Code
+                <input class="checkout-input" type="text" />
+            </label>
             
         </form>
 
