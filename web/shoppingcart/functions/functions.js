@@ -51,10 +51,6 @@ function action(form){
     var itemQty, item_name, src_id;
     formid = $(form).attr("id"); //get id
     var properId = "#"+formid;
-    
-
-    alert(formid);
-    alert(properId);
 
     if(formid=="form1") {
         
@@ -121,6 +117,8 @@ function action(form){
         data[$(itemQty).attr('name')] = $(itemQty).val(); //Adding item name to POST data to be sent
         data[$(src_id).attr('name')] = $(src_id).val(); //Adding item name to POST data to be sent
         data[$(item_name).attr('name')] = $(item_name).val(); //Adding item name to POST data to be sent
+
+        alert($(itemQty).val()+"\n"+$(src_id).val()+"\n"+$(item_name).val());
     
     //The actual ajax data transfer method. Data gathered above will now be used.
     $.ajax({
