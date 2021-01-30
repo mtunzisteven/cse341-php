@@ -8,15 +8,6 @@ if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){    //Since form is 
 
 }
 
-if(isset($_POST["removewatch"])){
-    unset($_SESSION["watchdata"]);
-    unset($_SESSION["watchdsrc"]);
-    unset($_SESSION["watchqty"]);
-    unset($_POST["watchdata"]);
-    unset($_POST["watchdsrc"]);
-    unset($_POST["watchqty"]);
-}
-
 if(isset($_POST["saltsdata"]) && isset($_POST["saltssrc"])){    //Since form is submitted to this page, we capture the information here
 
     $_SESSION["saltsdata"] = $_POST["saltsdata"];
@@ -93,6 +84,14 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
 
             if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"]) && !(isset($_POST['removewatch']))){
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons removers" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
+            }else{
+
+                session_unset($_SESSION["watchdata"]);
+                session_unset($_SESSION["watchdsrc"]);
+                session_unset($_SESSION["watchqty"]);
+                unset($_POST["watchdata"]);
+                unset($_POST["watchdsrc"]);
+                unset($_POST["watchqty"]);
             }
 
             if(isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"])){
@@ -123,7 +122,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["trainersrc"].' /><p class="cart-item-title">'.$_SESSION["trainerdata"].'</p><input class="buttons removers" type="button" id="removetrainer" name="removetrainer" value="Delete item" /></div>';
             }
             
-            if(!(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"]) && isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"]) && isset($_SESSION["oilsdata"]) && isset($_SESSION["oilssrc"]) && isset($_SESSION["maskdata"]) && isset($_SESSION["masksrc"]) && isset($_SESSION["sandalsdata"]) && isset($_SESSION["sandalssrc"]) && isset($_SESSION["chaneldata"]) && isset($_SESSION["sandalssrc"]) && isset($_SESSION["loaferdata"]) && isset($_SESSION["loafersrc"]) && isset($_SESSION["trainerdata"]) && isset($_SESSION["trainersrc"]))){
+            if(!isset($_SESSION["watchdata"]) && !isset($_SESSION["saltsdata"]) && !isset($_SESSION["oilsdata"]) && !isset($_SESSION["maskdata"]) && !isset($_SESSION["sandalsdata"]) && !isset($_SESSION["chaneldata"]) && !isset($_SESSION["loaferdata"]) && !isset($_SESSION["trainerdata"])){
                 echo '<p class="cart-item-title2">Your Cart is empty</p>';
                 }
 
