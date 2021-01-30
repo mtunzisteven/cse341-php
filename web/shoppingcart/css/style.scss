@@ -223,12 +223,13 @@ img.products{
     color:$light-color;
 }
 
-.checkout-button{
+.checkout-button, .checkout-button-link{
     @include equal(100%);
 }
 
 .checkout-buttons-container{
     @include flex(row, center, nowrap);
+    
 }
 
 .footer-div{
