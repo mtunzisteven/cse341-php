@@ -256,10 +256,15 @@ img.products{
     text-align: left;
 }
 
+.confirm-form-title{
+    @include pad-all-sides(20px, 0);
+    color: $main-color;
+}
+
 .confirmation-container{
     @include flex(column, center, nowrap);
     background-color:$main-color;
-    @include pad-all-sides(20px, 10%);
+    @include pad-all-sides(20px, 20px);
     margin: 20px 30%;
 }
 
@@ -269,14 +274,9 @@ img.products{
     @include pad-all-sides(2px, 2px)
 }
 
-.address, .summary-item{
+.address, .summary-item, .address-summary{
     border: none;
-    color: $large-font;
-}
-
-.address-summary{
-    border: none;
-    color: $large-font;
+    color: $light-color;;
 }
 
 .footer-div{
