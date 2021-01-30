@@ -4,25 +4,30 @@ $(document).ready(function () {
     $("#form1").on("submit" ,function(e){
         e.preventDefault();
         action(this);
+        return false;
     });
 
-    $("#form2").on("submit" ,function(){
+    $("#form2").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
-    });
+        return false;    });
     
-    $("#form3").on("submit" ,function(){
+    $("#form3").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
-    });
+        return false;    });
 
-    $("#form4").on("submit" ,function(){
+    $("#form4").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
-    });
+        return false;    });
     
-    $("#form5").on("submit" ,function(){
+    $("#form5").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
-    });
+        return false;    });
 
-    $("#form6").on("submit" ,function(){
+    $("#form6").on("submit" ,function(e){
         action(this);
     });
 
@@ -32,8 +37,10 @@ $(document).ready(function () {
         return false;
     });
 
-    $("#form8").on("submit" ,function(){
+    $("#form8").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
+        return false;
     });
 
     /*
