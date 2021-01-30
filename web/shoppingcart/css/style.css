@@ -238,10 +238,10 @@ img.products {
   color: #ffffff;
 }
 
-.checkout-button, .checkout-button-link {
-  width: 400px;
+.checkout-button, .checkout-link {
+  width: 200px;
   height: 30px;
-  padding: 2pc 5px;
+  padding: 2px 5px;
 }
 
 .checkout-buttons-container {
