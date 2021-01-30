@@ -48,7 +48,7 @@ $(document).ready(function () {
 });
 
 function action(form){
-    var itemQty, item_name, src;
+    var itemQty, item_name, src_id;
     formid = $(form).attr("id"); //get id
     var properId = "#"+formid;
     
@@ -60,7 +60,7 @@ function action(form){
         
             itemQty = "#watchqty";
             item_name = "#watchdata";
-            src = "#watchsrc";
+            src_id = "#watchsrc";
     }
     else if(formid=="form2"){
             itemQty = "#saltsqty";
