@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $(".removers").click(function (e) { 
         e.preventDefault();       
-        remove();
+        remove(this);
     });
 
     $("#form1").on("submit" ,function(e){
