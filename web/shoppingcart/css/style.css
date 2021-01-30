@@ -238,17 +238,6 @@ img.products {
   color: #ffffff;
 }
 
-.checkout-link {
-  width: 200px;
-  height: 30px;
-  padding: 2px 5px;
-}
-
-.checkout-button {
-  width: 100%;
-  height: 100%;
-}
-
 .checkout-buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,6 +251,17 @@ img.products {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 40px 0;
+}
+
+.checkout-link {
+  width: 200px;
+  height: 30px;
+  padding: 2px 5px;
+}
+
+.checkout-button {
+  width: 200px;
+  height: 200px;
 }
 
 .footer-div {
