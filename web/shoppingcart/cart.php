@@ -82,18 +82,15 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
         <form class="cart-form" method="post" action="checkout.php" >
             <?php
 
-            if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"]) && !(isset($_POST['removewatch']))){
-                echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons removers" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
-            }else{
-
-                session_unset($_SESSION["watchdata"]);
-                session_unset($_SESSION["watchdsrc"]);
-                session_unset($_SESSION["watchqty"]);
-                unset($_POST["watchdata"]);
-                unset($_POST["watchdsrc"]);
-                unset($_POST["watchqty"]);
+            if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"])){
+                if(!isset($_POST['removewatch'])){
+                    echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["watchsrc"].' /><p class="cart-item-title">'.$_SESSION["watchdata"].'</p><input class="buttons removers" type="button" id="removewatch" name="removewatch" value="Delete item" /></div>';
+                }
+                else{
+                    unset($_POST["watchdata"]); unset($_POST["watchdsrc"]); unset($_POST["watchqty"]);
+                    unset($_SESSION["watchdata"]); unset($_SESSION["watchdsrc"]); unset($_SESSION["watchqty"]);
+                }
             }
-
             if(isset($_SESSION["saltsdata"]) && isset($_SESSION["saltssrc"])){
                 echo '<div class="cart-item"><img class="cart-thumnails" alt="salts" src='.$_SESSION["saltssrc"].' /><p class="cart-item-title">'.$_SESSION["saltsdata"].'</p><input class="buttons removers" type="button" id="removesalts" name="removesalts" value="Delete item" /></div>';
             }
