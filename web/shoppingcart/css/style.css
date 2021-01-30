@@ -323,9 +323,15 @@ img.products {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   border: 1px solid #ffffff;
+  padding: 2px 2px;
 }
 
-.address, .summary-item, .address-summary {
+.address, .summary-item {
+  border: none;
+  color: 35px;
+}
+
+.address-summary {
   border: none;
   color: 35px;
 }

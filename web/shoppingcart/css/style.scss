@@ -266,9 +266,15 @@ img.products{
 .order-summary{
     @include flex(row, space-around, nowrap );
     border: 1px solid $light-color;
+    @include pad-all-sides(2px, 2px)
 }
 
-.address, .summary-item, .address-summary{
+.address, .summary-item{
+    border: none;
+    color: $large-font;
+}
+
+.address-summary{
     border: none;
     color: $large-font;
 }
