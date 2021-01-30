@@ -17,6 +17,22 @@
         <form class="cart-form" method="post" action="checkout.php" >
             <?php
 
+            echo $_POST["trainerdata"];
+
+            echo $_POST["loaferdata"];
+            
+            echo $_POST["chaneldata"];
+            
+            echo $_POST["sandalsdata"];
+            
+            echo $_POST["maskdata"];
+            
+            echo $_POST["oilsdata"];
+            
+            echo $_POST["chansaltsdataeldata"];
+            
+            echo $_POST["watchdata"];
+
             if(isset($_POST["watchdata"]) && isset($_POST["watchsrc"])){
 
                 $_SESSION["watchdata"] = $_POST["watchdata"];
