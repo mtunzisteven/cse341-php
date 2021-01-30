@@ -19,7 +19,7 @@
         <form class="cart-form checkout-form" method="post" action="confirmation.php" >
             <h3 class="checkout-form-title">Please enter your addess</h3>
             <label class="checkout-label">Address Line 1
-                <input class="checkout-input" type="text" name="addressl1" value=<?php if(isset($_SESSION["addressl1"])){echo $_SESSION["addressl1"];}else{echo " ";} ?> />
+                <input class="checkout-input" type="text" name="addressl1" value="<?php if(isset($_SESSION["addressl1"])){echo $_SESSION["addressl1"];}else{echo " ";} ?>" />
             </label>
             <label class="checkout-label">Street  Line 2
                 <input class="checkout-input" type="text" name="addressl2" value=<?php if(isset($_SESSION["addressl2"])){echo $_SESSION["addressl2"];}else{echo " ";} ?> />
