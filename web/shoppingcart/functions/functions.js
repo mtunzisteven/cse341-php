@@ -157,9 +157,14 @@ function remove(button){
 
     var non_input_html = $("*").not("input").length; 
     var whole_html = $("*").length;
+    var inputs = $("input").length;
 
-    if(non_input_html===whole_html){ //If equal, then the inputs have all been removed.
-        $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
+    if(inputs==1){
+        $("input").remove(); //checkout button
+
+        if(non_input_html===whole_html){ //If equal, then the inputs have all been removed.
+            $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
+        }
     }
         
   
