@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 function send_to_cart(form){
     var itemQty, item_name, src_id;
-    formid = "#"+$(form).attr("id"); //get id
+    formid = $(form).attr("id"); //get id
     var properId = "#"+formid;
 
     if(formid=="form1") {
