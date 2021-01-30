@@ -332,6 +332,11 @@ img.products {
   padding: 2px 2px;
 }
 
+.confirmation-column-title {
+  color: #ffffff;
+  padding: 5px 0;
+}
+
 .address, .summary-item, .address-summary {
   border: none;
   color: #ffffff;

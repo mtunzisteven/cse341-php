@@ -47,26 +47,28 @@ if(isset($_POST["code"])){
             <div class="order-summary">
 
                 <div class="address">
-                <?php 
-                    if(isset($_SESSION["addressl1"])){
-                        echo '<p class="address-summary">'.$_SESSION["addressl1"].'</p>';
-                    }
+                    <h4 class="confirmation-column-title">Items Purchased</h4>
+                    <?php 
+                        if(isset($_SESSION["addressl1"])){
+                            echo '<p class="address-summary">'.$_SESSION["addressl1"].'</p>';
+                        }
 
-                    if(isset($_SESSION["addressl2"])){
-                        echo '<p class="address-summary">'.$_SESSION["addressl2"].'</p>';
-                    }
+                        if(isset($_SESSION["addressl2"])){
+                            echo '<p class="address-summary">'.$_SESSION["addressl2"].'</p>';
+                        }
 
-                    if(isset($_SESSION["town"])){
-                        echo '<p class="address-summary">'.$_SESSION["town"].'</p>';
-                    }
+                        if(isset($_SESSION["town"])){
+                            echo '<p class="address-summary">'.$_SESSION["town"].'</p>';
+                        }
 
-                    if(isset($_SESSION["code"])){
-                        echo '<p class="address-summary">'.$_SESSION["code"].'</p>';
-                    }
-                ?>
+                        if(isset($_SESSION["code"])){
+                            echo '<p class="address-summary">'.$_SESSION["code"].'</p>';
+                        }
+                    ?>
                 </div>
 
                 <div class="products">
+                    <h4 class="confirmation-column-title">Items Purchased</h4>
                     <?php 
 
                         if(isset($_SESSION["watchdata"]) && isset($_SESSION["watchsrc"]) && isset($_SESSION["watchqty"])){
