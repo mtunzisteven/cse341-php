@@ -235,7 +235,8 @@ img.products{
 }
 
 .checkout-button{
-    @include equal(200px);
+    @include unequal(200px, 30px);
+    max-width: 200px;
 }
 
 .footer-div{

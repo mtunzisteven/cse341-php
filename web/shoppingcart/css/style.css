@@ -261,7 +261,8 @@ img.products {
 
 .checkout-button {
   width: 200px;
-  height: 200px;
+  height: 30px;
+  max-width: 200px;
 }
 
 .footer-div {
