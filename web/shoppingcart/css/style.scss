@@ -224,12 +224,12 @@ img.products{
 }
 
 .checkout-button, .checkout-button-link{
-    @include unequal(150px, 30px);
+    @include unequal(250px, 30px);
     @include pad-all-sides(0, 5px);
 }
 
 .checkout-buttons-container{
-    @include flex(row, center, nowrap);
+    @include flex(row, space-around, nowrap);
     @include pad-all-sides(40px, 0);
 
 }

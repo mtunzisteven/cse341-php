@@ -239,7 +239,7 @@ img.products {
 }
 
 .checkout-button, .checkout-button-link {
-  width: 150px;
+  width: 250px;
   height: 30px;
   padding: 0 5px;
 }
@@ -252,9 +252,8 @@ img.products {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 40px 0;
