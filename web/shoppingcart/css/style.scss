@@ -195,7 +195,7 @@ img.products{
     align-items: center;
     @include marg-all-sides(10px, 10px);
     @include pad-all-sides(10px, 100px);
-    width:100%;
+    width:90%;
     border:1px solid $light-color;
 
 }
