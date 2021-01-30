@@ -117,13 +117,13 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 }
             }
 
-            if(isset($_SESSION["maskdata"]) && isset($_SESSION["maskrc"]) && isset($_SESSION["maskqty"])){
+            if(isset($_SESSION["maskdata"]) && isset($_SESSION["masksrc"]) && isset($_SESSION["maskqty"])){
                 if(!isset($_POST['removemask'])){
                     echo '<div class="cart-item removemask"><img class="cart-thumnails removemask" alt="salts" src='.$_SESSION["masksrc"].' /><p class="cart-item-title removemask">'.$_SESSION["maskdata"].'</p><input class="buttons removers removemask" type="button" id="removemask" name="removemask" value="Delete item" /></div>';
                 }
                 else{
                     unset($_POST["maskdata"]); unset($_POST["masksrc"]); unset($_POST["maskqty"]);
-                    unset($_SESSION["maskdata"]); unset($_SESSION["maskrc"]); unset($_SESSION["maskqty"]);
+                    unset($_SESSION["maskdata"]); unset($_SESSION["masksrc"]); unset($_SESSION["maskqty"]);
                 }
             }
 
@@ -147,23 +147,23 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 }
             }
 
-            if(isset($_SESSION["loaferdata"]) && isset($_SESSION["loafersrc"]) && isset($_SESSION["loafersqty"])){
+            if(isset($_SESSION["loaferdata"]) && isset($_SESSION["loafersrc"]) && isset($_SESSION["loaferqty"])){
                 if(!isset($_POST['removeloafer'])){
                     echo '<div class="cart-item removeloafer"><img class="cart-thumnails removeloafer" alt="salts" src='.$_SESSION["loafersrc"].' /><p class="cart-item-title removeloafer">'.$_SESSION["loaferdata"].'</p><input class="buttons removers removeloafer" type="button" id="removeloafer" name="removeloafer" value="Delete item" /></div>';
                 }     
                 else{
-                    unset($_POST["loaferdata"]); unset($_POST["loafersrc"]); unset($_POST["loafersqty"]);
-                    unset($_SESSION["loaferdata"]); unset($_SESSION["loafersrc"]); unset($_SESSION["loafersqty"]);
+                    unset($_POST["loaferdata"]); unset($_POST["loafersrc"]); unset($_POST["loaferqty"]);
+                    unset($_SESSION["loaferdata"]); unset($_SESSION["loafersrc"]); unset($_SESSION["loaferqty"]);
                 }
             }  
 
-            if(isset($_SESSION["trainerdata"]) && isset($_SESSION["trainersrc"]) && isset($_SESSION["trainersqty"])){
+            if(isset($_SESSION["trainerdata"]) && isset($_SESSION["trainersrc"]) && isset($_SESSION["trainerqty"])){
                 if(!isset($_POST['removeloafer'])){
                     echo '<div class="cart-item removetrainer"><img class="cart-thumnails removetrainer" alt="salts" src='.$_SESSION["trainersrc"].' /><p class="cart-item-title removetrainer">'.$_SESSION["trainerdata"].'</p><input class="buttons removers removetrainer" type="button" id="removetrainer" name="removetrainer" value="Delete item" /></div>';
                 }
                 else{
-                    unset($_POST["trainerdata"]); unset($_POST["trainersrc"]); unset($_POST["trainersqty"]);
-                    unset($_SESSION["trainerdata"]); unset($_SESSION["trainersrc"]); unset($_SESSION["trainersqty"]);
+                    unset($_POST["trainerdata"]); unset($_POST["trainersrc"]); unset($_POST["trainerqty"]);
+                    unset($_SESSION["trainerdata"]); unset($_SESSION["trainersrc"]); unset($_SESSION["trainerqty"]);
                 }
             }
             
