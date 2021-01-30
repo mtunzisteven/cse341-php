@@ -23,9 +23,9 @@
 
    ?>
 
-  <div class="container">
-      <h2 class="soon">Coming soon...</h2>
-  </div>
+  <ul class="container">
+      <li class="soon"><a href="../shoppingcart/" >Assignments</a></li>
+  </ul>
 
   <?php
 
