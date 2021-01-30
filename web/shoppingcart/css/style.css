@@ -186,6 +186,11 @@ img.products {
   background-color: #009687;
 }
 
+.cart-checkout-button {
+  margin-top: 20px;
+  padding: 4px;
+}
+
 .cart-form {
   background-color: #009687;
   padding: 50px 50px;

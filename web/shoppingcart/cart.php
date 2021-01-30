@@ -172,7 +172,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 }
 
             else{
-                echo '<input clas="buttons" type="submit" value="Go to Checkout" />';
+                echo '<input class="buttons cart-checkout-button" type="submit" value="Go to Checkout" />';
             }
                 
             ?>
