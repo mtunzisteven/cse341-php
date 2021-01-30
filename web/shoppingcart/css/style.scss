@@ -259,6 +259,7 @@ img.products{
 .confirm-form-title{
     @include pad-all-sides(20px, 0);
     color: $main-color;
+    text-align: center;
 }
 
 .confirmation-container{
