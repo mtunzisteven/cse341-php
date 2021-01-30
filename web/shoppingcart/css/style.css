@@ -307,7 +307,7 @@ img.products {
       flex-wrap: nowrap;
   background-color: #009687;
   padding: 20px 10%;
-  padding: 20px 30%;
+  margin: 20px 30%;
 }
 
 .order-summary {
@@ -325,7 +325,7 @@ img.products {
   border: 1px solid #ffffff;
 }
 
-.address, .summary-item, .address-item {
+.address, .summary-item, .address-summary {
   border: none;
   color: 35px;
 }
