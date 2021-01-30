@@ -194,7 +194,7 @@ img.products{
     @include flex(row, space-between, nowrap);
     align-items: center;
     @include marg-all-sides(10px, 10px);
-    @include pad-all-sides(10px, 100px);
+    @include pad-all-sides(10px, 10px);
     max-width:90%;
     border:1px solid $light-color;
 

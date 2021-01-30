@@ -209,7 +209,7 @@ img.products {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 10px;
-  padding: 10px 100px;
+  padding: 10px 10px;
   max-width: 90%;
   border: 1px solid #ffffff;
 }
