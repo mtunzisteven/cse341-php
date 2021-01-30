@@ -189,7 +189,8 @@ img.products {
 .cart-form {
   background-color: #009687;
   padding: 50px 50px;
-  margin: auto;
+  margin: 20px auto;
+  border: 1px solid #ffffff;
 }
 
 .cart-item {
@@ -208,8 +209,8 @@ img.products {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 10px;
-  padding: 100px 100px;
+  padding: 10px 10px;
+  padding: 10px 100px;
 }
 
 .cart-thumnails {
