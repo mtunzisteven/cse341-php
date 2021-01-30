@@ -281,36 +281,35 @@ function action(form){
         
             itemQty = "#watchqty";
             item_name = "#watchdata";
-            name = "watchdata";
-            src = "loafersrc";
+            src = "watchsrc";
     }
     else if(formid=="form2"){
             itemQty = "#saltsqty";
             item_name = "#saltsdata";
-            name = "saltsdata";
+            src_id = "#saltssrc";
     }
     else if(formid=="form3"){
             itemQty = "#sandalsqty";
             item_name = "#sandalsdata";
-            name = "sandalsdata";
+            src_id = "#sandalssrc";
 
      }
     else if(formid=="form4"){
             itemQty = "#soillsqty";
             item_name = "#oilsdata";
-            name = "oilsdata";
+            src_id = "#oilssrc";
 
      }
     else if(formid=="form5"){
             itemQty = "#maskqty";
             item_name = "#maskdata";
-            name = "maskdata";
+            src_id = "#masksrc";
 
     }
     else if(formid=="form6"){
             itemQty = "#chanelqty";
             item_name = "#chaneldata";
-            name = "chaneldata";
+            src_id = "#chanelsrc";
 
     }
     else if(formid=="form7"){
@@ -322,7 +321,7 @@ function action(form){
     else if(formid=="form8"){
             itemQty = "#trainerqty";
             item_name = "#trainerdata";
-
+            src_id = "#trainersrc";
 
     }
     else{alert("Not working accordingly!")}
