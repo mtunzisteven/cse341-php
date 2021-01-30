@@ -190,7 +190,6 @@ img.products {
   background-color: #009687;
   padding: 50px 50px;
   margin: 20px auto;
-  border: 1px solid #ffffff;
 }
 
 .cart-item {
@@ -211,6 +210,8 @@ img.products {
           align-items: center;
   padding: 10px 10px;
   padding: 10px 100px;
+  width: 100%;
+  border: 1px solid #ffffff;
 }
 
 .cart-thumnails {

@@ -187,7 +187,6 @@ img.products{
     background-color: $main-color;
     @include pad-all-sides(50px, 50px);
     margin: 20px auto;
-    border:1px solid $light-color;
 
 }
 
@@ -196,6 +195,9 @@ img.products{
     align-items: center;
     @include marg-all-sides(10px, 10px);
     @include pad-all-sides(10px, 100px);
+    width:100%;
+    border:1px solid $light-color;
+
 }
 
 .cart-thumnails{
