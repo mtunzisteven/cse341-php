@@ -170,8 +170,10 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
             if(!isset($_SESSION["watchdata"]) && !isset($_SESSION["saltsdata"]) && !isset($_SESSION["oilsdata"]) && !isset($_SESSION["maskdata"]) && !isset($_SESSION["sandalsdata"]) && !isset($_SESSION["chaneldata"]) && !isset($_SESSION["loaferdata"]) && !isset($_SESSION["trainerdata"])){
                 echo '<p class="cart-item-title2">Your Cart is empty</p>';
                 }
-
+                
             ?>
+
+            <input clas="buttons" type="submit" value="Go to Checkout" />
         </form>
         
         <?php require "snippets/footer.php"; ?>
