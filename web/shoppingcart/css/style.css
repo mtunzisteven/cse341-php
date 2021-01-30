@@ -224,6 +224,12 @@ img.products {
   color: #ffffff;
 }
 
+.cart-item-title2 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
 .footer-div {
   width: 99.2%;
   max-width: 100%;
