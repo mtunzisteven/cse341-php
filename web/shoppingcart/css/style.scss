@@ -269,7 +269,12 @@ img.products{
 }
 
 .address{
+    border:none;
     border-right: 1px solid $light-color;
+}
+
+.summary-item, .address-item{
+    border: none;
 }
 
 .footer-div{
