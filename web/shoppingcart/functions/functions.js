@@ -151,6 +151,9 @@ function remove(button){
             console.log(response);
         }
     })
+
+    var removals = $("div").parentsUntil(properId);
+    $(properId).remove(removals);
         
   
 
