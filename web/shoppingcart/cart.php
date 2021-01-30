@@ -93,7 +93,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"]) && isset($_POST["
         <form class="cart-form" method="post" action="checkout.php" >
             <?php
 
-            if(isset($_SESSION["trainerdata"]) && isset($_SESSION["trainersrc"]) && isset($_SESSION["trainerqty"])){
+            if(isset($_SESSION["trainerdata"]) || isset($_SESSION["trainersrc"]) || isset($_SESSION["trainerqty"])){
                 echo $trainer;
             }
            
