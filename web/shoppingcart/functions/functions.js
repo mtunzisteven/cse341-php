@@ -60,7 +60,7 @@ function action(form){
         
             itemQty = "#watchqty";
             item_name = "#watchdata";
-            src = "watchsrc";
+            src = "#watchsrc";
     }
     else if(formid=="form2"){
             itemQty = "#saltsqty";

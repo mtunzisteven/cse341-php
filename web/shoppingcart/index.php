@@ -45,7 +45,7 @@
                 <input class="invisibles proname" type="text" id="sandalsdata" name="sandalsdata" value="Brikestock Sandals" />
                 <input class="invisibles qty" type="text" id="sandalsqty" name="sandalsqty" value="<?php if($_SESSION["watchqty"]<1){echo 0 ;} else{echo $_SESSION["watchqty"];} ?>" />
                 <input class="invisibles src" type="text" id="sandalssrc" name="sandalssrc" value="images/sandals.jpg" />  
-                <input class="buttons" type="button" id="submit" name="sandals" value="Add to Cart" />
+                <input class="buttons" type="submit" id="submit" name="sandals" value="Add to Cart" />
             </form>
 
             <form id="form4" method="post" action="cart.php" class="product-container">
