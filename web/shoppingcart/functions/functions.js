@@ -114,9 +114,9 @@ function action(form){
         method =holder.attr("method"),
         data = {};
 
-        data[$(itemQty).attr('name')] = $(itemQty).val(); //Adding item name to POST data to be sent
-        data[$(src_id).attr('name')] = $(src_id).val(); //Adding item name to POST data to be sent
-        data[$(item_name).attr('name')] = $(item_name).val(); //Adding item name to POST data to be sent
+        data[$(itemQty).attr('value')] = $(itemQty).val(); //Adding item name to POST data to be sent
+        data[$(src_id).attr('value')] = $(src_id).val(); //Adding item name to POST data to be sent
+        data[$(item_name).attr('value')] = $(item_name).val(); //Adding item name to POST data to be sent
 
         alert($(itemQty).val()+"\n"+$(src_id).val()+"\n"+$(item_name).val());
     
