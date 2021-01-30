@@ -48,19 +48,19 @@ if(isset($_POST["code"])){
                 <div class="address">
                 <?php 
                     if(isset($_SESSION["addressl1"])){
-                        echo '<p class="cart-item removewatch">'.$_SESSION["addressl1"].' /></p>';
+                        echo '<p class="cart-item removewatch">'.$_SESSION["addressl1"].'</p>';
                     }
 
                     if(isset($_SESSION["addressl2"])){
-                        echo '<p class="cart-item removewatch">'.$_SESSION["addressl2"].' /></p>';
+                        echo '<p class="cart-item removewatch">'.$_SESSION["addressl2"].'</p>';
                     }
 
                     if(isset($_SESSION["town"])){
-                        echo '<p class="cart-item removewatch">'.$_SESSION["town"].' /></p>';
+                        echo '<p class="cart-item removewatch">'.$_SESSION["town"].'</p>';
                     }
 
                     if(isset($_SESSION["code"])){
-                        echo '<p class="cart-item removewatch">'.$_SESSION["code"].' /></p>';
+                        echo '<p class="cart-item removewatch">'.$_SESSION["code"].'</p>';
                     }
                 ?>
                 </div>
