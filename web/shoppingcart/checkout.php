@@ -19,16 +19,16 @@
         <form class="cart-form checkout-form" method="post" action="confirmation.php" >
             <h3 class="checkout-form-title">Please enter your addess</h3>
             <label class="checkout-label">Address Line 1
-                <input class="checkout-input" type="text" />
+                <input class="checkout-input" type="text" name="addressl1" value=<?php if(isset($_SESSION["addressl1"])){echo $_SESSION["addressl1"];}else{echo "";} ?> />
             </label>
             <label class="checkout-label">Street  Line 2
-                <input class="checkout-input" type="text" />
+                <input class="checkout-input" type="text" name="addressl2" value=<?php if(isset($_SESSION["addressl2"])){echo $_SESSION["addressl2"];}else{echo "";} ?> />
             </label>
             <label class="checkout-label">Town
-                <input class="checkout-input" type="text" />
+                <input class="checkout-input" type="text" name="town" value=<?php if(isset($_SESSION["town"])){echo $_SESSION["town"];}else{echo "";} ?> />
             </label>
             <label class="checkout-label">Zip Code
-                <input class="checkout-input" type="text" />
+                <input class="checkout-input" type="text" name="code" value=<?php if(isset($_SESSION["code"])){echo $_SESSION["code"];}else{echo "";} ?> />
             </label>
 
             <input type="submit" class="buttons checkout-button complete" value="Complete Purchase" />
