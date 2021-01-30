@@ -88,7 +88,7 @@ if(isset($_POST["code"])){
                         }
 
                         if(isset($_SESSION["chaneldata"]) && isset($_SESSION["chanelsrc"]) && isset($_SESSION["chanelqty"])){
-                            echo '<div class="cart-item removechanel"><img class="cart-thumnails removechanel" alt="salts" src='.$_SESSION["chanelsrc"].' /><p class="cart-item-title removechanel">'.$_SESSION["chaneldata"].'</p></div>';
+                            echo '<div class="cart-item summary-item"><img class="cart-thumnails removechanel" alt="salts" src='.$_SESSION["chanelsrc"].' /><p class="cart-item-title removechanel">'.$_SESSION["chaneldata"].'</p></div>';
                         }
 
                         if(isset($_SESSION["loaferdata"]) && isset($_SESSION["loafersrc"]) && isset($_SESSION["loaferqty"])){
