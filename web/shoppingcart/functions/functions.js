@@ -54,7 +54,8 @@ $(document).ready(function () {
 
 function send_to_cart(form){
     var itemQty, item_name, src_id;
-    formid = "#"+$(form).attr("id"); //get id in JQuery format
+    formid = "#"+$(form).attr("id"); //get id
+    var properId = "#"+formid;
 
     if(formid=="form1") {
         
@@ -135,12 +136,13 @@ function send_to_cart(form){
 }
 
 function remove(button){
-    var buttonid = "#"+$(button).attr("id"); //get id
+    var buttonid = $(button).attr("id"); //get id
+    var properId = "#"+buttonid;
 
 
     data = {};
 
-    data[$(buttonid).attr("name")] = $(buttonid).val();
+    data[$(properId).attr("name")] = $(properId).val();
 
     $.ajax({
         type : "post",
