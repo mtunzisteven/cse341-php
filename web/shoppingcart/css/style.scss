@@ -200,6 +200,12 @@ img.products{
 
 .cart-thumnails{
     @include equal(50px);
+    padding-right: 20px;
+}
+
+.cart-item-title{
+    width: 100px;
+    color:$light-color;
 }
 
 .footer-div{

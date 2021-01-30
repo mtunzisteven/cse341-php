@@ -70,7 +70,7 @@ function action(form){
 
      }
     else if(formid=="form4"){
-            itemQty = "#soillsqty";
+            itemQty = "#oillsqty";
             item_name = "#oilsdata";
             src_id = "#oilssrc";
 
