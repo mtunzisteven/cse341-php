@@ -264,7 +264,7 @@ img.products{
 }
 
 .order-summary{
-    @include flex(row, space-between, nowrap );
+    @include flex(row, space-around, nowrap );
     border: 1px solid $light-color;
 }
 
