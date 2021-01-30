@@ -327,6 +327,7 @@ img.products {
 
 .address, .summary-item, .address-item {
   border: none;
+  color: 35px;
 }
 
 .footer-div {
