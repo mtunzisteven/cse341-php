@@ -124,6 +124,7 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 else{
                     unset($_POST["maskdata"]); unset($_POST["masksrc"]); unset($_POST["masksqty"]);
                     unset($_SESSION["maskdata"]); unset($_SESSION["masksrc"]); unset($_SESSION["masksqty"]);
+                    echo "<h1>Here</h1>";
                 }
             }
 
