@@ -293,7 +293,6 @@ img.products {
 }
 
 .confirmation-container {
-  padding: 20px 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +306,8 @@ img.products {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: #009687;
-  padding: 20px 20px;
+  padding: 20px 10%;
+  padding: 20px 30%;
 }
 
 .order-summary {
@@ -325,12 +325,7 @@ img.products {
   border: 1px solid #ffffff;
 }
 
-.address {
-  border: none;
-  border-right: 1px solid #ffffff;
-}
-
-.summary-item, .address-item {
+.address, .summary-item, .address-item {
   border: none;
 }
 

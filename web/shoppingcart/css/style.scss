@@ -257,10 +257,10 @@ img.products{
 }
 
 .confirmation-container{
-    @include marg-all-sides(20px, 30%);
     @include flex(column, center, nowrap);
     background-color:$main-color;
-    @include pad-all-sides(20px, 20px);
+    @include pad-all-sides(20px, 10%);
+    @include marg-all-sides(20px, 30%);
 }
 
 .order-summary{
@@ -268,12 +268,7 @@ img.products{
     border: 1px solid $light-color;
 }
 
-.address{
-    border:none;
-    border-right: 1px solid $light-color;
-}
-
-.summary-item, .address-item{
+.address, .summary-item, .address-item{
     border: none;
 }
 
