@@ -25,10 +25,13 @@ $(document).ready(function () {
     $("#form5").on("submit" ,function(e){
         e.preventDefault();
         action(this);
-        return false;    });
+        return false;    
+    });
 
     $("#form6").on("submit" ,function(e){
+        e.preventDefault();
         action(this);
+        return false;    
     });
 
     $("#form7").on("submit" ,function(e){
