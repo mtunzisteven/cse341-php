@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Browse</title>
+        <title>cart</title>
         <meta charset="utf-8">
         <meta content="author" name="Mtunzi Mavuma" >
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,7 @@
         <form class="cart-form" method="post" action="checkout.php" >
             <?php
 
-            echo $_POST["trainerdata"];
+            echo "<p>".$_POST["trainerdata"]."</p>";
 
             echo $_POST["loaferdata"];
             
