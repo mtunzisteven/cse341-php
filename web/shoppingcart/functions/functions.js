@@ -155,9 +155,10 @@ function remove(button){
 
     $(containerclass).remove();
 
-    var check_empty = $(".cart-form").filter(".removers");
+    var non_input_html = $("*").not("input").length; 
+    var whole_html = $("*").length;
 
-    if(!check_empty){
+    if(non_input_html===whole_html){ //If equal, then the inputs have all been removed.
         $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
     }
         
