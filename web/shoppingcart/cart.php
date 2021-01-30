@@ -117,14 +117,13 @@ if(isset($_POST["trainerdata"]) && isset($_POST["trainersrc"])){    //Since form
                 }
             }
 
-            if(isset($_SESSION["maskdata"]) && isset($_SESSION["masksrc"]) && isset($_SESSION["masksqty"])){
+            if(isset($_SESSION["maskdata"]) && isset($_SESSION["maskrc"]) && isset($_SESSION["maskqty"])){
                 if(!isset($_POST['removemask'])){
                     echo '<div class="cart-item removemask"><img class="cart-thumnails removemask" alt="salts" src='.$_SESSION["masksrc"].' /><p class="cart-item-title removemask">'.$_SESSION["maskdata"].'</p><input class="buttons removers removemask" type="button" id="removemask" name="removemask" value="Delete item" /></div>';
                 }
                 else{
-                    unset($_POST["maskdata"]); unset($_POST["masksrc"]); unset($_POST["masksqty"]);
-                    unset($_SESSION["maskdata"]); unset($_SESSION["masksrc"]); unset($_SESSION["masksqty"]);
-                    echo "<h1>Here</h1>";
+                    unset($_POST["maskdata"]); unset($_POST["masksrc"]); unset($_POST["maskqty"]);
+                    unset($_SESSION["maskdata"]); unset($_SESSION["maskrc"]); unset($_SESSION["maskqty"]);
                 }
             }
 
