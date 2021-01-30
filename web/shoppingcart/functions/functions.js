@@ -155,6 +155,12 @@ function remove(button){
 
     var removals = $("div").parentsUntil(properId);
     $(containerclass).remove();
+
+    var check_empty = $(".cart-form").find(".removers");
+
+    if(!check_empty){
+        $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
+    }
         
   
 
