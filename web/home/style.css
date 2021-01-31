@@ -66,6 +66,11 @@ li a{
   box-shadow:1px 1px 0 2px #ffffff;
 }
 
+.assignments-container{
+  display: block;
+  margin: 20px auto;
+}
+
 .assignment-item a{
   color:#ffffff;
   background-color:midnightblue;
