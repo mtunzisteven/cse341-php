@@ -24,7 +24,7 @@
    ?>
 
   <div class="container">
-      <h2 class="soon">Assignment: Shopping Car</h2>
+      <p class="soon"><a href="../shoppingcart/" title="Shopping Cart">Assignment: Shopping Car</a></p>
   </div>
 
   <?php
