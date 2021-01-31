@@ -44,16 +44,6 @@ a{
   text-align: center;
 }
 
-ul.navbar-nav{
-  text-align:center;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  width: 200px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:0;
-}
-
 li a{
   text-align:center;  
   display:block;
@@ -66,20 +56,6 @@ li a{
   box-shadow:1px 1px 0 2px #ffffff;
 }
 
-.assignments-container{
-  display: block;
-  margin: 20px auto;
-}
-
-.assignment-item a{
-  color:#ffffff;
-  background-color:midnightblue;
-  box-shadow: none;
-  width:50%;
-  text-align: center;
-
-}
-
 li a:hover{
   color:#ffffff;
   background-color: tomato;
@@ -88,6 +64,16 @@ li a:hover{
 li{
   list-style-type: none;
 
+}
+
+ul.navbar-nav{
+  text-align:center;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
 }
 
 nav,footer{
