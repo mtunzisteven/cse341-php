@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en-us">
     <head>
-        <title>login</title>
+        <title>home</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
         <link href="/web//app/css/style.css" media="screen" rel="stylesheet">
     </head>
     <body>
         <main class="content">
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/header.php'; ?>
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/navigation.php'; ?>
+            <?php include '/web/app/snippets/header.php'; ?>
+            <?php include '/web/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -25,7 +25,7 @@
             <section class="right-section"> 
             </section>
            
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/footer.php'; ?>
+            <?php include '/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>
