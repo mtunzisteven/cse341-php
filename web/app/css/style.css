@@ -1,0 +1,14 @@
+nav {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+li li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+/*# sourceMappingURL=style.css.map */
