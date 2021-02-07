@@ -1,0 +1,12 @@
+nav{
+    background-color: darkblue;
+    color:aliceblue;
+}
+
+li{
+    list-style-type: none;
+
+    & li a{
+    text-decoration: none;
+    }
+}
