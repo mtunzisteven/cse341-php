@@ -4,12 +4,12 @@
         <title>login</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-        <link href="/cs313-php/css/style.css" media="screen" rel="stylesheet">
+        <link href="/web//app/css/style.css" media="screen" rel="stylesheet">
     </head>
     <body>
         <main class="content">
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/cs313-php/snippets/header.php'; ?>
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/cs313-php/snippets/navigation.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/header.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -25,7 +25,7 @@
             <section class="right-section"> 
             </section>
            
-            <?php require $_SERVER['DOCUMENT_ROOT'].'/cs313-php/snippets/footer.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'].'/web//app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>
