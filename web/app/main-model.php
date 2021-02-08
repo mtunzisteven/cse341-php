@@ -16,12 +16,3 @@ $stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating 
 $stmt->execute();
 
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-echo "\n".var_dump($developer)."\n";
-
-$stmt2 = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
-$stmt2->execute();
-
-$customer = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-
-echo "\n".var_dump($customer);
