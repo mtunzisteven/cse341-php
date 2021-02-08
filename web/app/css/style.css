@@ -22,7 +22,7 @@ header {
 
 header a {
   text-decoration: none;
-  padding-left: 60%;
+  color: grey;
 }
 
 header a:hover {

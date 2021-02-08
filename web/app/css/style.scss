@@ -1,6 +1,7 @@
 $main-color:darkblue;
 $secondary-color:aqua;
 $light-color:aliceblue;
+$dark-color: grey;
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,7 +20,7 @@ header{
 
     & a{
         text-decoration: none;
-        padding-left:60%;
+        color:$dark-color;
     }
 
     & a:hover{
