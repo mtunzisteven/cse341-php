@@ -52,4 +52,13 @@ li a:hover {
   background-color: aqua;
   height: 250px;
 }
+
+.hero .title {
+  margin-top: 50%;
+  margin-right: 45%;
+}
+
+footer {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

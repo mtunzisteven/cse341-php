@@ -50,4 +50,13 @@ li{
     background-color: $secondary-color;
     height:250px;
 
+    & .title{
+        margin-top:50%;
+        margin-right:45%;
+    }
+
+}
+
+footer{
+    text-align:center;
 }
