@@ -17,10 +17,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 30px;
 }
 
 header a {
   text-decoration: none;
+  padding-left: 80%;
 }
 
 header a:hover {
