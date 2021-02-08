@@ -41,7 +41,7 @@ li a {
   color: aliceblue;
   text-align: left;
   line-height: 50px;
-  height: 100%;
+  height: 50px;
 }
 
 li a:hover {
@@ -61,8 +61,8 @@ li:hover {
 
 .hero #title {
   margin: 0;
-  padding-left: 20%;
-  padding-top: 10%;
+  padding-left: 45%;
+  padding-top: 9%;
 }
 
 footer {
