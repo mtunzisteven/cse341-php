@@ -49,25 +49,27 @@ li{
     height:100%;
     padding-right: 10px;
     text-align: center;
+    color:$light-color;
 
     & a{
     text-decoration: none;
-    color:$light-color;
+    color:inherit;
     text-align: left;
     line-height: 50px;
     height:50px;
     padding-left:2px;
-    }
-
-    & a:hover{
-        color:$main-color;
-        background-color: $secondary-color;
     }
 }
 
 li:hover{
     color:$main-color;
     background-color: $secondary-color;
+
+    
+    & a:hover{
+        color:inherit;
+        background-color: inherit;
+    }
 }
 
 .hero{
