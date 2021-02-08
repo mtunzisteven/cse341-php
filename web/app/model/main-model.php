@@ -2,9 +2,15 @@
 
 //This is the main model for the app.
 
+echo "model started<br/>";
+
 require_once "/app/connector/connection.php";
 
+echo "model inserts connection<br/>";
+
 $db = db_connect();
+
+echo "model call connection fn";
 
 $stmt = $db->prepare('SELECT * FROM developer');
 $stmt->bindValue(':firstName', $firstName, PDO::PARAM_STR);
