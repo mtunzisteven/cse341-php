@@ -22,7 +22,7 @@ header {
 
 header a {
   text-decoration: none;
-  padding-left: 80%;
+  padding-left: 60%;
 }
 
 header a:hover {
@@ -95,7 +95,7 @@ li:hover {
 
 section {
   border: darkblue 1px solid;
-  padding: 5px;
+  padding: 15px;
 }
 
 .sections {
