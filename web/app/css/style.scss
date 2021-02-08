@@ -13,6 +13,7 @@ body{
 nav{
     background-color: $main-color;
     color:$light-color;
+    height:50px;
 }
 
 ul{
@@ -23,6 +24,7 @@ ul{
 
 li{
     list-style-type: none;
+    padding-right: 10px;
 
     & a{
     text-decoration: none;

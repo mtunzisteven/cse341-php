@@ -9,6 +9,7 @@ body {
 nav {
   background-color: darkblue;
   color: aliceblue;
+  height: 50px;
 }
 
 ul {
@@ -25,6 +26,7 @@ ul {
 
 li {
   list-style-type: none;
+  padding-right: 10px;
 }
 
 li a {
