@@ -17,13 +17,11 @@ $stmt->execute();
 
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo var_dump($developer);
+echo "\n".var_dump($developer)."\n";
 
-$stmt = $db->prepare('SELECT * FROM customer');
-$stmt->bindValue(':firstName', $firstName, PDO::PARAM_STR);
-$stmt->bindValue(':lastName', $lastName, PDO::PARAM_STR);
-$stmt->bindValue(':profileImage', $profileImage, PDO::PARAM_STR);  
+$stmt = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
 $stmt->execute();
+
 $customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 echo var_dump($customer);
