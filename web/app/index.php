@@ -11,6 +11,5 @@ if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
 }
 
-//For Testing purposes
-echo var_dump($developer);
+
 

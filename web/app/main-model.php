@@ -22,5 +22,5 @@ $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 //test whether array data is correct
 foreach($developer as $row){
-    echo "Name: ".$row['firstname']."Last Name: ".$row['lastname'];
+    echo "Name: ".$row['firstname']." Last Name: ".$row['lastname']."\n";
 }
