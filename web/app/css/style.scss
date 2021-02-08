@@ -1,13 +1,31 @@
+$main-color:darkblue;
+$light-color:aliceblue;
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.content{
+    overflow-x: hidden;
+}
+
 nav{
-    background-color: darkblue;
-    color:aliceblue;
+    background-color: $main-color;
+    color:$light-color;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    align-content: flex-start;
 }
 
 li{
     list-style-type: none;
 
-    & li a{
+    & a{
     text-decoration: none;
-    color:aliceblue;
+    color:$light-color;
     }
 }

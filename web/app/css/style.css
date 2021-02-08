@@ -1,13 +1,33 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
 nav {
   background-color: darkblue;
   color: aliceblue;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 li {
   list-style-type: none;
 }
 
-li li a {
+li a {
   text-decoration: none;
   color: aliceblue;
 }
