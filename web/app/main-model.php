@@ -22,5 +22,5 @@ echo "\n".var_dump($developer)."\n";
 
 //test whether array data is correct
 foreach($developer as $row){
-    echo "Name: ".$row['firstName']."Last Name: ".$row['lastName'];
+    echo "Name: ".$row['firstname']."Last Name: ".$row['lastname'];
 }
