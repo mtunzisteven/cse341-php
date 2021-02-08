@@ -43,6 +43,7 @@ li a {
   height: 100%;
   width: 100%;
   padding-top: 50%;
+  padding-top: 50;
 }
 
 li a:hover {
@@ -58,11 +59,11 @@ li:hover {
 .hero {
   background-color: aqua;
   height: 250px;
+  padding: 50%;
 }
 
-.hero .title {
-  padding-top: 50%;
-  padding-right: 45%;
+.hero #title {
+  margin: 0;
 }
 
 footer {

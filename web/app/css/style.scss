@@ -40,6 +40,7 @@ li{
     height:100%;
     width: 100%;
     padding-top: 50%;
+    padding-top:50;
     }
 
     & a:hover{
@@ -56,10 +57,10 @@ li:hover{
 .hero{
     background-color: $secondary-color;
     height:250px;
+    padding:50%;
 
-    & .title{
-        padding-top:50%;
-        padding-right:45%;
+    & #title{
+        margin:0;
     }
 
 }
