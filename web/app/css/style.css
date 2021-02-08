@@ -6,6 +6,27 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: aqua;
+}
+
 nav {
   background-color: darkblue;
   color: aliceblue;
@@ -42,6 +63,7 @@ li a {
   text-align: left;
   line-height: 50px;
   height: 50px;
+  padding-left: 2px;
 }
 
 li a:hover {
@@ -63,6 +85,10 @@ li:hover {
   margin: 0;
   padding-left: 45%;
   padding-top: 9%;
+}
+
+.intro {
+  text-align: center;
 }
 
 footer {
