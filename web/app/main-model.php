@@ -24,3 +24,14 @@ $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach($developer as $row){
     echo "Name: ".$row['firstname']." Last Name: ".$row['lastname']."<br/>";
 }
+
+echo "<br/>";
+
+$stmt = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
+$stmt->execute();
+
+$customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+foreach($developer as $row){
+    echo "Name: ".$row['firstname']." Last Name: ".$row['lastname']."<br/>";
+}
