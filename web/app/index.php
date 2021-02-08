@@ -4,12 +4,33 @@
 
 echo "Started!<br/>";
 
-require_once "model/main-model.php";
 
-$action = filter_input(INPUT_POST, 'action');
-if ($action == NULL){
-    $action = filter_input(INPUT_GET, 'action');
+try{
+
+    $dbUrl = getenv('DATABASE_URL');
+
+    $dbOpts = parse_url($dbUrl);
+
+    $dbHost = $dbOpts["host"];
+    $dbPort = $dbOpts["port"];
+    $dbUser = $dbOpts["user"];
+    $dbPassword = $dbOpts["pass"];
+    $dbName = ltrim($dbOpts["path"],'/');
+
+    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    echo 'Success!';
+
+}catch (PDOException $ex){
+
+    echo 'Error!: ' . $ex->getMessage();
+    die();
+
 }
+
 
 //For Testing purposes
 echo var_dump($developer);
+
