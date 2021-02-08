@@ -85,8 +85,9 @@ li:hover{
     text-align: center;
 }
 
-.sections, section{
+section{
     border:$main-color 1px solid;
+    padding:5px;
 }
 
 .sections{
@@ -99,7 +100,7 @@ li:hover{
 }
 
 .right-section{
-    width:65%;
+    width:70%;
 }
 
 footer{
