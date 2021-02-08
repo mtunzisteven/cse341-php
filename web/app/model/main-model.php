@@ -2,7 +2,7 @@
 
 //This is the main model for the app.
 
-require_once "../connector/connection.php";
+require_once "/app/connector/connection.php";
 
 $stmt = $db->prepare('SELECT * FROM developer');
 $stmt->bindValue(':firstName', $firstName, PDO::PARAM_STR);
