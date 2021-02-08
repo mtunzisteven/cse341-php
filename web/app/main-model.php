@@ -16,3 +16,11 @@ $stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating 
 $stmt->execute();
 
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//Test wether array data received from db
+echo "\n".var_dump($developer)."\n";
+
+//test whether array data is correct
+foreach($developer as $row){
+    echo "Name: ".$row['firstName']."Last Name: ".$row['lastName'];
+}
