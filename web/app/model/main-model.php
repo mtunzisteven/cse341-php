@@ -4,6 +4,8 @@
 
 require_once "/app/connector/connection.php";
 
+$db = db_connect();
+
 $stmt = $db->prepare('SELECT * FROM developer');
 $stmt->bindValue(':firstName', $firstName, PDO::PARAM_STR);
 $stmt->bindValue(':lastName', $lastName, PDO::PARAM_STR);
