@@ -4,6 +4,8 @@ createdb myBb
 --create developer table
 CREATE TABLE developer (
     developerId         serial,
+    firstName           varchar(30) NOT NULL,
+    lastName            varchar(30) NOT NULL,
     username            varchar(30) NOT NULL,
     passwrd             varchar(30) NOT NULL,
     email               varchar(80) NOT NULL,
@@ -18,6 +20,8 @@ CREATE TABLE developer (
 --create customer table
 CREATE TABLE customer (
     customerId         serial,
+    firstName          varchar(30) NOT NULL,
+    lastName           varchar(30) NOT NULL,
     passwrd            varchar(30) NOT NULL,
     email              varchar(80) NOT NULL,
     phone              integer NOT NULL,
@@ -38,48 +42,48 @@ CREATE TABLE projects (
 
 -- Inserting into customer table
 INSERT INTO customer
-(passwrd, email, phone)
+(firstName, lastName, passwrd, email, phone)
 VALUES
-('sms2211','me@123.com', 0313457890);
+('Sam', 'Job', 'sms2211','me@123.com', 1313457890);
 
 INSERT INTO customer
-(passwrd, email, phone)
+(firstName, lastName, passwrd, email, phone)
 VALUES
-('sms4949','her@123.com', 0393457890);
+('Dale', 'Schwenksteiner', 'sms4949','her@123.com', 1393457890);
 
 INSERT INTO customer
-(passwrd, email, phone)
+(firstName, lastName, passwrd, email, phone)
 VALUES
-('sms0000','him@123.com', 0003457890);
+('Dale', 'Peters', 'sms0000','him@123.com', 1003457890);
 
 -- Inserting into developer table
 INSERT INTO developer
-(username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone)
 VALUES
-('dev001', 'dev001123','001@dev.com', 0013457890);
+('Bong', 'Simelani', 'dev001', 'dev001123','001@dev.com', 0013457890);
 
 INSERT INTO developer
-(username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone)
 VALUES
-('dev002', 'dev002123','002@dev.com', 0023457890);
+('Thabo', 'Dlamini', 'dev002', 'dev002123','002@dev.com', 0023457890);
 
 INSERT INTO developer
-(username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone)
 VALUES
-('dev003', 'dev003123','002@dev.com', 0033457890);
+('Thokozani', 'Cebekhulu', 'dev003', 'dev003123','002@dev.com', 0033457890);
 
 -- Inserting into project table
 INSERT INTO projects
 (datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-12-16', DATE '2021-02-16',3, 3);
+(DATE '2020-12-16', DATE '2021-02-16',5, 5);
 
 INSERT INTO projects
 (datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-10-15', DATE '2021-01-26',1, 4);
+(DATE '2020-10-15', DATE '2021-01-26',6, 4);
 
 INSERT INTO projects
 (datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-01-04', DATE '2020-11-28',2, 5);
+(DATE '2020-01-04', DATE '2020-11-28',7, 6);
