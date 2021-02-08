@@ -4,7 +4,7 @@
         <title>home</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-        <link href="/web//app/css/style.css" media="screen" rel="stylesheet">
+        <link href="../css/style.css" media="screen" rel="stylesheet">
     </head>
     <body>
         <main class="content">
