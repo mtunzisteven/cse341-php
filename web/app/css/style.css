@@ -93,6 +93,28 @@ li:hover {
   text-align: center;
 }
 
+.sections, section {
+  border: darkblue 1px solid;
+}
+
+.sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.left-section {
+  width: 30%;
+}
+
+.right-section {
+  width: 65%;
+}
+
 footer {
   text-align: center;
 }

@@ -85,6 +85,23 @@ li:hover{
     text-align: center;
 }
 
+.sections, section{
+    border:$main-color 1px solid;
+}
+
+.sections{
+    display:flex;
+    flex-direction: row;
+}
+
+.left-section{
+    width:30%;
+}
+
+.right-section{
+    width:65%;
+}
+
 footer{
     text-align:center;
 }
