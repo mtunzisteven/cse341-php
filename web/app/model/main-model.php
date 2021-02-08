@@ -2,6 +2,7 @@
 
 //This is the main model for the app.
 
+$db;
 
 try{
 
