@@ -9,7 +9,7 @@
     <body>
         <main class="content">
             <?php include '../snippets/header.php'; ?>
-            <?php include '/app/snippets/navigation.php'; ?>
+            <?php include '../snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -25,7 +25,7 @@
             <section class="right-section"> 
             </section>
            
-            <?php include '/app/snippets/footer.php'; ?>
+            <?php include '../snippets/footer.php'; ?>
         </main>
     </body>
 </html>
