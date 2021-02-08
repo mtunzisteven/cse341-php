@@ -12,13 +12,9 @@ $db = db_connect();
 
 echo "model call connection fn";
 
-$stmt = $db->prepare('SELECT * FROM developer');
-$stmt->bindValue(':firstName', $firstName, PDO::PARAM_STR);
-$stmt->bindValue(':lastName', $lastName, PDO::PARAM_STR);
-$stmt->bindValue(':profileImage', $profileImage, PDO::PARAM_STR);  
-$stmt->bindValue(':reviews', $reviews, PDO::PARAM_STR);
-$stmt->bindValue(':rating', $rating, PDO::PARAM_STR);
+$stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating FROM developer");
 $stmt->execute();
+
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 echo var_dump($developer);
