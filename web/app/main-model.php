@@ -19,9 +19,9 @@ $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 echo "\n".var_dump($developer)."\n";
 
-$stmt = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
-$stmt->execute();
+$stmt2 = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
+$stmt2->execute();
 
-$customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$customer = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 echo "\n".var_dump($customer);
