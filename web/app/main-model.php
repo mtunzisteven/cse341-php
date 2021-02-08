@@ -32,6 +32,6 @@ $stmt->execute();
 
 $customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach($developer as $row){
+foreach($customer as $row){
     echo "Name: ".$row['firstname']." Last Name: ".$row['lastname']."<br/>";
 }
