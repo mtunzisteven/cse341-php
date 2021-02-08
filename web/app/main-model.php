@@ -10,7 +10,7 @@ echo "model inserts connection<br/>";
 
 $db = db_connect();
 
-echo "model call connection fn";
+echo "<br/>model call connection fn<br/>";
 
 $stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating FROM developer");
 $stmt->execute();
@@ -24,4 +24,4 @@ $stmt->execute();
 
 $customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo var_dump($customer);
+echo "\n".var_dump($customer);
