@@ -37,15 +37,20 @@ li{
     text-decoration: none;
     color:$light-color;
     text-align: left;
-    height:54.8px;
-    width: 50px;
-    padding-right: 8px;
+    height:100%;
+    width: 100%;
+    padding-top: 50%;
     }
 
     & a:hover{
         color:$main-color;
         background-color: $secondary-color;
     }
+}
+
+li:hover{
+    color:$main-color;
+    background-color: $secondary-color;
 }
 
 .hero{
