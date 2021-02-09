@@ -22,7 +22,21 @@
                 </section>
 
                 <section class="right-section"> 
-                    
+                    <?php
+                        include "../main-model.php";
+
+                        foreach($developer as $row){
+                            echo '<div class="dev-container">';
+                            echo    '<img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
+                            echo    '<div class="dev-text-container">';
+                            echo        '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
+                            echo        '<p class"dev-contacts">'.'Phone: '.$row['phone'].' Email: '.$row['email'].'</p>';
+                            echo        '<a class="dev-link" href="../?action=profile&user='.$row['username'].'" title="" ></a>';
+                            echo    '</div';
+                            echo '</div>';
+                        }
+
+                    ?>
                 </section>
             </div>  
            

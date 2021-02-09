@@ -107,6 +107,50 @@ section{
     width:70%;
 }
 
+.dev-container{
+    border:inherit;
+    padding:inherit;
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+
+    & .dev-img{
+        padding:inherit;
+        box-shadow: 0 0 2px 2px $dark-color;
+    }
+
+    & .dev-text-container{
+        display:flex;
+        flex-direction: column;
+        align-content: left;
+    }
+
+    & .dev-name{
+        color: $dark-color;
+        text-align: left;
+    }
+
+    & .dev-contacts{
+        color: $dark-color;
+        text-align: left;
+    }
+
+    & .dev-link{
+        background-color: $main-color;
+        color:$light-color;
+        width: 20%;
+        height: 20px;
+        padding:inherit;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    & .dev-link:hover{
+        background-color: $secondary-color;
+        color:$dark-color;
+    }
+}
+
 footer{
     text-align:center;
 }
