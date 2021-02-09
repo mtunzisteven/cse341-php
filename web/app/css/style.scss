@@ -2,6 +2,7 @@ $main-color:darkblue;
 $secondary-color:aqua;
 $light-color:aliceblue;
 $dark-color: rgb(63, 62, 62);
+$light-dark:grey;
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -126,6 +127,7 @@ hr{
     font-size:0.8em;
     margin:0;
     margin-bottom:15px;
+    color:$light-dark;
 }
 
 .right-section{

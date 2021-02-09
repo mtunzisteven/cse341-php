@@ -17,7 +17,7 @@
 
             <div class="sections">
                 <section class="left-section"> 
-                    <h4>Projects</h4>
+                    <h4>Posted Projects</h4>
                     <?php
                         include "/app/main-model.php";
 
@@ -28,7 +28,6 @@
                 </section>
 
                 <section class="right-section"> 
-                    <h4>Developers</h4>
                     <?php
 
                         foreach($developer as $row){
