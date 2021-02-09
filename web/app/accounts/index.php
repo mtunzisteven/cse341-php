@@ -9,10 +9,10 @@ if ($action == NULL){
 
 switch($action){
     case 'login':
-        include "views/login.php";
+        include "/app/views/login.php";
         break;
     case 'reg':
-        include "views/register.php";
+        include "/app/views/register.php";
         break;
     default:
         break;
