@@ -197,4 +197,9 @@ hr{
 
 footer{
     text-align:center;
+    background-color: $main-color;
+
+    & p{
+        color:$light-color;
+    }
 }
