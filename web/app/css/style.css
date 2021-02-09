@@ -107,8 +107,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 80%;
   margin: 0 10% 0 10%;
 }
