@@ -220,6 +220,11 @@ label, input, .login-inputs, .reg-inputs{
     color: $light-color;
 }
 
+.login-inputs{
+    background-color: $secondary-color;
+    color: $dark-color;
+}
+
 .login-reg-button{
     text-decoration: none;
     text-align: center;

@@ -239,6 +239,11 @@ label, input, .login-inputs, .reg-inputs {
   color: aliceblue;
 }
 
+.login-inputs {
+  background-color: aqua;
+  color: #3f3e3e;
+}
+
 .login-reg-button {
   text-decoration: none;
   text-align: center;
