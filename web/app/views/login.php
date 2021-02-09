@@ -8,7 +8,7 @@
     </head>
     <body>
         <main class="content">
-            <?php include '/app/snippets/header.php'; ?>
+            <?php echo "here!"; include '/app/snippets/header.php'; ?>
             <?php include '/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
