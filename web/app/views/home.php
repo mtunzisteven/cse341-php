@@ -30,7 +30,7 @@
                             echo '<div class="dev-text-container">';
                             echo '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
                             echo '<p class"dev-contacts">'.'Phone: '.$row['phone'].' Email: '.$row['email'].'</p>';
-                            echo '<a class="dev-link" href="../?action=profile&user='.$row['username'].'" title="" >View Profile</a></div</div><br/>';
+                            echo '<a class="dev-link" href="../?action=profile&user='.$row['username'].'" title="" >View Profile</a></div></div><br/>';
                         }
 
                     ?>

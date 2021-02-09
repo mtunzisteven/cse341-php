@@ -148,6 +148,8 @@ section{
     & .dev-link:hover{
         background-color: $secondary-color;
         color:$dark-color;
+        text-decoration: none;
+        text-align:center;
     }
 }
 

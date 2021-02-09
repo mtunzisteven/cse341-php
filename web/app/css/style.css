@@ -173,6 +173,8 @@ section {
 .dev-container .dev-link:hover {
   background-color: aqua;
   color: grey;
+  text-decoration: none;
+  text-align: center;
 }
 
 footer {
