@@ -91,13 +91,14 @@ li:hover{
 section{
     border:$main-color 1px solid;
     padding:15px;
-    margin: 0 10% 0 10%;
+
 }
 
 .sections{
     display:flex;
     flex-direction: row;
     width:100%;
+    margin: 0 10% 0 10%;
 }
 
 .left-section{

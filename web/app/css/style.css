@@ -97,7 +97,6 @@ li:hover a:hover {
 section {
   border: darkblue 1px solid;
   padding: 15px;
-  margin: 0 10% 0 10%;
 }
 
 .sections {
@@ -109,6 +108,7 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  margin: 0 10% 0 10%;
 }
 
 .left-section {

@@ -14,8 +14,6 @@
             <div class="hero">     
                 <h1 id="title">Home</h1>
             </div>
-
-            <p class="intro">This application will help you get a developer to complete your project. Just select a developer and request their services.</p>
             <div class="sections">
                 <section class="left-section"> 
                     <h4>Projects</h4>
