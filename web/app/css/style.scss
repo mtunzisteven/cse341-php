@@ -13,8 +13,6 @@ body{
     overflow-x: hidden;
     margin: 0 10% 0 10%;
     border:$dark-color 1px solid;
-    padding:15px 5px 0 5px;
-
 }
 
 header{
@@ -22,6 +20,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     height:60px;
+    padding:25px 5px 0 5px;
 
     & a{
         text-decoration: none;

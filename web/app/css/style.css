@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
   margin: 0 10% 0 10%;
   border: #3f3e3e 1px solid;
-  padding: 15px 5px 0 5px;
 }
 
 header {
@@ -21,6 +20,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 60px;
+  padding: 25px 5px 0 5px;
 }
 
 header a {
