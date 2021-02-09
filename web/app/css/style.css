@@ -4,6 +4,7 @@ body {
 
 .content {
   overflow-x: hidden;
+  margin: 0 10% 0 10%;
 }
 
 header {
@@ -107,8 +108,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
-  margin: 0 10% 0 10%;
 }
 
 .left-section {
