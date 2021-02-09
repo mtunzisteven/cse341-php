@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php echo "here!"; include '/app/snippets/header.php'; ?>
-            <?php include '/app/snippets/navigation.php'; ?>
+            <?php include '../snippets/header.php'; ?>
+            <?php include '../snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Welcome!</h1>
@@ -27,7 +27,7 @@
                 <a  class="login-inputs login-reg-button connection" href="../index.php?action=reg" title="registration form">register</a>
             </form>
             
-            <?php include '/app/snippets/footer.php'; ?>
+            <?php include '../snippets/footer.php'; ?>
         </main>
     </body>
 </html>
