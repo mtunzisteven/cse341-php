@@ -206,6 +206,11 @@ hr {
   color: grey;
 }
 
+.dev-container:hover {
+  -webkit-box-shadow: 0 0 2px 8px darkblue;
+          box-shadow: 0 0 2px 8px darkblue;
+}
+
 footer {
   text-align: center;
 }

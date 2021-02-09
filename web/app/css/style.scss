@@ -187,6 +187,10 @@ hr{
     }
 }
 
+.dev-container:hover{
+    box-shadow: 0 0 2px 8px $main-color;
+}
+
 footer{
     text-align:center;
 }
