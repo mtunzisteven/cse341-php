@@ -17,6 +17,11 @@ CREATE TABLE developer (
     PRIMARY KEY(developerId)
 );
 
+--Reset the id auto increment start point to 1.
+ALTER SEQUENCE   
+    developer_developerid_seq
+RESTART WITH 1;
+
 --create customer table
 CREATE TABLE customer (
     customerId         serial,
@@ -30,15 +35,26 @@ CREATE TABLE customer (
     PRIMARY KEY(customerId)
 );
 
+--Reset the id auto increment start point to 1.
+ALTER SEQUENCE   
+    customer_customerid_seq
+RESTART WITH 1;
+
 --create projects table
-CREATE TABLE projects (
+CREATE TABLE projects ( 
     projectId         serial,
-    datePosted        timestamp,
+    title             varchar(80) NOT NULL,
+    datePosted        timestamp NOT NULL,
     dateCompleted     timestamp,
     customerId        integer NOT NULL references customer(customerId),
     developerId       integer NOT NULL references developer(developerId),
     PRIMARY KEY(projectId)
 );
+
+--Reset the id auto increment start point to 1.
+ALTER SEQUENCE   
+    projects_projectid_seq
+RESTART WITH 1;
 
 -- Inserting into customer table
 INSERT INTO customer
@@ -74,16 +90,30 @@ VALUES
 
 -- Inserting into project table
 INSERT INTO projects
-(datePosted, dateCompleted, customerId, developerId)
+(title, datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-12-16', DATE '2021-02-16',5, 5);
+('Alter Site HTML', DATE '2020-12-16', DATE '2021-02-16',1, 1);
 
 INSERT INTO projects
-(datePosted, dateCompleted, customerId, developerId)
+(title, datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-10-15', DATE '2021-01-26',6, 4);
+('Create Ecommerce Site', DATE '2020-10-15', DATE '2021-01-26',2, 2);
 
 INSERT INTO projects
-(datePosted, dateCompleted, customerId, developerId)
+(title, datePosted, dateCompleted, customerId, developerId)
 VALUES
-(DATE '2020-01-04', DATE '2020-11-28',7, 6);
+('Create an Android App', DATE '2020-01-04', DATE '2020-11-28',3, 3);
+
+--Add new column to projects table (NOT NULL will not work if other data already filled because it will initially have null values)
+--Either make it accept NULL values then add values, and then finally make it NOT NULL or drop the table and create it with correct data.
+ALTER TABLE projects
+ADD COLUMN title varchar(80);
+
+UPDATE projects
+SET title = HTML project
+WHERE projectId = 1;
+
+ALTER TABLE projects
+ALTER COLUMN title SET NOT NULL;
+
+-- I will drop the table and recreate it with the correct information since it's not a lot of data.

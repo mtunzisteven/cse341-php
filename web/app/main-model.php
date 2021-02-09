@@ -12,6 +12,7 @@ $db = db_connect();
 
 //echo "<br/>model call connection fn<br/>";
 
+//Get developer data
 $stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating, phone, email FROM developer");
 $stmt->execute();
 
@@ -27,6 +28,7 @@ $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 echo "<br/>";*/
 
+//Get customer data
 $stmt = $db->prepare("SELECT firstName, lastName, profileImage FROM customer");
 $stmt->execute();
 
@@ -35,3 +37,9 @@ $customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 /*foreach($customer as $row){
     echo "Name: ".$row['firstname']." Last Name: ".$row['lastname']."<br/>";
 }*/
+
+//Get project data
+$stmt = $db->prepare("SELECT title, dateposted FROM projects");
+$stmt->execute();
+
+$projects = $stmt->fetchAll(PDO::FETCH_ASSOC);

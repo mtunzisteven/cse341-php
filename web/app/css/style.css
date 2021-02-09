@@ -114,6 +114,21 @@ section {
   width: 30%;
 }
 
+.project-title {
+  color: grey;
+  text-align: left;
+}
+
+hr {
+  color: darkblue;
+}
+
+.date-posted {
+  color: grey;
+  text-align: right;
+  font-size: 0.5em;
+}
+
 .right-section {
   width: 70%;
 }
@@ -137,6 +152,8 @@ section {
   margin-right: 15px;
   -webkit-box-shadow: 0 0 2px 2px grey;
           box-shadow: 0 0 2px 2px grey;
+  width: 80px;
+  height: 80px;
 }
 
 .dev-container .dev-text-container {
