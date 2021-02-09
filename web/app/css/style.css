@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
   margin: 0 10% 0 10%;
   border: #3f3e3e 1px solid;
-  padding-top: 15px;
+  padding: 15px 5px 0 5px;
 }
 
 header {
@@ -216,6 +216,7 @@ hr {
 footer {
   text-align: center;
   background-color: darkblue;
+  padding: 20px;
 }
 
 footer p {

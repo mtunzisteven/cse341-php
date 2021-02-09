@@ -13,7 +13,7 @@ body{
     overflow-x: hidden;
     margin: 0 10% 0 10%;
     border:$dark-color 1px solid;
-    padding-top:15px;
+    padding:15px 5px 0 5px;
 
 }
 
@@ -198,6 +198,7 @@ hr{
 footer{
     text-align:center;
     background-color: $main-color;
+    padding:20px;
 
     & p{
         color:$light-color;
