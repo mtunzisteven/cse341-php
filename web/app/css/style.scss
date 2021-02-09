@@ -11,7 +11,7 @@ body{
 .content{
     overflow-x: hidden;
     margin: 0 10% 0 10%;
-    border:$main-color 1px solid;
+    border:$dark-color 1px solid;
 
 }
 
@@ -19,7 +19,7 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height:30px;
+    height:60px;
 
     & a{
         text-decoration: none;
@@ -99,12 +99,14 @@ section{
 .sections{
     display:flex;
     flex-direction: row;
+    border-top: $dark-color 1px solid;
+    border-radius: $dark-color 1px solid;
     
 }
 
 .left-section{
     width:30%;
-    border-right:$main-color 1px solid;
+    border-right:$dark-color 1px solid;
 
 }
 
@@ -142,6 +144,7 @@ hr{
         box-shadow: 0 0 2px 2px $dark-color;
         width: 160px;
         height:160px;
+        border-radius: 160px;
     }
 
     & .dev-text-container{
