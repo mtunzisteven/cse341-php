@@ -97,7 +97,8 @@ section{
 .sections{
     display:flex;
     flex-direction: row;
-    width:100%;
+    flex-wrap: wrap;
+    width:80%;
     margin: 0 10% 0 10%;
 }
 

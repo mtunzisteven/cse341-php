@@ -14,6 +14,7 @@
             <div class="hero">     
                 <h1 id="title">Home</h1>
             </div>
+
             <div class="sections">
                 <section class="left-section"> 
                     <h4>Projects</h4>
