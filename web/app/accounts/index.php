@@ -13,11 +13,11 @@ switch($action){
     case 'login':
 
         echo "login selected!<br/>";
-        include "/app/views/login.php";
+        include "../views/login.php";
         echo "path here!";
         break;
     case 'reg':
-        include "/app/views/register.php";
+        include "../views/register.php";
         break;
     default:
         break;
