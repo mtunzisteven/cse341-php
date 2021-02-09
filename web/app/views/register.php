@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php include 'snippets/header.php'; ?>
-            <?php include 'snippets/navigation.php'; ?>
+            <?php include '../snippets/header.php'; ?>
+            <?php include '../snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Welcome!</h1>
@@ -39,7 +39,7 @@
             </form>
 
            
-            <?php include 'snippets/footer.php'; ?>
+            <?php include '../snippets/footer.php'; ?>
         </main>
     </body>
 </html>

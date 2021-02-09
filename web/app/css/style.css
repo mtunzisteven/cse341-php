@@ -89,8 +89,10 @@ li:hover a:hover {
 
 .hero #title {
   margin: 0;
-  padding-left: 45%;
-  padding-top: 9%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
 }
 
 .intro {

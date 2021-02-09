@@ -81,9 +81,11 @@ li:hover{
     height:250px;
 
     & #title{
-        margin:0;
-        padding-left:45%;
-        padding-top: 9%;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 10%;
     }
 
 }
