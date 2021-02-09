@@ -12,9 +12,8 @@
             <?php include 'snippets/navigation.php'; ?>
 
             <div class="hero">     
-                <h1 id="title">Home</h1>
+                <h1 id="title">Developers</h1>
             </div>
-            <h4>Developers</h4>
             <?php
 
                 foreach($developer as $row){
