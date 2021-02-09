@@ -39,7 +39,7 @@ $customer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }*/
 
 //Get project data
-$stmt = $db->prepare("SELECT title, dateposted FROM projects");
+$stmt = $db->prepare("SELECT title, DATE(dateposted) FROM projects"); //Use date() to get just the date from the time stamp.
 $stmt->execute();
 
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
