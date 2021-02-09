@@ -143,14 +143,14 @@ section{
         height: 20px;
         padding:10px;
         border-radius: 10px;
-        text-align: left;
+        text-decoration: none;
+        text-align:center;
     }
 
     & .dev-link:hover{
         background-color: $secondary-color;
         color:$dark-color;
-        text-decoration: none;
-        text-align:center;
+
     }
 }
 

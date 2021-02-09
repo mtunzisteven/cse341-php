@@ -168,14 +168,13 @@ section {
   height: 20px;
   padding: 10px;
   border-radius: 10px;
-  text-align: left;
+  text-decoration: none;
+  text-align: center;
 }
 
 .dev-container .dev-link:hover {
   background-color: aqua;
   color: grey;
-  text-decoration: none;
-  text-align: center;
 }
 
 footer {
