@@ -4,12 +4,12 @@
         <title>home</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-        <link href="../css/style.css" media="screen" rel="stylesheet">
+        <link href="/app/css/style.css" media="screen" rel="stylesheet">
     </head>
     <body>
         <main class="content">
-            <?php include '../snippets/header.php'; ?>
-            <?php include '../snippets/navigation.php'; ?>
+            <?php include '/app/snippets/header.php'; ?>
+            <?php include '/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -23,7 +23,7 @@
 
                 <section class="right-section"> 
                     <?php
-                        include "../main-model.php";
+                        include "/app/main-model.php";
 
                         foreach($developer as $row){
                             echo '<div class="dev-container">';
@@ -31,7 +31,7 @@
                             echo    '<div class="dev-text-container">';
                             echo        '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
                             echo        '<p class"dev-contacts">'.'Phone: '.$row['phone'].' Email: '.$row['email'].'</p>';
-                            echo        '<a class="dev-link" href="../?action=profile&user='.$row['username'].'" title="" ></a>';
+                            echo        '<a class="dev-link" href="../?action=profile&user='.$row['username'].'" title="" >View Profile</a>';
                             echo    '</div';
                             echo '</div>';
                         }
