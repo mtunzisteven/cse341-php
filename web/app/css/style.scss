@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
     margin: 0 10% 0 10%;
     border:$dark-color 1px solid;
+    padding-top:15px;
 
 }
 
@@ -175,7 +176,7 @@ hr{
     & .dev-link{
         background-color: $main-color;
         color:$light-color;
-        width: 40%;
+        width: 60px;
         height: 20px;
         padding:10px;
         border-radius: 10px;

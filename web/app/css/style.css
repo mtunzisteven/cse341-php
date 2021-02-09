@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   margin: 0 10% 0 10%;
   border: #3f3e3e 1px solid;
+  padding-top: 15px;
 }
 
 header {
@@ -194,7 +195,7 @@ hr {
 .dev-container .dev-link {
   background-color: darkblue;
   color: aliceblue;
-  width: 40%;
+  width: 60px;
   height: 20px;
   padding: 10px;
   border-radius: 10px;
