@@ -217,7 +217,7 @@ hr {
 
 form {
   border-radius: 30px;
-  padding: 5px 15% 20px 15%;
+  margin: 5px 15% 20px 15%;
   border: grey 1px solid;
 }
 
@@ -230,8 +230,8 @@ label, input, .login-inputs, .reg-inputs {
   height: 30px;
   border: grey;
   display: block;
-  text-align: center;
   margin: 0 auto 0 auto;
+  border: grey 1px solid;
 }
 
 .login-button, .reg-button {
@@ -243,6 +243,9 @@ label, input, .login-inputs, .reg-inputs {
   text-decoration: none;
   text-align: center;
   background-color: aqua;
+  color: grey;
+  margin-top: 20px;
+  font-size: 10px;
 }
 
 .login-reg-button:hover {
