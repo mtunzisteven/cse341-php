@@ -5,6 +5,7 @@ body {
 .content {
   overflow-x: hidden;
   margin: 0 10% 0 10%;
+  border: darkblue 1px solid;
 }
 
 header {
@@ -96,7 +97,6 @@ li:hover a:hover {
 }
 
 section {
-  border: darkblue 1px solid;
   padding: 15px;
 }
 
@@ -112,6 +112,7 @@ section {
 
 .left-section {
   width: 30%;
+  border-right: darkblue 1px solid;
 }
 
 .project-title {
@@ -126,7 +127,6 @@ hr {
 }
 
 .date-posted {
-  color: grey;
   text-align: right;
   font-size: 0.5em;
   margin: 0;
@@ -138,7 +138,6 @@ hr {
 }
 
 .dev-container {
-  border: inherit;
   padding: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,6 +148,8 @@ hr {
           flex-direction: row;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  -webkit-box-shadow: 0 1px 2px 2px darkblue;
+          box-shadow: 0 1px 2px 2px darkblue;
 }
 
 .dev-container .dev-img {
