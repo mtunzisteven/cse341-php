@@ -108,8 +108,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: grey 1px solid;
-  border-radius: grey 1px solid;
+  border-top: grey;
+  border-radius: grey;
 }
 
 .left-section {
@@ -150,8 +150,9 @@ hr {
           flex-direction: row;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  -webkit-box-shadow: 0 1px 2px 2px darkblue;
-          box-shadow: 0 1px 2px 2px darkblue;
+  -webkit-box-shadow: 0 0 2px 8px grey;
+          box-shadow: 0 0 2px 8px grey;
+  border-radius: 160px 0 160px 0;
 }
 
 .dev-container .dev-img {
