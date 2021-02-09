@@ -239,6 +239,17 @@ label, input, .login-inputs, .reg-inputs {
   color: aliceblue;
 }
 
+.login-reg-button {
+  text-decoration: none;
+  text-align: center;
+  background-color: aqua;
+}
+
+.login-reg-button:hover {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
 footer {
   text-align: center;
   background-color: darkblue;

@@ -220,6 +220,17 @@ label, input, .login-inputs, .reg-inputs{
     color: $light-color;
 }
 
+.login-reg-button{
+    text-decoration: none;
+    text-align: center;
+    background-color: $secondary-color;
+}
+
+.login-reg-button:hover{
+    background-color:$main-color;
+    color:$light-color;
+}
+
 footer{
     text-align:center;
     background-color: $main-color;
