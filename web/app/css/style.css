@@ -134,6 +134,7 @@ section {
 
 .dev-container .dev-img {
   padding: inherit;
+  margin-right: 15px;
   -webkit-box-shadow: 0 0 2px 2px grey;
           box-shadow: 0 0 2px 2px grey;
 }
@@ -163,9 +164,9 @@ section {
 .dev-container .dev-link {
   background-color: darkblue;
   color: aliceblue;
-  width: 20%;
+  width: 40%;
   height: 20px;
-  padding: inherit;
+  padding: 10px;
   border-radius: 10px;
   text-align: left;
 }

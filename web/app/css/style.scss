@@ -116,6 +116,7 @@ section{
 
     & .dev-img{
         padding:inherit;
+        margin-right: 15px;
         box-shadow: 0 0 2px 2px $dark-color;
     }
 
@@ -138,9 +139,9 @@ section{
     & .dev-link{
         background-color: $main-color;
         color:$light-color;
-        width: 20%;
+        width: 40%;
         height: 20px;
-        padding:inherit;
+        padding:10px;
         border-radius: 10px;
         text-align: left;
     }
