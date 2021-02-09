@@ -131,7 +131,6 @@ hr{
     align-content: space-between;
 
     & .dev-img{
-        padding:inherit;
         margin-right: 15px;
         box-shadow: 0 0 2px 2px $dark-color;
         width: 80px;
@@ -142,6 +141,8 @@ hr{
         display:flex;
         flex-direction: column;
         align-content: left;
+        margin:0;
+        padding:0;
     }
 
     & .dev-name{
@@ -152,6 +153,7 @@ hr{
     & .dev-contacts{
         color: $dark-color;
         text-align: left;
+        
     }
 
     & .dev-link{

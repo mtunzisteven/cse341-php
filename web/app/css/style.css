@@ -149,7 +149,6 @@ hr {
 }
 
 .dev-container .dev-img {
-  padding: inherit;
   margin-right: 15px;
   -webkit-box-shadow: 0 0 2px 2px grey;
           box-shadow: 0 0 2px 2px grey;
@@ -167,6 +166,8 @@ hr {
           flex-direction: column;
   -ms-flex-line-pack: left;
       align-content: left;
+  margin: 0;
+  padding: 0;
 }
 
 .dev-container .dev-name {
