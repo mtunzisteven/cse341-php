@@ -199,14 +199,20 @@ hr{
 form{
     border-radius:30px;
     padding: 5px 15% 20px 15%;
-    border:$light-dark;
+    border:$light-dark 1px solid;
+}
+
+form h3{
+    text-align: center;
 }
 
 label, input, .login-inputs, .reg-inputs{
-    width:80%;
+    width:60%;
     height:30px;
     border:$light-dark;
     display:block;
+    text-align: center;
+    margin: 0 auto 0 auto;
 }
 
 .login-button, .reg-button{
