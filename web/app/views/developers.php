@@ -18,11 +18,7 @@
             <?php
 
                 foreach($developer as $row){
-                    echo '<div class="dev-container"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
-                    echo '<div class="dev-text-container">';
-                    echo '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
-                    echo '<p class"dev-contacts">'.'Phone: '.$row['phone'].' Email: '.$row['email'].'</p>';
-                    echo '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="" >Request</a></div></div><br/>';
+                    echo '<a class="dev-container-link"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" /></a>';
                 }
 
             ?>
