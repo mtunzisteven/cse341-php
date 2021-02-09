@@ -24,7 +24,7 @@
                 
                 
                 <input class="login-inputs login-button" type="submit" name="login" value="login" />
-                <a  class="login-inputs login-reg-button connection" href="../index.php?action=reg" title="registration form">register</a>
+                <a  class="login-inputs login-reg-button connection" href="../accounts/index.php?action=reg" title="registration form">register</a>
             </form>
             
             <?php include '../snippets/footer.php'; ?>

@@ -5,8 +5,6 @@ if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
 }
 
-echo "accounts filtered!";
-
 switch($action){
     case 'login':
 
@@ -17,7 +15,7 @@ switch($action){
 
         include "../views/register.php";
         break;
-        
+
     default:
         break;
     }
