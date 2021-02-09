@@ -5,7 +5,7 @@ body {
 .content {
   overflow-x: hidden;
   margin: 0 10% 0 10%;
-  border: grey 1px solid;
+  border: #3f3e3e 1px solid;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: grey;
+  color: #3f3e3e;
 }
 
 header a:hover {
@@ -108,17 +108,17 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: grey;
-  border-radius: grey;
+  border-top: #3f3e3e;
+  border-radius: #3f3e3e;
 }
 
 .left-section {
   width: 30%;
-  border-right: grey 1px solid;
+  border-right: #3f3e3e 1px solid;
 }
 
 .project-title {
-  color: grey;
+  color: #3f3e3e;
   text-align: left;
   margin: 0;
 }
@@ -130,7 +130,7 @@ hr {
 
 .date-posted {
   text-align: right;
-  font-size: 0.5em;
+  font-size: 0.8em;
   margin: 0;
   margin-bottom: 15px;
 }
@@ -150,15 +150,15 @@ hr {
           flex-direction: row;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  -webkit-box-shadow: 0 0 8px 1px grey;
-          box-shadow: 0 0 8px 1px grey;
+  -webkit-box-shadow: 0 0 8px 1px #3f3e3e;
+          box-shadow: 0 0 8px 1px #3f3e3e;
   border-radius: 160px 0 0 160px;
 }
 
 .dev-container .dev-img {
   margin-right: 15px;
-  -webkit-box-shadow: 0 0 2px 2px grey;
-          box-shadow: 0 0 2px 2px grey;
+  -webkit-box-shadow: 0 0 2px 2px #3f3e3e;
+          box-shadow: 0 0 2px 2px #3f3e3e;
   width: 160px;
   height: 160px;
   border-radius: 160px;
@@ -179,13 +179,13 @@ hr {
 }
 
 .dev-container .dev-name {
-  color: grey;
+  color: #3f3e3e;
   text-align: left;
   margin: 0;
 }
 
 .dev-container .dev-contacts {
-  color: grey;
+  color: #3f3e3e;
   text-align: left;
   margin: 0;
 }
@@ -203,7 +203,7 @@ hr {
 
 .dev-container .dev-link:hover {
   background-color: aqua;
-  color: grey;
+  color: #3f3e3e;
 }
 
 .dev-container:hover {
