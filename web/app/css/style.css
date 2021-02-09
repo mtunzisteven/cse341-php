@@ -173,11 +173,13 @@ hr {
 .dev-container .dev-name {
   color: grey;
   text-align: left;
+  margin: 0;
 }
 
 .dev-container .dev-contacts {
   color: grey;
   text-align: left;
+  margin: 0;
 }
 
 .dev-container .dev-link {
