@@ -137,8 +137,8 @@ hr{
     display:flex;
     flex-direction: row;
     align-content: space-between;
-    box-shadow: 0 0 2px 8px $dark-color;
-    border-radius:160px 0 160px 0;
+    box-shadow: 0 0 8px 1px $dark-color;
+    border-radius:160px 0 0 160px;
 
 
     & .dev-img{
@@ -188,7 +188,8 @@ hr{
 }
 
 .dev-container:hover{
-    box-shadow: 0 0 2px 8px $main-color;
+    box-shadow: 0 0 8px 1px $main-color;
+
 }
 
 footer{
