@@ -12,7 +12,7 @@ $db = db_connect();
 
 //echo "<br/>model call connection fn<br/>";
 
-$stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating FROM developer");
+$stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating, phone, email FROM developer");
 $stmt->execute();
 
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);
