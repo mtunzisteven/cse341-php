@@ -23,7 +23,7 @@
                         include "/app/main-model.php";
 
                         foreach($projects as $row){
-                            echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">'.$row['dateposted'].'</p>';
+                            echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">'.$row['date'].'</p>';
                         }
                     ?>
                 </section>
