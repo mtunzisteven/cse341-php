@@ -2,7 +2,7 @@
 
 //This is the main model for the app.
 
-require_once "/app/connector/connection.php";
+require_once "../connector/connection.php";
 
 echo "Account model inserts connection<br/>";
 
