@@ -4,7 +4,7 @@
 
 //echo "Started!<br/>";
 
-require_once "/app/model/main-model.php";
+require_once "main-model.php";
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
