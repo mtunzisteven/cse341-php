@@ -217,20 +217,26 @@ label{
     margin-bottom: -10px;
 }
 
-.login-button{
+.login-button, .reg-button{
     background-color:$main-color;
     color: $light-color;
-    padding:5px;
+    padding:8px;
+}
+
+.login-button:hover, .reg-button:hover{
+    background-color:$secondary-color;
+    color: $dark-color;
 }
 
 .login-reg-button{
     text-decoration: none;
     text-align: center;
     background-color: $secondary-color;
-    color:$light-color;
+    color:$dark-color;
     margin:20px auto 20px auto;
     font-size:12px;
     line-height: 30px;
+    padding:8px;
 }
 
 .login-reg-button:hover{
