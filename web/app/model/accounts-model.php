@@ -16,6 +16,7 @@ $sql = "INSERT INTO developer
         VALUES 
             ($firstname, $lastname,$username , $phone, $email, $passwrd)";
 
+echo "values issue!";
  
 if ($db->query($sql) === TRUE) {
     echo "New record created successfully";
