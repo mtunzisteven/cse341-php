@@ -44,6 +44,10 @@ $stmt->execute();
 
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+foreach($developer as $row){
+    echo $row.'1 <br/>';
+}
+
 //Set developer data
 $sql = "INSERT INTO developer 
             (firstName, lastName, userName, phone, email, passwrd)
@@ -54,7 +58,7 @@ $stmt = $db->prepare($sql);
 $stmt->execute();
 
 foreach($developer as $row){
-    echo $row;
+    echo $row.'2 <br/>';
 }
 
 $stmt->closeCursor();
