@@ -36,7 +36,7 @@ try{
     $stmt->execute([$firstname, $lastname, $username, $phone, $email, $passwrd, '', '', '', '']);
     //echo "result inserted";
 
-    $message = "Your registration was successful! <br/>Please login below<br/>";
+    $message = "Your registration was successful! Please login below<br/>";
 
 }catch (PDOException $ex){
 

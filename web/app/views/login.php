@@ -14,16 +14,17 @@
             <div class="hero">     
                 <h1 id="title">Welcome!</h1>
             </div>
+            <p class="form-message">
+
+                <?php 
+                    if(!empty($message)){
+                        echo $message;
+                    }
+                ?>
+
+            </p>
             <form class="login-form" method="post" action="/">
-                <p>
 
-                    <?php 
-                        if(!empty($message)){
-                            echo $message;
-                        }
-                    ?>
-
-                </p>
                 <h3>Login</h3>
                 <label class="login-label">Email Address</label>
                 <input class="login-inputs" type="email" name="email"  />

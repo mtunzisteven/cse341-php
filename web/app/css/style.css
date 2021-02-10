@@ -261,6 +261,11 @@ label {
   color: aliceblue;
 }
 
+.form-message {
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+
 footer {
   text-align: center;
   background-color: darkblue;
