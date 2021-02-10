@@ -11,7 +11,7 @@ $db = db_connect();
 //Set developer data
 $stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
 
-$stmt->bind_param("sss", $firstname, $lastname, $email,$username,$phone,$password);
+$stmt->bindParam("sssiss", $firstname, $lastname, $username,$phone,$email,$password);
 
 $firstname="Lusanda";
 $lastname="Mavuma";
