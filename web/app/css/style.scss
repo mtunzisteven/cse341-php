@@ -218,23 +218,17 @@ label{
     margin-bottom: -5px;
 }
 
-.login-inputs{
-    border:$light-dark 1px solid;
-    padding:2px;
-    margin-top: 10px;
-}
-
 .login-button{
     background-color:$main-color;
     color: $light-color;
-    border:none;
-}
+    padding:5px;
+    margin-top: 10px;}
 
 .login-reg-button{
     text-decoration: none;
     text-align: center;
     background-color: $secondary-color;
-    color:$dark-color;
+    color:$light-color;
     margin:20px auto 20px auto;
     font-size:12px;
     line-height: 30px;
