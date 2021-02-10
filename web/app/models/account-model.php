@@ -19,12 +19,12 @@ echo "Bound<br/>";
 $firstnam="Lusanda";
 $lastnam="Mavuma";
 $usernam="lusysuh";
-$phone=0732124365;
+$phon=0732124365;
 $emai="luhh1973@gmail.com";
 $passwor="passwrd";
 
 echo "Values<br/>";
 $stmt->execute();
 
-echo $stmt;
+echo "Executed<br/>";
 $stmt->closeCursor();
