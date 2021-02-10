@@ -9,7 +9,17 @@ require_once "/app/connector/connection.php";
 $db = db_connect();
 
 //Set developer data
-$stmt = $db->prepare("INSERT INTO 'developer' ('firstname', 'lastname', 'username', 'phone', 'email', 'passwrd') VALUES ('Lusanda', 'Mavuma','lusysuh' , 0732124365, luhh1973@gmail.com, 'passwrd')");
+$stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
+
+$stmt->bind_param("sss", $firstname, $lastname, $email,$username,$phone,$password);
+
+$firstname="Lusanda";
+$lastname="Mavuma";
+$username="lusysuh";
+$phone=0732124365;
+$email="luhh1973@gmail.com";
+$password="passwrd";
+
 $stmt->execute();
-echo "Account model Inserts passed";
+echo $stmt;
 $stmt->closeCursor();
