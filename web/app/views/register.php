@@ -25,6 +25,9 @@
                 <label class="reg-label">Email Address</label>
                 <input class="reg-inputs" type="email" name="email" />
 
+                <label class="reg-label">Username</label>
+                <input class="reg-inputs" type="text" name="username" />
+
                 <label class="reg-label">Phone</label>
                 <input class="reg-inputs" type="phone" name="phone" />
                 
