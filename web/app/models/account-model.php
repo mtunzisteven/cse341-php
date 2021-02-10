@@ -10,10 +10,10 @@ $db = db_connect();
 
 echo "Setting User Data<br/>";
 //Set developer data
-$stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
+/*$stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
 echo "??<br/>";
 
-/*$stmt->bindParam("sssiss", $firstnam, $lastnam, $usernam,$phon,$emai,$passwor);
+$stmt->bindParam("sssiss", $firstnam, $lastnam, $usernam,$phon,$emai,$passwor);
 echo "Bound<br/>";
 
 $firstnam="Lusanda";
@@ -23,9 +23,19 @@ $phon=0732124365;
 $emai="luhh1973@gmail.com";
 $passwor="passwrd";
 
-echo "Values<br/>";*/
+echo "Values<br/>";
 
 $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password]);
 echo "Executed<br/>";
 
-$stmt->closeCursor();
+$stmt->closeCursor();*/
+
+if (!empty($firstname) || !empty($lastname) || !empty($username) || !empty($phone) || !empty($email) || !empty($password))
+    {
+        $stmt = $db->prepare("INSERT INTO login(firstname', 'lastname', 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?)");
+        $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
+        echo "result inserted";
+
+    } else {
+        echo 'You have not entered all of the fields.';
+    }
