@@ -43,3 +43,5 @@ $stmt = $db->prepare("SELECT title, DATE(dateposted) FROM projects"); //Use date
 $stmt->execute();
 
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$stmt->closeCursor();

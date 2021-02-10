@@ -11,9 +11,16 @@ $db = db_connect();
 echo "<br/>accounts-model called connection fn<br/>";
 
 //Set developer data
-$stmt = $db->prepare('INSERT INTO developer (firstName, lastName, userName, phone, email, passwrd) VALUES ($firstname, $lastname,$username , $phone, $email, $passwrd)');
-$stmt->execute();
+$sql = "INSERT INTO developer 
+            (firstName, lastName, userName, phone, email, passwrd)
+        VALUES 
+            ($firstname, $lastname,$username , $phone, $email, $passwrd)";
 
-$Registration = $stmt->fetchAll(PDO::FETCH_ASSOC);
+ 
+if ($db->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-echo $Registration;
+$stmt->closeCursor();
