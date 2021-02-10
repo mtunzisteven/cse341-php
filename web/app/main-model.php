@@ -58,4 +58,11 @@ foreach($developer as $row){
     echo $row.'2 <br/>';
 }
 
+echo "<br/>".$firstname;
+echo "<br/>".$lastname;
+echo "<br/>".$email;
+echo "<br/>".$phone;
+echo "<br/>".$username;
+echo "<br/>".$passwrd;
+
 $stmt->closeCursor();
