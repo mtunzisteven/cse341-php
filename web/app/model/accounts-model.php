@@ -25,12 +25,9 @@ echo $email."<br/>";
 echo $phone."<br/>";
 echo $username."<br/>";
 echo $passwrd."<br/>";
+
+$stmt = $db->prepare($sql);
+$stmt->execute();
  
-if ($db->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $db->error;
-}
-
-
 $stmt->closeCursor();
+
