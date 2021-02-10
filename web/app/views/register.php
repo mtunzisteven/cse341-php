@@ -17,19 +17,19 @@
             <form class="reg-form" method="post" action="/app/accounts/index.php">
                 <h3>Registration</h3>
                 <label class="reg-label">First Name</label>
-                <input class="reg-inputs" type="text" name="firstName" />
+                <input class="reg-inputs" type="text" name="firstname" />
 
                 <label class="reg-label">Last Name</label>
-                <input class="reg-inputs" type="text" name="lastName" />
+                <input class="reg-inputs" type="text" name="lastname" />
                 
                 <label class="reg-label">Email Address</label>
                 <input class="reg-inputs" type="email" name="email" />
 
-                <label class="reg-label">Username</label>
-                <input class="reg-inputs" type="text" name="username" />
-
                 <label class="reg-label">Phone</label>
                 <input class="reg-inputs" type="phone" name="phone" />
+
+                <label class="reg-label">Username</label>
+                <input class="reg-inputs" type="text" name="username" />
                 
                 <label class="reg-label">Password</label>
                 <input class="reg-inputs" type="text" name="passwrd" />
