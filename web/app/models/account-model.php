@@ -32,7 +32,7 @@ $stmt->closeCursor();*/
 
 try{
 
-    $stmt = $db->prepare("INSERT INTO developer(firstName, lastname, 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?,?,?,?,?)");
+    $stmt = $db->prepare("INSERT INTO developer(firstname, lastname, username, phone, email, passwrd, reviews, rating, profileimage, qualifications) VALUES(?,?,?,?,?,?,?,?,?,?)");
     $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
     echo "result inserted";
 
