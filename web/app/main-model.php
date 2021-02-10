@@ -57,6 +57,10 @@ if(isset($firstname) || isset($lastname) || isset($username) || isset($passwrd) 
     $stmt = $db->prepare($sql);
     $stmt->execute();
 
+    foreach($developer as $row){
+        echo $row;
+    }
+
 }
 
 $stmt->closeCursor();
