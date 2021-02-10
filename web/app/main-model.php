@@ -44,4 +44,19 @@ $stmt->execute();
 
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+
+//Create new developer
+if(isset($firstname) || isset($lastname) || isset($username) || isset($passwrd) || isset($phone) || isset($email)){
+
+    //Set developer data
+    $sql = "INSERT INTO developer 
+                (firstName, lastName, userName, phone, email, passwrd)
+            VALUES 
+                ($firstname, $lastname,$username , $phone, $email, $passwrd)";
+
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
+
+}
+
 $stmt->closeCursor();
