@@ -42,22 +42,4 @@ $stmt->execute();
 
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-
-//Set developer data
-$sql = 'INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES ("Lusanda", "Mavuma","lusysuh" , 0732124365, luhh1973@gmail.com, "passwrd")';
-
-$stmt = $db->prepare($sql);
-$stmt->execute();
-
-foreach($developer as $row){
-    echo $row.'2 <br/>';
-}
-
-echo "<br/>".$firstname;
-echo "<br/>".$lastname;
-echo "<br/>".$email;
-echo "<br/>".$phone;
-echo "<br/>".$username;
-echo "<br/>".$passwrd;
-
 $stmt->closeCursor();
