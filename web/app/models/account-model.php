@@ -13,7 +13,7 @@ echo "Setting User Data<br/>";
 $stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
 echo "??<br/>";
 
-$stmt->bindParam("sssiss", $firstnam, $lastnam, $usernam,$phon,$emai,$passwor);
+/*$stmt->bindParam("sssiss", $firstnam, $lastnam, $usernam,$phon,$emai,$passwor);
 echo "Bound<br/>";
 
 $firstnam="Lusanda";
@@ -23,8 +23,9 @@ $phon=0732124365;
 $emai="luhh1973@gmail.com";
 $passwor="passwrd";
 
-echo "Values<br/>";
-$stmt->execute();
+echo "Values<br/>";*/
 
+$stmt->execute([$firstname, $lastname, $username, $phone, $email, $password]);
 echo "Executed<br/>";
+
 $stmt->closeCursor();
