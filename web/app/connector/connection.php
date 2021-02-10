@@ -18,7 +18,7 @@ function db_connect(){
 
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        //echo 'Success!';
+        echo 'Success!<br/>';
 
     }catch (PDOException $ex){
 

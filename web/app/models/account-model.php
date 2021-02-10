@@ -4,7 +4,7 @@
 
 require_once "/app/connector/connection.php";
 
-//echo "model inserts connection<br/>";
+echo "Account model inserts connection<br/>";
 
 $db = db_connect();
 
