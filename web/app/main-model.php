@@ -49,10 +49,7 @@ foreach($developer as $row){
 }
 
 //Set developer data
-$sql = "INSERT INTO developer 
-            (firstName, lastName, userName, phone, email, passwrd)
-        VALUES 
-            ($firstname, $lastname,$username , $phone, $email, $passwrd)";
+$sql = "INSERT INTO developer (firstName, lastName, userName, phone, email, passwrd) VALUES ($firstname, $lastname,$username , $phone, $email, $passwrd)";
 
 $stmt = $db->prepare($sql);
 $stmt->execute();
