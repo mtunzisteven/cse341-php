@@ -4,11 +4,11 @@
 
 require_once "../connector/connection.php";
 
-echo "Account model inserts connection<br/>";
+//echo "Account model inserts connection<br/>";
 
 $db = db_connect();
 
-echo "Setting User Data<br/>";
+//echo "Setting User Data<br/>";
 //Set developer data
 /*$stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
 echo "??<br/>";
