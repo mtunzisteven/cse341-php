@@ -2,7 +2,7 @@
 
 echo "accounts-model started<br/>";
 
-require_once "connector/connection.php";
+require_once "/app/connector/connection.php";
 
 echo "accounts-model inserts connection<br/>";
 
