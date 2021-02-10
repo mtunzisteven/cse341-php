@@ -13,5 +13,5 @@ $sql = 'INSERT INTO developer (firstname, lastname, username, phone, email, pass
 
 $stmt = $db->prepare($sql);
 $stmt->execute();
-
+echo "Account model Inserts passed";
 $stmt->closeCursor();
