@@ -2,8 +2,6 @@
 
 //This is the main model for the app.
 
-echo "model started<br/>";
-
 require_once "connector/connection.php";
 
 //echo "model inserts connection<br/>";
