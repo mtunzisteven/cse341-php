@@ -16,12 +16,21 @@ $sql = "INSERT INTO developer
         VALUES 
             ($firstname, $lastname,$username , $phone, $email, $passwrd)";
 
-echo "values issue!";
+echo "values issue!<br/>";
+
+
+echo $firstname."<br/>";
+echo $lastname."<br/>";
+echo $email."<br/>";
+echo $phone."<br/>";
+echo $username."<br/>";
+echo $passwrd."<br/>";
  
 if ($db->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $db->error;
 }
+
 
 $stmt->closeCursor();
