@@ -26,6 +26,7 @@ switch($action){
         $username = filter_input(INPUT_POST, 'username');
         $passwrd = filter_input(INPUT_POST, 'passwrd');
         include "../models/account-model.php";
+        include "../views/login.php";
         break;
     
     default:

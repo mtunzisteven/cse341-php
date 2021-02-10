@@ -34,7 +34,9 @@ try{
 
     $stmt = $db->prepare("INSERT INTO developer(firstname, lastname, username, phone, email, passwrd, reviews, rating, profileimage, qualifications) VALUES(?,?,?,?,?,?,?,?,?,?)");
     $stmt->execute([$firstname, $lastname, $username, $phone, $email, $passwrd, '', '', '', '']);
-    echo "result inserted";
+    //echo "result inserted";
+
+    $message = "Your registration was successful! <br/>Please login below<br/>";
 
 }catch (PDOException $ex){
 
