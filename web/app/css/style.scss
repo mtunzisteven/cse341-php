@@ -209,20 +209,19 @@ form h3{
 label, input, .login-inputs, .reg-inputs{
     width:60%;
     height:30px;
-    border:$light-dark;
     display:block;
     margin: 0 auto 0 auto;
-    border:$light-dark 1px solid;
-}
-
-.login-button, .reg-button{
-    background-color:$main-color;
-    color: $light-color;
+   
 }
 
 .login-inputs{
-    background-color: $secondary-color;
-    color: $dark-color;
+    border:$light-dark 1px solid;
+}
+
+.login-button{
+    background-color:$main-color;
+    color: $light-color;
+    border:none;
 }
 
 .login-reg-button{
@@ -230,8 +229,9 @@ label, input, .login-inputs, .reg-inputs{
     text-align: center;
     background-color: $secondary-color;
     color:$light-dark;
-    margin-top:20px;
-    font-size:10px;
+    margin:20px 0 20px 0;
+    font-size:15px;
+    line-height: 30px;
 }
 
 .login-reg-button:hover{
