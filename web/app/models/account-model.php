@@ -33,7 +33,7 @@ $stmt->closeCursor();*/
 try{
 
     $stmt = $db->prepare("INSERT INTO developer(firstname, lastname, username, phone, email, passwrd, reviews, rating, profileimage, qualifications) VALUES(?,?,?,?,?,?,?,?,?,?)");
-    $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
+    $stmt->execute([$firstname, $lastname, $username, $phone, $email, $passwrd, '', '', '', '']);
     echo "result inserted";
 
 }catch (PDOException $ex){
