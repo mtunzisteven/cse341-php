@@ -252,9 +252,9 @@ label {
   text-decoration: none;
   text-align: center;
   background-color: aqua;
-  color: grey;
+  color: #3f3e3e;
   margin: 20px auto 20px auto;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 30px;
 }
 
