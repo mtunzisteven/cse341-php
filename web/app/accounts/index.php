@@ -20,11 +20,17 @@ switch($action){
 
     case 'register':
         $firstname = filter_input(INPUT_POST, 'firstname');
+        echo $firstname;
         $lastname = filter_input(INPUT_POST, 'lastname');
+        echo $lastname;
         $email = filter_input(INPUT_POST, 'email');
+        echo $email;
         $phone = filter_input(INPUT_POST, 'phone');
+        echo $phone;
         $username = filter_input(INPUT_POST, 'username');
+        echo $username;
         $passwrd = filter_input(INPUT_POST, 'passwrd');
+        echo $passwrd;
         include "../model/accounts-model.php";
         break;
     
