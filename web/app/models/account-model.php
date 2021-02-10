@@ -32,10 +32,10 @@ $stmt->closeCursor();*/
 
 if (!empty($firstname) || !empty($lastname) || !empty($username) || !empty($phone) || !empty($email) || !empty($password))
     {
-        $stmt = $db->prepare("INSERT INTO login(firstname', 'lastname', 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?)");
+        $stmt = $db->prepare("INSERT INTO developer('firstname', 'lastname', 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?,?,?,?,?)");
         $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
         echo "result inserted";
 
     } else {
-        echo 'You have not entered all of the fields.';
+        echo 'Issues with the fields.';
     }
