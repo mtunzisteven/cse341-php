@@ -30,12 +30,15 @@ echo "Executed<br/>";
 
 $stmt->closeCursor();*/
 
-if (!empty($firstname) || !empty($lastname) || !empty($username) || !empty($phone) || !empty($email) || !empty($password))
-    {
-        $stmt = $db->prepare("INSERT INTO developer('firstname', 'lastname', 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?,?,?,?,?)");
-        $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
-        echo "result inserted";
+try{
 
-    } else {
-        echo 'Issues with the fields.';
-    }
+    $stmt = $db->prepare("INSERT INTO developer('firstname', 'lastname', 'username', 'phone', 'email', 'passwrd', 'reviews', 'rating', 'profileimage, 'qualifications') VALUES(?,?,?,?,?,?,?,?,?,?)");
+    $stmt->execute([$firstname, $lastname, $username, $phone, $email, $password, '', '', '', '']);
+    echo "result inserted";
+
+}catch (PDOException $ex){
+
+    echo 'Error!: ' . $ex->getMessage();
+    die();
+
+}
