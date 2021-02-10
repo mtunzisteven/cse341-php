@@ -31,7 +31,7 @@ switch($action){
         echo "<br/>".$username;
         $passwrd = filter_input(INPUT_POST, 'passwrd');
         echo "<br/>".$passwrd;
-        include "../models/account-model.php.php";
+        include "../models/account-model.php";
         break;
     
     default:
