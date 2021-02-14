@@ -23,16 +23,17 @@
                 ?>
 
             </p>
-            <form class="login-form" method="post" action="/">
+            <form class="login-form" method="post" action="/app/accounts/index.php">
 
                 <h3>Login</h3>
-                <label class="login-label">Email Address</label>
-                <input class="login-inputs" type="email" name="email"  />
+                <label class="login-label">Username</label>
+                <input class="login-inputs" type="text" name="username"  />
                 
                 <label class="login-label">Password</label>
-                <input class="login-inputs" type="text" name="password" />
+                <input class="login-inputs" type="text" name="passwrd" />
                 
                 <input class="login-inputs login-button" type="submit" name="login" value="login" />
+                <input type="hidden" name="action" value="developer-login" />
                 <a  class="login-inputs login-reg-button connection" href="../accounts/index.php?action=regform" title="registration form">register</a>
             </form>
             

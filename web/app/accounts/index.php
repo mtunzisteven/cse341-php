@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 //This is the accounts controller: Specializes in logins and registrations
 
 // include connection
@@ -21,6 +23,31 @@ switch($action){
         break;
 
     case 'developer-login':
+
+        $username = filter_input(INPUT_POST, 'username');
+        $passwrd = filter_input(INPUT_POST, 'passwrd');
+
+        // Login results returned.
+        $logins = login_developer($username, $passwrd);
+
+        if(!empty($logins)){
+            // fetch all developer data
+            $develepoer_data = getDeveloper_data($username, $passwrd);
+
+            // set session data
+            $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
+            $_SESSION['dev_lastname'] = $develepoer_data['lastname'];
+            $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
+            $_SESSION['dev_username'] = $username;
+            $_SESSION['dev_password'] = $passwrd;
+            $_SESSION['dev_phone'] = $develepoer_data['phone'];
+            $_SESSION['dev_reviews'] = $develepoer_data['reviews'];
+            $_SESSION['dev_rating'] = $develepoer_data['rating'];
+            $_SESSION['dev_profileimage'] = $develepoer_data['profileimage'];
+            $_SESSION['dev_qualifications'] = $develepoer_data['qualifications'];
+
+            include "../views/home.php";
+        }
 
         break;
 

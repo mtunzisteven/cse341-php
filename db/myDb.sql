@@ -117,3 +117,25 @@ ALTER TABLE projects
 ALTER COLUMN title SET NOT NULL;
 
 -- I will drop the table and recreate it with the correct information since it's not a lot of data.
+
+-- Register a developer
+INSERT INTO customer
+    (firstName, lastName, userName, phone, email, passwrd)
+VALUES
+    ('fistName', 'lastName', 'userName', 'phone', 'email', 'passwrd');
+
+-- Register a customer
+INSERT INTO customer
+    (firstName, lastName, phone, email, passwrd)
+VALUES
+    ('fistName', 'lastName', 'phone', 'email', 'passwrd');
+
+-- Login a developer
+SELECT userName, passwrd FROM developer WHERE userName='userNamevalue' AND passwrod = 'passwordValue'; 
+
+-- Login a customer
+SELECT email, passwrd FROM customer WHERE email='emailvalue' AND passwrod = 'passwordValue'; 
+
+-- Make number varchar
+ALTER TABLE developer 
+ALTER COLUMN phone TYPE VARCHAR;

@@ -6,7 +6,7 @@
 //echo "Account model inserts connection<br/>";
 
 
-
+// Register a developer and save their details in the database
 function register_developer($firstName, $lastName, $userName, $phone, $email, $passwrd){
 
     $db = db_connect();
@@ -41,6 +41,7 @@ function register_developer($firstName, $lastName, $userName, $phone, $email, $p
     }
 }
 
+// Developer login using username and password
 function login_developer($userName, $passwrd){
 
     $db = db_connect();
@@ -56,10 +57,45 @@ function login_developer($userName, $passwrd){
         $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
 
         $stmt->execute();
+        $login_result = $stmt->fetchAll();
 
         //echo "result inserted";
 
         $message = "Your registration was successful! Please login below<br/>";
+
+        return $login_result;
+
+    }catch (PDOException $ex){
+
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+
+    }
+}
+
+function getDeveloper_data($userName, $passwrd){
+
+    $db = db_connect();
+
+    try{
+
+        $sql = "SELECT* FROM developer WHERE userName=':userName' AND passwrod = ':passwrd"; 
+
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindValue(':userName',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        $develepoer_data=$stmt->fetchAll();
+
+        //echo "result inserted";
+
+        $message = "Your registration was successful! Please login below<br/>";
+
+        return $develepoer_data;
 
     }catch (PDOException $ex){
 
