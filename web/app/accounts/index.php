@@ -6,7 +6,7 @@
 require_once "../connector/connection.php";
 
 // Include accounts Model
-include "../account-model.php";
+include "../models/account-model.php";
 
 
 $action = filter_input(INPUT_POST, 'action');
@@ -20,18 +20,28 @@ switch($action){
         include "../views/login.php";
         break;
 
+    case 'developer-login':
+
+        break;
+
+    case 'customer-login':
+
+        break;
+
     case 'regform':
 
         include "../views/register.php";
         break;
 
-    case 'register':
+    case 'register-developer':
         $firstname = filter_input(INPUT_POST, 'firstname');
         $lastname = filter_input(INPUT_POST, 'lastname');
-        $email = filter_input(INPUT_POST, 'email');
-        $phone = filter_input(INPUT_POST, 'phone');
         $username = filter_input(INPUT_POST, 'username');
+        $phone = filter_input(INPUT_POST, 'phone');
+        $email = filter_input(INPUT_POST, 'email');
         $passwrd = filter_input(INPUT_POST, 'passwrd');
+
+        $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd);
 
         include "../views/login.php";
         break;

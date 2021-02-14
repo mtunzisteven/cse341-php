@@ -36,7 +36,7 @@
                 
                 
                 <input class="reg-inputs reg-button" type="submit" name="submit" id="regbtn" value="register" />
-                <input type="hidden" name="action" value="register">
+                <input type="hidden" name="action" value="register-developer">
                 
 
             </form>
