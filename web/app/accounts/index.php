@@ -2,6 +2,13 @@
 
 //This is the accounts controller: Specializes in logins and registrations
 
+// include connection
+require_once "../connector/connection.php";
+
+// Include accounts Model
+include "../account-model.php";
+
+
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
@@ -25,10 +32,11 @@ switch($action){
         $phone = filter_input(INPUT_POST, 'phone');
         $username = filter_input(INPUT_POST, 'username');
         $passwrd = filter_input(INPUT_POST, 'passwrd');
-        include "../models/account-model.php";
+
         include "../views/login.php";
         break;
     
     default:
+        include "../index.php";
         break;
     }

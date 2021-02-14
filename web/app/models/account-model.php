@@ -2,45 +2,75 @@
 
 //This is the main model for the app.
 
-require_once "../connector/connection.php";
 
 //echo "Account model inserts connection<br/>";
 
-$db = db_connect();
 
-//echo "Setting User Data<br/>";
-//Set developer data
-/*$stmt = $db->prepare('INSERT INTO developer (firstname, lastname, username, phone, email, passwrd) VALUES (?,?,?,?,?,?)');
-echo "??<br/>";
 
-$stmt->bindParam("sssiss", $firstnam, $lastnam, $usernam,$phon,$emai,$passwor);
-echo "Bound<br/>";
+function register_developer($firstName, $lastName, $userName, $phone, $email, $passwrd){
 
-$firstnam="Lusanda";
-$lastnam="Mavuma";
-$usernam="lusysuh";
-$phon=0732124365;
-$emai="luhh1973@gmail.com";
-$passwor="passwrd";
+    $db = db_connect();
 
-echo "Values<br/>";
+    try{
 
-$stmt->execute([$firstname, $lastname, $username, $phone, $email, $password]);
-echo "Executed<br/>";
+        $sql = "INSERT INTO developer
+                    (firstName, lastName, userName, phone, email, passwrd)
+                VALUES
+                    (:fistName, :lastName, :userName, :phone, :email, :passwrd)";
 
-$stmt->closeCursor();*/
+        $stmt = $db->prepare($sql);
 
-try{
+        $stmt->bindValue(':firstName',$firstName, PDO::PARAM_STR);
+        $stmt->bindValue(':lastName',$lastName, PDO::PARAM_STR);
+        $stmt->bindValue(':userName',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':phone',$phone, PDO::PARAM_INT);
+        $stmt->bindValue(':email',$email, PDO::PARAM_STR);
+        $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
 
-    $stmt = $db->prepare("INSERT INTO developer(firstname, lastname, username, phone, email, passwrd, reviews, rating, profileimage, qualifications) VALUES(?,?,?,?,?,?,?,?,?,?)");
-    $stmt->execute([$firstname, $lastname, $username, $phone, $email, $passwrd, '', '', '', '']);
-    //echo "result inserted";
+        $stmt->execute();
 
-    $message = "Your registration was successful! Please login below<br/>";
+        //echo "result inserted";
 
-}catch (PDOException $ex){
+        $message = "Your registration was successful! Please login below<br/>";
 
-    echo 'Error!: ' . $ex->getMessage();
-    die();
+    }catch (PDOException $ex){
 
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+
+    }
+}
+
+function register_customer($firstName, $lastName, $userName, $phone,$email, $passwrd){
+    
+    $db = db_connect();
+
+    try{
+
+        $sql = "INSERT INTO customer
+                    (firstName, lastName, userName, phone, email, passwrd)
+                VALUES
+                    (:fistName, :lastName, :userName, :phone, :email, :passwrd)";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindValue(':firstName',$firstName, PDO::PARAM_STR);
+        $stmt->bindValue(':lastName',$lastName, PDO::PARAM_STR);
+        $stmt->bindValue(':userName',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':phone',$phone, PDO::PARAM_INT);
+        $stmt->bindValue(':email',$email, PDO::PARAM_STR);
+        $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        //echo "result inserted";
+
+        $message = "Your registration was successful! Please login below<br/>";
+
+    }catch (PDOException $ex){
+
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+
+    }
 }

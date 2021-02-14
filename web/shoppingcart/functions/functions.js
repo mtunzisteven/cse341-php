@@ -178,10 +178,8 @@ function remove(button){
 
         $(".cart-form").html('<p class="cart-item-title2">Your Cart is empty</p>');
     }
-        
-  
-
 }
+
 
 function confirm(input){
     data = {};
