@@ -32,9 +32,10 @@ switch($action){
         // Login results returned.
         $logins = login_developer($username, $passwrd);
 
-        //echo "Hey!"; exit;
+        echo $logins; exit;
 
         if($logins===1){
+            
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
             //echo "Hey!"; exit;
