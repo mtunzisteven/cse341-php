@@ -19,14 +19,11 @@ foreach($projects as $row){
 }
 
 foreach($developer as $row){
-    $counter = 0;
     $dev = '<div class="dev-container"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
     $dev .=  '<div class="dev-text-container">';
     $dev .=  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
     $dev .=  '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
     $dev .=  '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div><br/>';
-
-    $counter +=1;
 
     if($counter==5){
         break;

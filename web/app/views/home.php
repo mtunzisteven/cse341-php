@@ -8,7 +8,7 @@
     </head>
     <body>
         <main class="content">
-            <?php include '/app/snippets/header.php'; ?>
+            <?php include '/cs313-php/app/snippets/header.php'; ?>
             <?php include '/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
@@ -19,13 +19,17 @@
                 <section class="left-section"> 
                     <h4>Posted Projects</h4>
                     <?php
-                        echo $projectList;
+                        foreach($projectList as $project){
+                            echo $project;
+                        }
                     ?>
                 </section>
 
                 <section class="right-section"> 
                     <?php
-                        echo $dev;
+                        foreach($dev as $inforcard){
+                            echo $inforcard;
+                        }
                     ?>
                 </section>
             </div>  
