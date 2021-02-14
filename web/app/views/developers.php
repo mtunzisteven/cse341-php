@@ -25,8 +25,7 @@
             ?>
            
             <?php 
-                $footer=''; if($_SESSION('dev_firstname')!=null){$footer = '../snippets/footer.php';}else{$footer = 'snippets/footer.php';}
-                include $footer;
+                if($_SESSION('dev_firstname')!=null){include '../snippets/footer.php';}else{include 'snippets/footer.php';}
             ?>
         </main>
     </body>
