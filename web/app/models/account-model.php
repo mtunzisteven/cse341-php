@@ -48,7 +48,7 @@ function login_developer($userName, $passwrd){
 
     try{
 
-        $sql = "SELECT userName, passwrd FROM developer WHERE userName=':userName' AND passwrod = ':passwrd"; 
+        $sql = "SELECT username, passwrd FROM developer WHERE username=':userName' AND passwrod = ':passwrd"; 
 
 
         $stmt = $db->prepare($sql);
