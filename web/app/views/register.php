@@ -33,6 +33,7 @@
                 
                 <label class="reg-label">Password</label>
                 <input class="reg-inputs" type="text" name="passwrd" />
+                <input type="hiden" name="profileimage" value="/app/images/no-image.png" />
                 
                 
                 <input class="reg-inputs reg-button" type="submit" name="submit" id="regbtn" value="register" />

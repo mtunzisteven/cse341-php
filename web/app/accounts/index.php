@@ -39,7 +39,7 @@ switch($action){
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
 
-            echo var_dump($develepoer_data); exit;
+            echo $develepoer_data['firstname']; exit;
 
             //echo "Hey!"; exit;
             // set session data
@@ -79,8 +79,9 @@ switch($action){
         $phone = filter_input(INPUT_POST, 'phone');
         $email = filter_input(INPUT_POST, 'email');
         $passwrd = filter_input(INPUT_POST, 'passwrd');
+        $profileimage = $_POST['profileimage'];
 
-        $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd);
+        $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd, $profileimage);
 
         include "../views/login.php";
         break;
