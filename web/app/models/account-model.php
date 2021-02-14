@@ -48,12 +48,12 @@ function login_developer($userName, $passwrd){
 
     try{
 
-        $sql = "SELECT username, passwrd FROM developer WHERE username=':userName' AND passwrod = ':passwrd"; 
+        $sql = "SELECT username, passwrd FROM developer WHERE username=':username' AND passwrod = ':passwrd"; 
 
 
         $stmt = $db->prepare($sql);
 
-        $stmt->bindValue(':userName',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':username',$userName, PDO::PARAM_STR);
         $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
 
         $stmt->execute();
@@ -79,12 +79,12 @@ function getDeveloper_data($userName, $passwrd){
 
     try{
 
-        $sql = "SELECT* FROM developer WHERE username=':userName' AND passwrod = ':passwrd"; 
+        $sql = "SELECT* FROM developer WHERE username=':username' AND passwrod = ':passwrd"; 
 
 
         $stmt = $db->prepare($sql);
 
-        $stmt->bindValue(':userName',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':username',$userName, PDO::PARAM_STR);
         $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
 
         $stmt->execute();
