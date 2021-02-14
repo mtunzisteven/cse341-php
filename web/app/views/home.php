@@ -30,7 +30,7 @@
                 </section>
             </div>  
            
-            <?php include 'snippets/footer.php'; ?>
+            <?php include '/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>

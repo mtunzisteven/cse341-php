@@ -6,9 +6,10 @@
 
 require_once "main-model.php";
 
+$projectList=[]; $counter = [];
 
 foreach($projects as $row){
-    $projectList = '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
+    $projectList = '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p><br/>';
 }
 
 foreach($developer as $row){
