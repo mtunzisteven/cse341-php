@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 //This is the main controller
 
 //echo "Started!<br/>";

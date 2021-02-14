@@ -82,7 +82,15 @@ switch($action){
 
         include "../views/login.php";
         break;
-    
+
+    case 'about':
+        include "../views/about.php";
+        break;
+
+    case 'developers':
+        include "../views/developers.php";
+        break;
+
     default:
         include "../index.php";
         break;
