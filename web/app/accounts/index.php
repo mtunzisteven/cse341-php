@@ -45,10 +45,6 @@ switch($action){
             //echo "Hey!"; exit;
             // set session data
             $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname']; 
-
-            echo "Session: ".$_SESSION['dev_firstname']."| Database result: ".$develepoer_data['firstname']; 
-            exit;
-
             $_SESSION['dev_lastname'] = $develepoer_data[0]['lastname'];
             $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname'];
             $_SESSION['dev_username'] = $username;
