@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php include '../snippets/header.php'; ?>
-            <?php include '../snippets/navigation.php'; ?>
+            <?php include 'snippets/header.php'; ?>
+            <?php include 'snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -19,18 +19,18 @@
                 <section class="left-section"> 
                     <h4>Posted Projects</h4>
                     <?php
-                        echo $projectList;
+                        echo implode("<br/>", $projectList);
                     ?>
                 </section>
 
                 <section class="right-section"> 
                     <?php
-                        echo $dev;
+                        echo implode("<br/>", $dev);
                     ?>
                 </section>
             </div>  
            
-            <?php include '../snippets/footer.php'; ?>
+            <?php include 'snippets/footer.php'; ?>
         </main>
     </body>
 </html>

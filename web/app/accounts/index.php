@@ -13,6 +13,7 @@ include "../main-model.php";
 // Include accounts Model
 include "../models/account-model.php";
 
+$projectList=[]; $counter = [];
 
 foreach($projects as $row){
     $projectList = '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
@@ -23,11 +24,7 @@ foreach($developer as $row){
     $dev .=  '<div class="dev-text-container">';
     $dev .=  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
     $dev .=  '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
-    $dev .=  '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div><br/>';
-
-    if($counter==5){
-        break;
-    }
+    $dev .=  '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div>';
 }
 
 
