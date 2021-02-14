@@ -30,10 +30,12 @@ switch($action){
         // Login results returned.
         $logins = login_developer($username, $passwrd);
 
-        if($login===1){
+        //echo "Hey!"; exit;
+
+        if($logins===1){
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
-            echo "Hey!"; exit;
+            //echo "Hey!"; exit;
             // set session data
             $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
             $_SESSION['dev_lastname'] = $develepoer_data['lastname'];
@@ -45,7 +47,7 @@ switch($action){
             $_SESSION['dev_rating'] = $develepoer_data['rating'];
             $_SESSION['dev_profileimage'] = $develepoer_data['profileimage'];
             $_SESSION['dev_qualifications'] = $develepoer_data['qualifications'];
-
+            //echo "Hey!"; exit;
             include "../views/home.php";
         }
 
