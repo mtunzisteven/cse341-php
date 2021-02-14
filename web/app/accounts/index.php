@@ -40,24 +40,24 @@ switch($action){
             $develepoer_data = getDeveloper_data($username, $passwrd);
 
             //echo var_dump($develepoer_data); exit;
-            echo $develepoer_data[0]['firstname']; exit;
+            //echo $develepoer_data[0]['firstname']; exit;
 
             //echo "Hey!"; exit;
             // set session data
-            $_SESSION['dev_firstname'] = $develepoer_data['firstname']; 
+            $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname']; 
 
             echo "Session: ".$_SESSION['dev_firstname']."| Database result: ".$develepoer_data['firstname']; 
             exit;
 
-            $_SESSION['dev_lastname'] = $develepoer_data['lastname'];
-            $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
+            $_SESSION['dev_lastname'] = $develepoer_data[0]['lastname'];
+            $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname'];
             $_SESSION['dev_username'] = $username;
             $_SESSION['dev_password'] = $passwrd;
-            $_SESSION['dev_phone'] = $develepoer_data['phone'];
-            $_SESSION['dev_reviews'] = $develepoer_data['reviews'];
-            $_SESSION['dev_rating'] = $develepoer_data['rating'];
-            $_SESSION['dev_profileimage'] = $develepoer_data['profileimage'];
-            $_SESSION['dev_qualifications'] = $develepoer_data['qualifications'];
+            $_SESSION['dev_phone'] = $develepoer_data[0]['phone'];
+            $_SESSION['dev_reviews'] = $develepoer_data[0]['reviews'];
+            $_SESSION['dev_rating'] = $develepoer_data[0]['rating'];
+            $_SESSION['dev_profileimage'] = $develepoer_data[0]['profileimage'];
+            $_SESSION['dev_qualifications'] = $develepoer_data[0]['qualifications'];
             //echo "Hey!"; exit;
             include "../views/home.php";
         }
