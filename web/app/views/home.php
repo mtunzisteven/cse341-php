@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php include 'cs313-php/../snippets/header.php'; ?>
-            <?php include 'cs313-php/../snippets/navigation.php'; ?>
+            <?php include '/web/app/snippets/header.php'; ?>
+            <?php include '/web/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -38,7 +38,7 @@
                 </section>
             </div>  
            
-            <?php include '/../snippets/footer.php'; ?>
+            <?php include '/web/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>
