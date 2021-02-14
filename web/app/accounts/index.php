@@ -37,9 +37,9 @@ switch($action){
         if($logins===1){
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
-            echo "Hey!"; exit;
+            //echo "Hey!"; exit;
             // set session data
-            $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
+            $_SESSION['dev_firstname'] = $develepoer_data['firstname']; echo "Hey- $_SESSION['dev_firstname']"; exit;
             $_SESSION['dev_lastname'] = $develepoer_data['lastname'];
             $_SESSION['dev_firstname'] = $develepoer_data['firstname'];
             $_SESSION['dev_username'] = $username;
