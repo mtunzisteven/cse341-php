@@ -19,8 +19,8 @@
                 <section class="left-section"> 
                     <h4>Posted Projects</h4>
                     <?php
-                        foreach($project as $row){
-                            echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
+                        foreach($projects as $row){
+                            echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p><br/>';
                         }
                     ?>
                 </section>
@@ -38,7 +38,7 @@
                 </section>
             </div>  
            
-            <?php include 'snippets/footer.php'; ?>
+            <?php include '/../snippets/footer.php'; ?>
         </main>
     </body>
 </html>
