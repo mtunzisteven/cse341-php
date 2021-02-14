@@ -25,7 +25,7 @@
             ?>
            
             <?php 
-                if($_SESSION('dev_firstname')!=null){include '../snippets/footer.php';}else{include 'snippets/footer.php';}
+                include 'http://agile-brook-40795.herokuapp.com/app/snippets/footer.php';
             ?>
         </main>
     </body>
