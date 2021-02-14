@@ -7,8 +7,31 @@ session_start();
 // include connection
 require_once "../connector/connection.php";
 
+// Include main-model
+include "../main-model.php";
+
 // Include accounts Model
 include "../models/account-model.php";
+
+
+foreach($projects as $row){
+    $projectList = '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
+}
+
+foreach($developer as $row){
+    $counter = 0;
+    $dev = '<div class="dev-container"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
+    $dev .=  '<div class="dev-text-container">';
+    $dev .=  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
+    $dev .=  '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
+    $dev .=  '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div><br/>';
+
+    $counter +=1;
+
+    if($counter==5){
+        break;
+    }
+}
 
 
 $action = filter_input(INPUT_POST, 'action');

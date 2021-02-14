@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php include 'snippets/header.php'; ?>
-            <?php include 'snippets/navigation.php'; ?>
+            <?php include '/app/snippets/header.php'; ?>
+            <?php include '/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Home</h1>
@@ -19,25 +19,13 @@
                 <section class="left-section"> 
                     <h4>Posted Projects</h4>
                     <?php
-                        include "/app/main-model.php";
-
-                        foreach($projects as $row){
-                            echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
-                        }
+                        echo $projectList;
                     ?>
                 </section>
 
                 <section class="right-section"> 
                     <?php
-
-                        foreach($developer as $row){
-                            echo '<div class="dev-container"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
-                            echo '<div class="dev-text-container">';
-                            echo '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
-                            echo '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
-                            echo '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div><br/>';
-                        }
-
+                        echo $dev;
                     ?>
                 </section>
             </div>  
