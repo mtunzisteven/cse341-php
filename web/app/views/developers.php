@@ -25,7 +25,16 @@
             ?>
            
             <?php 
-                include 'http://agile-brook-40795.herokuapp.com/app/snippets/footer.php';
+                try{
+                    require_once '/app/snippets/footer.php';
+                }
+                catch(Exception $ex){
+
+                    echo 'Error!: ' . $ex->getMessage();
+                    die();
+            
+                }
+                
             ?>
         </main>
     </body>
