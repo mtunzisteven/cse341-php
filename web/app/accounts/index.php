@@ -30,7 +30,7 @@ switch($action){
         // Login results returned.
         $logins = login_developer($username, $passwrd);
 
-        if(!empty($logins)){
+        if($login===1){
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
 
