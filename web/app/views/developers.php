@@ -22,7 +22,7 @@
 
             ?>
            
-            <?php include '/app/snippets/footer.php'; ?>
+            <?php include '/web/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>
