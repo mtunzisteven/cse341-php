@@ -25,15 +25,8 @@
             ?>
            
             <?php 
-                try{
-                    require_once '/app/snippets/footer.php';
-                }
-                catch(Exception $ex){
-
-                    echo 'Error!: ' . $ex->getMessage();
-                    die();
-            
-                }
+                 include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php';
+                
                 
             ?>
         </main>
