@@ -13,21 +13,6 @@ include "../main-model.php";
 // Include accounts Model
 include "../models/account-model.php";
 
-$projectList=[]; $counter = [];
-
-foreach($projects as $row){
-    $projectList = '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p>';
-}
-
-foreach($developer as $row){
-    $dev = '<div class="dev-container"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" />';
-    $dev .=  '<div class="dev-text-container">';
-    $dev .=  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
-    $dev .=  '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
-    $dev .=  '<a class="dev-link" href="../app/?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div></div>';
-}
-
-
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
