@@ -14,9 +14,9 @@ function register_developer($firstName, $lastName, $userName, $phone, $email, $p
     try{
 
         $sql = "INSERT INTO developer
-                    (firstName, lastName, userName, phone, email, passwrd)
+                    (firstname, lastname, username, phone, email, passwrd)
                 VALUES
-                    (:fistName, :lastName, :userName, :phone, :email, :passwrd)";
+                    (:firstName, :lastName, :userName, :phone, :email, :passwrd)";
 
         $stmt = $db->prepare($sql);
 
