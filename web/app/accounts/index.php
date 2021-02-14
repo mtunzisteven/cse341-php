@@ -39,6 +39,7 @@ switch($action){
             // fetch all developer data
             $develepoer_data = getDeveloper_data($username, $passwrd);
 
+            echo var_dump($develepoer_data); exit;
             echo $develepoer_data['firstname']; exit;
 
             //echo "Hey!"; exit;
