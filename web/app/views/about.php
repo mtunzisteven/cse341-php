@@ -1,9 +1,7 @@
-<?php session_start();?>
-
 <!doctype html>
 <html lang="en-us">
     <head>
-        <title>Developers</title>
+        <title>About</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
         <link href="/app/css/style.css" media="screen" rel="stylesheet">
@@ -14,21 +12,12 @@
             <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
-                <h1 id="title">Developers</h1>
+                <h1 id="title">About The Application</h1>
             </div>
-            <?php
 
-                foreach($developer as $row){
-                    echo '<a class="dev-container-link"><img class="dev-img" src"'.$row['profileimage'].'" alt="profile image" /></a>';
-                }
 
-            ?>
            
-            <?php 
-                 include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php';
-                
-                
-            ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>

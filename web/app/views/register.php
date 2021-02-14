@@ -8,8 +8,8 @@
     </head>
     <body>
         <main class="content">
-            <?php include '../snippets/header.php'; ?>
-            <?php include '../snippets/navigation.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/header.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/navigation.php'; ?>
 
             <div class="hero">     
                 <h1 id="title">Welcome!</h1>
@@ -43,7 +43,7 @@
             </form>
 
            
-            <?php include '../snippets/footer.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php'; ?>
         </main>
     </body>
 </html>
