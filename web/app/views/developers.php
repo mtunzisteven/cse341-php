@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!doctype html>
 <html lang="en-us">
     <head>
@@ -22,7 +24,10 @@
 
             ?>
            
-            <?php include '../snippets/footer.php'; ?>
+            <?php 
+                $footer=''; if($_SESSION('dev_firstname')!=null){$footer = '../snippets/footer.php';}else{$footer = 'snippets/footer.php';}
+                include $footer;
+            ?>
         </main>
     </body>
 </html>
