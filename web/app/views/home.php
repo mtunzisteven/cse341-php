@@ -34,7 +34,7 @@
                                     echo  '<div class="dev-inner-container"> <p class="dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
                                         echo  '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
                                         echo  '<div class="dev-text-container"><h4 class="center dev-countries">'.$row['country'].'</h4>';
-                                        echo  '<i class="center dev-cities">'.$row['city'].'</i></div></div>';
+                                        echo  '<i class="center dev-cities">'.$row['city'].'</i></div></div></div>';
                             echo  '</div><br/>';
                         }
                     ?>
