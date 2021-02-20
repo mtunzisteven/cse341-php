@@ -74,19 +74,19 @@ VALUES
 
 -- Inserting into developer table
 INSERT INTO developer
-(firstName, lastName, username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone, profileimage)
 VALUES
-('Bong', 'Simelani', 'dev001', 'dev001123','001@dev.com', 0013457890);
+('Bong', 'Simelani', 'dev001', 'dev001123','001@dev.com', 0013457890, 'no-image.png');
 
 INSERT INTO developer
-(firstName, lastName, username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone, profileimage)
 VALUES
-('Thabo', 'Dlamini', 'dev002', 'dev002123','002@dev.com', 0023457890);
+('Thabo', 'Dlamini', 'dev002', 'dev002123','002@dev.com', 0023457890, 'no-image.png"');
 
 INSERT INTO developer
-(firstName, lastName, username, passwrd, email, phone)
+(firstName, lastName, username, passwrd, email, phone, profileimage)
 VALUES
-('Thokozani', 'Cebekhulu', 'dev003', 'dev003123','002@dev.com', 0033457890);
+('Thokozani', 'Cebekhulu', 'dev003', 'dev003123','002@dev.com', 0033457890, 'no-image.png');
 
 -- Inserting into project table
 INSERT INTO projects
