@@ -28,15 +28,22 @@
                 <section class="right-section"> 
                     <?php
                         foreach($developer as $row){ // This value is from main model via controller
-                            echo  '<div class="dev-container"><img class="dev-img" src="images/'.$row['profileimage'].'" alt="profile image" />'; 
-                                echo  '<div class="dev-text-container">';
-                                    echo  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
-                                    echo  '<div class="dev-inner-container"> <div><p class="dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
-                                        echo  '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div>';
-                                        echo  '<div class="dev-text-container"><h4 class="dev-countries">'.$row['country'].'</h4>';
-                                        echo  '<i class="dev-cities">'.$row['city'].'</i></div></div></div>';
-                            echo  '</div><br/>';
+
+                            $card = '<div class="dev-container">';
+                            $card.=     '<img class="dev-img" src="images/'.$row['profileimage'].'" alt="profile image" />';
+                            $card.=     '<div class="dev-text-container">';
+                            $card.=         '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
+                            $card.=         '<div class="dev-inner-container">'; 
+                            $card.=             '<p class="dev-contacts">Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
+                            $card.=             '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
+                            $card.=             '<div class="dev-location-container">';
+                            $card.=                 '<h4 class="dev-countries">'.$row['country'].'</h4>';
+                            $card.=                 '<i class="dev-cities">'.$row['city'].'</i>';
+                            $card.= '</div></div></div></div>';
+
+                            echo $card;
                         }
+
                     ?>
                 </section>
             </div>  
