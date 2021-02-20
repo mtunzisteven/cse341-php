@@ -43,7 +43,7 @@
                             $card.=                 '<i class="dev-cities">'.$row['city'].'</i>';
                             $card.=             '</div>';
                             $card.=             '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
-                            $card.= '</div></div></div>';
+                            $card.= '</div></div></div><br/>';
 
                             echo $card;
                         }
