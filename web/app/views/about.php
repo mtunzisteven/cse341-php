@@ -14,6 +14,12 @@
             <div class="hero">     
                 <h1 id="title">About The Application</h1>
             </div>
+            <p class="explainer-paragraph">
+            This is a web application that connects web developers and their customers. When a
+            customer seeks the services of a developer, they will fill up a form to create a project request
+            on the app and it will be sent to the emails of qualifying developers. Developers will then
+            accept the project and the customer will select and contact one of them.
+            </p>
 
 
            
