@@ -194,8 +194,8 @@ hr{
 
 .dev-container:hover{
     box-shadow: 0 0 8px 1px $main-color;
-
 }
+
 
 form{
     border-radius:30px;
@@ -280,6 +280,10 @@ label{
 
 .dev-countries, .dev-cities{
     text-align: right;
+}
+
+.center{
+    text-align:center;
 }
 
 footer{
