@@ -1,8 +1,8 @@
-$main-color:darkblue;
-$secondary-color:aqua;
-$light-color:aliceblue;
-$dark-color: rgb(63, 62, 62);
-$light-dark:grey;
+$main-color:#00008b;
+$secondary-color:#00ffff;
+$light-color:#f0f8ff;
+$dark-color: #3f3e3e;
+$light-dark:#808080;
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -310,10 +310,6 @@ footer{
 
     .right-section{
         width:70%;
-    }
-    
-    ul{
-        justify-content: center;
     }
 
     .content{
