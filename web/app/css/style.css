@@ -46,9 +46,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
   padding: 0;
   margin: 0;
@@ -112,7 +112,6 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   border-top: #3f3e3e;
-  border-radius: #3f3e3e;
 }
 
 .left-section {
@@ -176,8 +175,9 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: left;
-      align-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin: 0;
   padding: 0;
 }
@@ -310,9 +310,8 @@ label {
   border-radius: 195px;
 }
 
-.center {
-  text-align: center;
-  margin: 0;
+.dev-countries, .dev-cities {
+  text-align: right;
 }
 
 footer {

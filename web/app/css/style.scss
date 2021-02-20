@@ -41,7 +41,7 @@ nav{
 ul{
     display:flex;
     flex-direction: row;
-    align-items: space-between;
+    justify-content: space-between;
     text-align: left;
     padding: 0;
     margin:0;
@@ -102,9 +102,7 @@ section{
 .sections{
     display:flex;
     flex-direction: row;
-    border-top: $dark-color;
-    border-radius: $dark-color;
-    
+    border-top: $dark-color;    
 }
 
 .left-section{
@@ -156,7 +154,7 @@ hr{
     & .dev-text-container{
         display:flex;
         flex-direction: column;
-        align-content: left;
+        justify-content: left;
         margin:0;
         padding:0;
     }
@@ -276,9 +274,8 @@ label{
 
 }
 
-.center{
-    text-align: center;
-    margin:0;
+.dev-countries, .dev-cities{
+    text-align: right;
 }
 
 footer{
