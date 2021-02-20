@@ -305,9 +305,9 @@ label {
 }
 
 .dev-page-img {
-  width: 190px;
-  height: 190px;
-  border-radius: 195px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
 }
 
 .dev-countries, .dev-cities {
