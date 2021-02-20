@@ -183,6 +183,7 @@ hr{
         border-radius: 10px;
         text-decoration: none;
         text-align:center;
+        margin-top: 5%;
     }
 
     & .dev-link:hover{
@@ -264,7 +265,6 @@ label{
 
 .dev-img-link{
     border-radius:200px;
-    box-shadow: 0 0 8px 1px $dark-color;
     width:200px;
     height:200px;
 }
@@ -272,7 +272,9 @@ label{
 .dev-page-img{
     width:150px;
     height:150px;
-    border-radius:150px;
+    border-radius:100px;
+    box-shadow: 0 0 8px 1px $dark-color;
+
 
 }
 
