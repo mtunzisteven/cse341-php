@@ -35,10 +35,10 @@
                             $card.=         '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
                             $card.=         '<div class="dev-inner-container">'; 
                             $card.=             '<p class="dev-contacts">Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
-                            $card.=             '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
                             $card.=             '<div class="dev-location-container">';
                             $card.=                 '<h4 class="dev-countries">'.$row['country'].'</h4>';
                             $card.=                 '<i class="dev-cities">'.$row['city'].'</i>';
+                            $card.=             '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
                             $card.= '</div></div></div></div>';
 
                             echo $card;
