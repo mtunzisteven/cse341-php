@@ -31,7 +31,7 @@
                             echo  '<div class="dev-container"><img class="dev-img" src="images/'.$row['profileimage'].'" alt="profile image" />'; 
                                 echo  '<div class="dev-text-container">';
                                     echo  '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
-                                    echo  '<p class"dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
+                                    echo  '<p class="dev-contacts">'.'Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
                                     echo  '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a></div>';
                                 echo  '<div class="dev-text-container"><h4 class="center dev-countries">'.$row['country'].'</h4>';
                                      echo  '<i class="center dev-cities">'.$row['city'].'</i></div>';
