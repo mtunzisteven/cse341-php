@@ -247,6 +247,12 @@ label{
     margin: 15px 0 15px 0;
 }
 
+.dev-inner-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .dev-img-link-container{
     display:flex;
     flex-direction:row;

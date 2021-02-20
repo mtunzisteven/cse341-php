@@ -266,6 +266,19 @@ label {
   margin: 15px 0 15px 0;
 }
 
+.dev-inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .dev-img-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
