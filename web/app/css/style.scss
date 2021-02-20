@@ -11,7 +11,7 @@ body{
 
 .content{
     overflow-x: hidden;
-    margin: 0 10% 0 10%;
+    margin: 0;
     border:$dark-color 1px solid;
 }
 
@@ -310,5 +310,9 @@ footer{
     
     ul{
         justify-content: center;
+    }
+
+    .content{
+        margin: 0 10% 0 10%;
     }
 }
