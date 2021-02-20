@@ -153,7 +153,7 @@ hr{
 
     & .dev-text-container{
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: left;
         margin:0;
         padding:0;
@@ -251,6 +251,7 @@ label{
 .dev-inner-container{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -322,9 +323,5 @@ footer{
         align-content: space-between;
         box-shadow: 0 0 8px 1px $dark-color;
         border-radius:160px 0 0 160px;
-    }
-
-    .dev-text-container{
-        flex-direction: column;
     }
 }
