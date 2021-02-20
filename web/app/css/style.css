@@ -171,10 +171,10 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -361,6 +361,12 @@ footer p {
     -webkit-box-shadow: 0 0 8px 1px #3f3e3e;
             box-shadow: 0 0 8px 1px #3f3e3e;
     border-radius: 160px 0 0 160px;
+  }
+  .dev-text-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
