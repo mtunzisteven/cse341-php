@@ -335,6 +335,11 @@ footer p {
 }
 
 @media only screen and (min-width: 1040px) {
+  ul {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
   .left-section {
     display: block;
   }
