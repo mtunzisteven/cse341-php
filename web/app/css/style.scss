@@ -250,22 +250,24 @@ label{
 .dev-img-link-container{
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-wrap:wrap;
     width:95%;
     margin:auto;
 }
 
 .dev-img-link{
-    border-radius:50px;
-    box-shadow: 0 0 6px 1px $dark-color;
+    border-radius:200px;
+    box-shadow: 0 0 15px 1px $dark-color;
     width:200px;
     height:200px;
 }
 
 .dev-page-img{
-    width:190px;
-    height:190px;
+    width:150px;
+    height:150px;
+    border-radius:200px;
+
 }
 
 footer{

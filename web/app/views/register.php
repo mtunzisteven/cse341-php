@@ -32,8 +32,8 @@
                 <input class="reg-inputs" type="text" name="username" />
                 
                 <label class="reg-label">Password</label>
-                <input class="reg-inputs" type="text" name="passwrd" />
-                <input type="hiden" name="profileimage" value="/app/images/no-image.png" />
+                <input class="reg-inputs" type="password" name="passwrd" pattern="/[\d2!#$%&?a-zA-Z]{8,*}/" required />
+                <input type="hidden" name="profileimage" value="no-image.png" />
                 
                 
                 <input class="reg-inputs reg-button" type="submit" name="submit" id="regbtn" value="register" />
