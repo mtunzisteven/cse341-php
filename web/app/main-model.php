@@ -11,7 +11,7 @@ $db = db_connect();
 //echo "<br/>model call connection fn<br/>";
 
 //Get developer data
-$stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating, phone, email, developerid FROM developer");
+$stmt = $db->prepare("SELECT firstName, lastName, profileImage, reviews, rating, phone, email, developerid, city, country FROM developer");
 $stmt->execute();
 
 $developer = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -19,7 +19,7 @@
                 <section class="left-section"> 
                     <h4>Posted Projects</h4>
                     <?php
-                        foreach($projects as $row){
+                        foreach($projects as $row){ // This value is from 
                             echo '<p class="project-title"><strong>'.$row['title'].'</strong></p><hr/><p class="date-posted">Date Posted: '.$row['date'].'</p><br/>';
                         }
                     ?>
