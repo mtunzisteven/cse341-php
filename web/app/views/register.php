@@ -28,14 +28,14 @@
                 <label class="reg-label">Phone</label>
                 <input class="reg-inputs" type="phone" name="phone" />
 
-                <label class="reg-label">Username</label>
-                <input class="reg-inputs" type="text" name="username" />
-
                 <label class="reg-label">Country</label>
                 <input class="reg-inputs" type="text" name="country" />
 
                 <label class="reg-label">City</label>
                 <input class="reg-inputs" type="text" name="city" />
+
+                <label class="reg-label">Username</label>
+                <input class="reg-inputs" type="text" name="username" />
                 
                 <label class="reg-label">Password</label>
                 <input class="reg-inputs" type="password" name="passwrd" pattern="/[\da-zA-Z]{8,}/" required />
