@@ -32,6 +32,11 @@ header a:hover {
   color: #00ffff;
 }
 
+header .logo {
+  width: 100px;
+  height: 100px;
+}
+
 nav {
   background-color: #00008b;
   color: #f0f8ff;

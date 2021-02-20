@@ -30,6 +30,11 @@ header{
     & a:hover{
         color:$secondary-color;
     }
+
+    & .logo{
+        width:100px;
+        height:100px;
+    }
 }
 
 nav{
