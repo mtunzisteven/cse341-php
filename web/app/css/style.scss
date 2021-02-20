@@ -138,10 +138,9 @@ hr{
 .dev-container{
     padding:inherit;
     display:flex;
-    flex-direction: row;
-    align-content: space-between;
+    flex-direction: column;
+    align-content: center;
     box-shadow: 0 0 8px 1px $dark-color;
-    border-radius:160px 0 0 160px;
 
 
     & .dev-img{
@@ -314,5 +313,14 @@ footer{
 
     .content{
         margin: 0 10% 0 10%;
+    }
+
+    .dev-container{
+        padding:inherit;
+        display:flex;
+        flex-direction: row;
+        align-content: space-between;
+        box-shadow: 0 0 8px 1px $dark-color;
+        border-radius:160px 0 0 160px;
     }
 }
