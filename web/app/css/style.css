@@ -35,7 +35,7 @@ header a:hover {
 header .logo {
   width: 65px;
   height: 65px;
-  margin-bottom: 30px;
+  margin-top: -20px;
 }
 
 nav {
