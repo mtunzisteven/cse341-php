@@ -180,6 +180,7 @@ hr {
           justify-content: left;
   margin: 0;
   padding: 0;
+  width: 85%;
 }
 
 .dev-container .dev-name {
@@ -191,7 +192,8 @@ hr {
 .dev-container .dev-contacts {
   color: #3f3e3e;
   text-align: left;
-  margin: 0;
+  margin-top: 24px;
+  width: 100%;
 }
 
 .dev-container .dev-link {
