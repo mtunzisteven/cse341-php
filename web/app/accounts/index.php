@@ -76,9 +76,11 @@ switch($action){
         $phone = filter_input(INPUT_POST, 'phone');
         $email = filter_input(INPUT_POST, 'email');
         $passwrd = filter_input(INPUT_POST, 'passwrd');
+        $country = filter_input(INPUT_POST, 'country');
+        $city = filter_input(INPUT_POST, 'city');
         $profileimage = $_POST['profileimage'];
 
-        $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd, $profileimage);
+        $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd, $profileimage, $country, $city);
 
         include "../views/login.php";
         break;

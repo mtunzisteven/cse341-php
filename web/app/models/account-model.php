@@ -7,16 +7,16 @@
 
 
 // Register a developer and save their details in the database
-function register_developer($firstName, $lastName, $userName, $phone, $email, $passwrd, $profileimage){
+function register_developer($firstName, $lastName, $userName, $phone, $email, $passwrd, $profileimage, $country, $city){
 
     $db = db_connect();
 
     try{
 
         $sql = "INSERT INTO developer
-                    (firstname, lastname, username, phone, email, passwrd, profileimage)
+                    (firstname, lastname, username, phone, email, passwrd, profileimage, country, city)
                 VALUES
-                    (:firstName, :lastName, :userName, :phone, :email, :passwrd, :profileimage)";
+                    (:firstName, :lastName, :userName, :phone, :email, :passwrd, :profileimage. :country, :city)";
 
         $stmt = $db->prepare($sql);
 
@@ -27,6 +27,8 @@ function register_developer($firstName, $lastName, $userName, $phone, $email, $p
         $stmt->bindValue(':email',$email, PDO::PARAM_STR);
         $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
         $stmt->bindValue(':profileimage',$profileimage, PDO::PARAM_STR);
+        $stmt->bindValue(':country',$country, PDO::PARAM_STR);
+        $stmt->bindValue(':city',$city, PDO::PARAM_STR);
 
         $stmt->execute();
 
