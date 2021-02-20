@@ -16,6 +16,7 @@
             <div class="hero">     
                 <h1 id="title">Developers</h1>
             </div>
+            <div class="dev-img-link-container">
             <?php
 
                 foreach($developer as $row){
@@ -23,6 +24,7 @@
                 }
 
             ?>
+            </div>
            
             <?php 
                  include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php';
