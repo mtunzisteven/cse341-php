@@ -20,9 +20,11 @@
             <?php
 
                 foreach($developer as $row){
+                    echo '<div class="per-dev-holder"';
                     echo '<a class="dev-img-link" href="?action=developer"><img class="dev-page-img" src="images/'.$row['profileimage'].'" alt="profile image" /></a>';
                     echo '<h4 class="center dev-countries">'.$row['country'].'</h4>';
                     echo '<i class="center dev-cities">'.$row['city'].'</i>';
+                    echo '</div>';
                 }
 
             ?>
