@@ -43,10 +43,10 @@ switch($action){
             //echo $develepoer_data[0]['firstname']; exit;
 
             //echo "Hey!"; exit;
+            
             // set session data
             $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname']; 
             $_SESSION['dev_lastname'] = $develepoer_data[0]['lastname'];
-            $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname'];
             $_SESSION['dev_username'] = $username;
             $_SESSION['dev_password'] = $passwrd;
             $_SESSION['dev_phone'] = $develepoer_data[0]['phone'];
@@ -54,6 +54,8 @@ switch($action){
             $_SESSION['dev_rating'] = $develepoer_data[0]['rating'];
             $_SESSION['dev_profileimage'] = $develepoer_data[0]['profileimage'];
             $_SESSION['dev_qualifications'] = $develepoer_data[0]['qualifications'];
+            $_SESSION['dev_city'] = $develepoer_data[0]['city'];
+            $_SESSION['dev_country'] = $develepoer_data[0]['country'];
             //echo "Hey!"; exit;
             include "../views/home.php";
         }
