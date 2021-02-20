@@ -34,12 +34,16 @@
                             $card.=     '<div class="dev-text-container">';
                             $card.=         '<h2 class="dev-name">'.$row['firstname'].' '.$row['lastname'].'</h2>';
                             $card.=         '<div class="dev-inner-container">'; 
-                            $card.=             '<p class="dev-contacts">Phone: '.$row['phone'].' <br/>Email: '.$row['email'].'</p>';
+                            $card.=             '<div class="dev-contacts-container">'; 
+                            $card.=                 '<p class="dev-contacts">Phone: '.$row['phone'].' </p>';
+                            $card.=                 '<p class="dev-contacts">Email: '.$row['email'].'</p>';
+                            $card.=             '</div>';
                             $card.=             '<div class="dev-location-container">';
                             $card.=                 '<h4 class="dev-countries">'.$row['country'].'</h4>';
                             $card.=                 '<i class="dev-cities">'.$row['city'].'</i>';
+                            $card.=             '</div>';
                             $card.=             '<a class="dev-link" href="../app/account/index.php?action=profile&user='.$row['developerid'].'" title="Request a Developer" >Request</a>';
-                            $card.= '</div></div></div></div>';
+                            $card.= '</div></div></div>';
 
                             echo $card;
                         }
