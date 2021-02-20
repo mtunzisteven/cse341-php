@@ -41,7 +41,7 @@ nav{
 ul{
     display:flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     text-align: center;
     padding: 0;
     margin:0;
@@ -132,7 +132,7 @@ hr{
 }
 
 .right-section{
-    width:70%;
+    width:100%;
 }
 
 .dev-container{
@@ -303,5 +303,12 @@ footer{
     .left-section{
         display:block;
     }
+
+    .right-section{
+        width:70%;
+    }
     
+    ul{
+        justify-content: center;
+    }
 }

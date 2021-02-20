@@ -46,9 +46,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -140,7 +140,7 @@ hr {
 }
 
 .right-section {
-  width: 70%;
+  width: 100%;
 }
 
 .dev-container {
@@ -336,6 +336,14 @@ footer p {
 @media only screen and (min-width: 1040px) {
   .left-section {
     display: block;
+  }
+  .right-section {
+    width: 70%;
+  }
+  ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
