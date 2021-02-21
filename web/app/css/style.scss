@@ -259,6 +259,10 @@ label{
     width:100%;
 }
 
+button{
+    outline:none;
+}
+
 .on{
     background-color:$main-color;
     color:$light-color;

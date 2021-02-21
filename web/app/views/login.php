@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
         <link href="/app/css/style.css" media="screen" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
         <main class="content">
@@ -29,7 +31,7 @@
             </div>
             <form class="customer-form login-form " method="post" action="/app/accounts/index.php">
 
-                <h3>Login</h3>
+                <h3>customer Login</h3>
                 <label class="login-label">Username</label>
                 <input class="login-inputs" type="text" name="username"  />
                 
@@ -43,7 +45,7 @@
 
             <form class="developer-form login-form hide" method="post" action="/app/accounts/index.php">
 
-                <h3>Login</h3>
+                <h3>Developer Login</h3>
                 <label class="login-label">Username</label>
                 <input class="login-inputs" type="text" name="username"  />
                 
@@ -57,5 +59,6 @@
             
             <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php'; ?>
         </main>
+        <script src="/app/library/functions.js"></script>
     </body>
 </html>
