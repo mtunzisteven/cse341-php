@@ -23,7 +23,25 @@
                 ?>
 
             </p>
-            <form class="login-form" method="post" action="/app/accounts/index.php">
+            <div class="registration-buttons">
+                <button class="customer-button on">Customer</button>
+                <button class="developer-button ">Developer</button>
+            </div>
+            <form class="customer-form login-form " method="post" action="/app/accounts/index.php">
+
+                <h3>Login</h3>
+                <label class="login-label">Username</label>
+                <input class="login-inputs" type="text" name="username"  />
+                
+                <label class="login-label">Password</label>
+                <input class="login-inputs" type="text" name="passwrd" />
+                
+                <input class="login-inputs login-button" type="submit" name="login" value="login" />
+                <input type="hidden" name="action" value="customer-login" />
+                <a  class="login-inputs login-reg-button connection" href="../accounts/index.php?action=regform" title="registration form">register</a>
+            </form>
+
+            <form class="developer-form login-form hide" method="post" action="/app/accounts/index.php">
 
                 <h3>Login</h3>
                 <label class="login-label">Username</label>

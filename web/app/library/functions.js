@@ -5,4 +5,11 @@ $(document).ready(function () {
         $(".customer-button").removeClass("on");
         $(".developer-form").removeClass("hide");
     });
+
+    $(".customer-button").on("click", function(){
+        $(this).addClass("on");
+        $(".developer-form").addClass("hide");
+        $(".developer-button").removeClass("on");
+        $(".customer-form").removeClass("hide");
+    });
 });
