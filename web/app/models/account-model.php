@@ -168,3 +168,35 @@ function login_customer($email, $passwrd){
 
     }
 }
+
+function getCustomer_data($userName, $passwrd){
+
+    $db = db_connect();
+
+    try{
+
+        $sql = "SELECT* FROM developer WHERE username=:username AND passwrd = :passwrd"; 
+
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindValue(':username',$userName, PDO::PARAM_STR);
+        $stmt->bindValue(':passwrd',$passwrd, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        $develepoer_data=$stmt->fetchAll();
+
+        //echo "result inserted";
+
+        $message = "Your registration was successful! Please login below<br/>";
+
+        return $develepoer_data;
+
+    }catch (PDOException $ex){
+
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+
+    }
+}

@@ -63,6 +63,34 @@ switch($action){
         break;
 
     case 'customer-login':
+        $username = filter_input(INPUT_POST, 'username');
+        $passwrd = filter_input(INPUT_POST, 'passwrd');
+
+        // Login results returned.
+        $logins = login_customer($username, $passwrd);
+
+        //echo $logins; exit;
+
+        if($logins==1){
+            //echo "hey!"; exit;
+            // fetch all developer data
+            $develepoer_data = getCustomer_data($username, $passwrd);
+
+            //echo var_dump($develepoer_data); exit;
+            //echo $develepoer_data[0]['firstname']; exit;
+
+            //echo "Hey!"; exit;
+            
+            // set session data
+            $_SESSION['dev_firstname'] = $develepoer_data[0]['firstname']; 
+            $_SESSION['dev_lastname'] = $develepoer_data[0]['lastname'];
+            $_SESSION['dev_username'] = $username;
+            $_SESSION['dev_password'] = $passwrd;
+            $_SESSION['dev_phone'] = $develepoer_data[0]['phone'];
+
+            //echo "Hey!"; exit;
+            include "../views/home.php";
+        }
 
         break;
 
@@ -83,6 +111,18 @@ switch($action){
         $profileimage = $_POST['profileimage'];
 
         $message = register_developer($firstname, $lastname, $username, $phone, $email, $passwrd, $profileimage, $country, $city);
+
+        include "../views/login.php";
+        break;
+
+    case 'register-customer':
+        $firstname = filter_input(INPUT_POST, 'firstname');
+        $lastname = filter_input(INPUT_POST, 'lastname');
+        $phone = filter_input(INPUT_POST, 'phone');
+        $email = filter_input(INPUT_POST, 'email');
+        $passwrd = filter_input(INPUT_POST, 'passwrd');
+
+        $message = register_customer($firstname, $lastname, $phone, $email, $passwrd);
 
         include "../views/login.php";
         break;

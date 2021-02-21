@@ -249,6 +249,16 @@ label{
     color:$light-color;
 }
 
+.customer-reg-button{
+    border-radius: 15px 15px 0 0;
+    border: $main-color;
+}
+
+.developer-reg-button{
+    border-radius: 15px 0 0 15px;
+    border: $main-color;
+}
+
 .form-message{
     text-align: center;
     margin: 15px 0 15px 0;
