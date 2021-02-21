@@ -257,14 +257,24 @@ label{
     margin:auto;
 }
 
-.customer-reg-button{
+.on{
+    background-color:$main-color;
+    color:$light-color;
+    box-shadow: 0 0 8px 2px $dark-color;
+}
+
+.customer-button{
     border-radius: 15px 15px 0 0;
     border: $main-color;
 }
 
-.developer-reg-button{
+.developer-button{
     border-radius: 15px 0 0 15px;
     border: $main-color;
+}
+
+.hide{
+    display:none;
 }
 
 .form-message{

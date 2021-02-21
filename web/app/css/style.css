@@ -283,14 +283,25 @@ label {
   margin: auto;
 }
 
-.customer-reg-button {
+.on {
+  background-color: #00008b;
+  color: #f0f8ff;
+  -webkit-box-shadow: 0 0 8px 2px #3f3e3e;
+          box-shadow: 0 0 8px 2px #3f3e3e;
+}
+
+.customer-button {
   border-radius: 15px 15px 0 0;
   border: #00008b;
 }
 
-.developer-reg-button {
+.developer-button {
   border-radius: 15px 0 0 15px;
   border: #00008b;
+}
+
+.hide {
+  display: none;
 }
 
 .form-message {

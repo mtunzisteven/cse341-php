@@ -17,8 +17,8 @@
                 <h1 id="title">Welcome!</h1>
             </div>
             <div class="registration-buttons">
-                <button class="customer-reg-button on">Customer</button>
-                <button class="developer-reg-button ">Developer</button>
+                <button class="customer-button on">Customer</button>
+                <button class="developer-button ">Developer</button>
             </div>
             <form class="customer-reg-form reg-form" method="post" action="/app/accounts/index.php">
                 <h3>Customer Registration</h3>
