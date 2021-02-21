@@ -266,12 +266,13 @@ label{
 .customer-button{
     border-radius: 15px 0 0 15px;
     border: 2px solid $main-color;
-    padding:15px;
+    padding:8px 15px;
 }
 
 .developer-button{
-    border-radius: 15px 0 0 15px;
+    border-radius: 0 15px 15px 0;
     border: 2px solid $main-color;
+    padding:8px 15px;
 }
 
 .hide{
