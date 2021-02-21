@@ -280,7 +280,10 @@ label {
           flex-direction: row;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
   width: 100%;
 }
 

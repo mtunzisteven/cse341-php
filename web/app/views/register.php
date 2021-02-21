@@ -20,7 +20,7 @@
                 <button class="customer-button on">Customer</button>
                 <button class="developer-button ">Developer</button>
             </div>
-            <form class="customer-reg-form reg-form" method="post" action="/app/accounts/index.php">
+            <form class="customer-form reg-form" method="post" action="/app/accounts/index.php">
                 <h3>Customer Registration</h3>
                 <label class="reg-label">First Name</label>
                 <input class="reg-inputs" type="text" name="firstname" />
@@ -42,7 +42,7 @@
                 <input type="hidden" name="action" value="register-customer">
                 
             </form>
-            <form class="hide developer-reg-form reg-form" method="post" action="/app/accounts/index.php">
+            <form class="hide developer-form reg-form" method="post" action="/app/accounts/index.php">
                 <h3>Developer Registration</h3>
                 <label class="reg-label">First Name</label>
                 <input class="reg-inputs" type="text" name="firstname" />

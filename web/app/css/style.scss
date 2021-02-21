@@ -254,7 +254,8 @@ label{
     display:flex;
     flex-direction: row;
     flex-wrap:none;
-    margin:20px auto;
+    justify-content: center;
+    padding: 20px 0;
     width:100%;
 }
 
