@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
     <head>
-        <title>home</title>
+        <title>Registration</title>
         <meta charset="utf-8">
         <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
         <link href="/app/css/style.css" media="screen" rel="stylesheet">
@@ -77,7 +77,7 @@
            
             <?php include $_SERVER['DOCUMENT_ROOT'].'/app/snippets/footer.php'; ?>
         </main>
-        <script src="../library/functions.js"></script>
+        <script src="/app/library/functions.js"></script>
     </body>
 </html>
 
