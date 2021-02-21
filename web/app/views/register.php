@@ -38,7 +38,7 @@
                 <input class="reg-inputs" type="password" name="passwrd" pattern="/[\da-zA-Z]{8,}/" required />
                 <input type="hidden" name="profileimage" value="no-image.png" />
                 
-                <input class="reg-inputs reg-button" type="submit" name="submit" id="regbtn" value="register" />
+                <input class="reg-inputs reg-button" type="submit" name="submit" value="register" />
                 <input type="hidden" name="action" value="register-customer">
                 
             </form>
@@ -69,7 +69,7 @@
                 <input class="reg-inputs" type="password" name="passwrd" pattern="/[\da-zA-Z]{8,}/" required />
                 <input type="hidden" name="profileimage" value="no-image.png" />
                 
-                <input class="reg-inputs reg-button" type="submit" name="submit" id="regbtn" value="register" />
+                <input class="reg-inputs reg-button" type="submit" name="submit" value="register" />
                 <input type="hidden" name="action" value="register-developer">
                 
             </form>

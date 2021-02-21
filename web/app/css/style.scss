@@ -254,7 +254,7 @@ label{
     display:flex;
     flex-direction: row;
     flex-wrap:none;
-    margin:auto;
+    margin:20px auto;
 }
 
 .on{
@@ -264,13 +264,14 @@ label{
 }
 
 .customer-button{
-    border-radius: 15px 15px 0 0;
-    border: $main-color;
+    border-radius: 15px 0 0 15px;
+    border: 2px solid $main-color;
+    padding:15px;
 }
 
 .developer-button{
     border-radius: 15px 0 0 15px;
-    border: $main-color;
+    border: 2px solid $main-color;
 }
 
 .hide{
